@@ -1,0 +1,1770 @@
+<div id="node-124139" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> There are K nuclear reactor chambers labelled from 0 to K-1. Particles are bombarded onto chamber 0. The particles keep collecting in the chamber 0. However if at any time, there are more than N particles in a chamber, a reaction will cause 1 particle to move to the immediate next chamber(if current chamber is 0, then to chamber number 1), and all the particles in the current chamber will be be destroyed and same continues till no chamber has number of particles greater than N. Given K,N and the total number of particles bombarded (A), find the final distribution of particles in the K chambers. Particles are bombarded one at a time. After one particle is bombarded, the set of reactions, as described, take place. After all reactions are over, the next particle is bombarded. If a particle is going out from the last chamber, it has nowhere to go and is lost.</p> 
+  <h3>Input</h3> 
+  <p> The input will consist of one line containing three numbers A,N and K separated by spaces.<br> A will be between 0 and 1000000000 inclusive.<br> N will be between 0 and 100 inclusive.<br> K will be between 1 and 100 inclusive.<br> All chambers start off with zero particles initially.</p> 
+  <h3>Output</h3> 
+  <p> Consists of K numbers on one line followed by a newline. The first number is the number of particles in chamber 0, the second number is the number of particles in chamber 1 and so on.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3 1 3
+<b>Output:</b>
+1 1 0
+</pre>
+  <p> <b>Explanation</b><br> Total of 3 particles are bombarded. After particle 1 is bombarded, the chambers have particle distribution as<br> "1 0 0". After second particle is bombarded, number of particles in chamber 0 becomes 2 which is greater<br> than 1. So, num of particles in chamber 0 becomes 0 and in chamber 1 becomes 1. So now distribution is<br> "0 1 0". After the 3rd particle is bombarded, chamber 0 gets 1 particle and so distribution is "1 1 0" after all<br> particles are bombarded one by one.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/admin">admin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/admin"> admin </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>15-07-2009</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/NUKES">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-458"></a> 
+ <div id="c458" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-458" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyush_ramavat">piyush_ramavat</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2009 06:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>it doesn't take java file. correctly.</p> 
+    <p>i mean. i have tested this program but Judge fails for all testcases.</p> 
+    <p>im not sure whether it is giving inputs correctly..</p> 
+    <p>please provide some examples for submitting a code.<br> i.e. give a sample java file which takes input and prints values.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-460"></a> 
+ <div id="c460" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-460" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 22 Jul 2009 06:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p><a href="http://www.codechef.com/help/" title="http://www.codechef.com/help/">http://www.codechef.com/help/</a> You will find that information here.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-466"></a> 
+ <div id="c466" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-466" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karthikj">karthikj</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 12:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi,<br> no matter what optimization i do for my java code, i am not able to complete 2 test cases of yours withing the time limit.<br> can some one help me with this.</p> 
+    <p>-karthik</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-468"></a> 
+ <div id="c468" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-468" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 12:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>What is the complexity of your solution?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-470"></a> 
+ <div id="c470" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-470" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 04:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have a O(log(A)) solution but still it is giving time limit exceeded. i cant believe it.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-471"></a> 
+ <div id="c471" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-471" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atulbansal128">atulbansal128</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 04:25 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oh I was assuming multiple input line. now its fine.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-474"></a> 
+ <div id="c474" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-474" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karthikj">karthikj</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 03:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@Directi Admin:<br> my algorithm works in 0(n), in the worst case for my implementation.<br> still i am not able to write within time for one of the test cases.</p> 
+    <p>can i get the test data for that test case.</p> 
+    <p>Thx.<br> -karthik</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-477"></a> 
+ <div id="c477" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-477" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2009 06:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>An O(n) algorithm won't work. You need a better complexity for it to pass.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-511"></a> 
+ <div id="c511" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-511" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaileshpandit">shaileshpandit</a></strong>
+   <span style="color:#828282"> @ 26 Jul 2009 09:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>hi, please check my solutions in java and c . both have same algorithm but yet java solution takes 1.95 s and c takes 0 s. are there any plans to remove this biasing?<br> basically are u calling the .class file from some script and measure how much script takes or u calling the static function from already running class and measuring how much the function took?<br> more precisely does the time include starting time of jvm or it is the more time taken by jvm for executing same instructions?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-562"></a> 
+ <div id="c562" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-562" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragkapasi">chiragkapasi</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2009 08:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I feel there is something seriously wrong........Even with the maximum inputs my code works perfectly fast....still i am getting time limit exceeded error.........any other way to measure the time.......plz suggest</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-564"></a> 
+ <div id="c564" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-564" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2009 09:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>One simple way would be to check the complexity and then check if it is such that the implementation would work in time. You can try executing the code locally for the maximum sized test case and see how much time it takes.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-572"></a> 
+ <div id="c572" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-572" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragkapasi">chiragkapasi</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2009 11:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>i have tried it on my local pc with maximum input say 1000000000 100 100 on eclipse.....and i feel it hardly takes a second or so..........</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-573"></a> 
+ <div id="c573" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-573" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragkapasi">chiragkapasi</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2009 11:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>And how can i check the complexity of my solution............</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-575"></a> 
+ <div id="c575" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-575" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 31 Jul 2009 01:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The complexity of your code is of a magnitude higher than O(A) and A can be as large as 10^9. You need to reduce the complexity.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-692"></a> 
+ <div id="c692" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-692" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vscool22">vscool22</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2009 05:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I have tested my code with various test cases. It is showing correct results. But it is showing wrong answer at your end with all your test cases. Please check whether I am using Input and output correctly.<br> Should I display - Input : ...... next line Output : .... or just the Input values and in the next line just the output values..?</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-696"></a> 
+ <div id="c696" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-696" class="active"></a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin 2">admin 2</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2009 06:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>You don't need to display the input again. Just the output as specified in the problem statement. It seems you already have got this problem accepted.</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1034"></a> 
+ <div id="c1034" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1034" class="active">I am unable to submit the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/setugupta">setugupta</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2009 04:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am unable to submit the solution to this problem. It says "The solution to this problem cannot be submitted now." May I know what has happened?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1036"></a> 
+ <div id="c1036" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1036" class="active">Submissions for this problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2009 04:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Submissions for this problem will be made available after some days. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1148"></a> 
+ <div id="c1148" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1148" class="active">when will we be able to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rosyish">rosyish</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2009 10:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    when will we be able to submit the solution to this problem ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1301"></a> 
+ <div id="c1301" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1301" class="active">Why can't we submit answers</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyush">piyush</a></strong>
+   <span style="color:#828282"> @ 29 Aug 2009 08:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Why can't we submit answers to this problem ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1321"></a> 
+ <div id="c1321" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1321" class="active">Submissions will be enabled</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2009 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Submissions will be enabled soon. </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1339"></a> 
+ <div id="c1339" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1339" class="active">&nbsp;why has the problem been</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/phoenix24">phoenix24</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2009 01:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;why has the problem been removed ?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1340"></a> 
+ <div id="c1340" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1340" class="active">&nbsp;HI, &nbsp; I was working on this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tapan.ghia">tapan.ghia</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2009 01:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>&nbsp;HI,</p> 
+    <p>&nbsp;</p> 
+    <p>I was working on this problem:</p> 
+    <p><a href="http://www.codechef.com/problems/NUKES/">http://www.codechef.com/problems/NUKES/</a></p> 
+    <p>&nbsp;</p> 
+    <p>I am not able to submit my solution. Is the Nuclear Reactor problem removed?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-1342"></a> 
+ <div id="c1342" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-1342" class="active">The problem will be up soon.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/admin">admin</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2009 01:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The problem will be up soon. Sorry for the inconvenience </p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5933"></a> 
+ <div id="c5933" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-5933" class="active">Hi I am getting a wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Recca">Recca</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2010 01:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Hi</p> 
+    <p>I am getting a wrong answer for the case 10^9. what could be the possible problems? I think that the code I have implemented is correct.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-5934"></a> 
+ <div id="c5934" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-5934" class="active">The ID of my code is 190634.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/Recca">Recca</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2010 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>The ID of my code is 190634.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8463"></a> 
+ <div id="c8463" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8463" class="active">I am getting a SIGFPE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh09">shubh09</a></strong>
+   <span style="color:#828282"> @ 19 May 2010 12:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>I am getting a SIGFPE (Floating Point Exception) for the case 10^9. Also, the answers for all the other test cases were correct. How to deal with this??</p> 
+    <p>Also, when I submitted the solution, it showed the results for different values of N, which according to me, should be A.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8514"></a> 
+ <div id="c8514" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8514" class="active">Regarding SIGFPE, please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh09">shubh09</a></strong>
+   <span style="color:#828282"> @ 21 May 2010 10:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Regarding SIGFPE, please don't bother anyone. Looks like C was assigning 0 to the variables that went outside the range of 'int'. Division by that variable was giving the Floating Point Exception.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8729"></a> 
+ <div id="c8729" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8729" class="active">@ADMIN PLZ HELP I GET SIGFPE</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ChunChun">ChunChun</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2010 06:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ADMIN</p> 
+    <p>PLZ HELP</p> 
+    <p>I GET SIGFPE for A = 10^9.</p> 
+    <p>BUT WHY I CAN'T SEE.</p> 
+    <p>Just have a look, i've tried a lot :|</p> 
+    <p><a href="http://www.codechef.com/viewsolution/250042">http://www.codechef.com/viewsolution/250042</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8805"></a> 
+ <div id="c8805" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8805" class="active">@ Admin I am able to pass all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anupam328">anupam328</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2010 03:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ Admin</p> 
+    <p>I am able to pass all the test cases except the third one. I have tried but I am unable to make out why, Please help. :)</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8806"></a> 
+ <div id="c8806" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8806" class="active">oh! i got it!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anupam328">anupam328</a></strong>
+   <span style="color:#828282"> @ 7 Jun 2010 03:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>oh! i got it!!</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-8951"></a> 
+ <div id="c8951" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-8951" class="active">got mine ass blown off in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/AnoopNarang">AnoopNarang</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2010 01:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>got mine ass blown off in such a easy question.</p> 
+    <p>tips for other people:</p> 
+    <p>1)try to use log function.</p> 
+    <p>2)take care of special case n=0</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10009"></a> 
+ <div id="c10009" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10009" class="active">@ admin My code runs</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navin9876">navin9876</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2010 04:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@ admin My code runs successfully on my system....bt gives wrong answer whn i submit it here.</p> 
+    <p>&nbsp;</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10237"></a> 
+ <div id="c10237" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10237" class="active">Am i too bad in algorithms or</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tokyo_312">tokyo_312</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2010 12:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Am i too bad in algorithms or am I correct in thinking that there is an O(K) solution to this problem?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10804"></a> 
+ <div id="c10804" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10804" class="active">ADMIN, &nbsp; m get this error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nirajkant">nirajkant</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 08:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>ADMIN,</p> 
+    <p>&nbsp;</p> 
+    <p>m get this error many times on submitting wht does this mean</p> 
+    <p><strong>:( internal error occurred in the system.</strong></p> 
+    <p><strong><br></strong></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10805"></a> 
+ <div id="c10805" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10805" class="active">ADMIN here is my code m</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nirajkant">nirajkant</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 09:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>ADMIN</p> 
+    <p>here is my code m getting <strong>:( internal error occurred in the system on submitting .</strong></p> 
+    <p><strong>http://www.codechef.com/viewsolution/335549<br></strong></p> 
+    <p>&nbsp;</p> 
+    <p>any suggestion what might be th reason ..</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10806"></a> 
+ <div id="c10806" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10806" class="active">ya admin&nbsp; me 2 getting the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nntnag17">nntnag17</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2010 10:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>ya admin&nbsp; me 2 getting the same result</p> 
+    <p><strong>:( internal error occurred in the system on submitting .</strong></p> 
+    <p><strong>plzz help<br></strong></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10810"></a> 
+ <div id="c10810" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10810" class="active">Hi, on submitting my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nntnag17">nntnag17</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 12:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, on submitting my solution to this problem ,i m getting 7 out of 8 cases right but on 8th case i am getting SIGSEGV error,here is what i get Test Approx_N_value Result (time) 1 10 accepted (0.00s) 2 10 accepted (0.00s) 3 10 accepted (0.00s) 4 10000 accepted (0.00s) 5 10000000 accepted (0.00s) 6 1000000000 accepted (0.00s) 7 100000000 accepted (0.00s) 8 100 runtime error (SIGSEGV) (0.00s) plzz help me with this ,what can be the problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10812"></a> 
+ <div id="c10812" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10812" class="active">got it atlast :) i was</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nntnag17">nntnag17</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 12:57 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    got it atlast :) i was missing the case whn N=0 :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-10818"></a> 
+ <div id="c10818" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-10818" class="active">ADMIN here is my code m</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nirajkant">nirajkant</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2010 08:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ADMIN here is my code m getting :( internal error occurred in the system on submitting . 
+    <a href="http://www.codechef.com/viewsolution/335549" title="http://www.codechef.com/viewsolution/335549">http://www.codechef.com/viewsolution/335549</a> still getting same error . admin pls consider and responce.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11542"></a> 
+ <div id="c11542" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-11542" class="active">When I had executed the code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rkjha">rkjha</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2010 03:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>When I had executed the code on my system it took 0.1 sec but after submitting here I got "Time Limited Exceeded", 2.85 sec when A = 10^9 .... <a target="_blank" href="/viewsolution/364999">http://www.codechef.com/viewsolution/364999</a></p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-11589"></a> 
+ <div id="c11589" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-11589" class="active">There is more than one</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 29 Oct 2010 01:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>There is more than one possible test case with A = 10^9. Have you tried N=1 and K=100?</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12619"></a> 
+ <div id="c12619" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-12619" class="active">&nbsp; //rishabh</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dcerishabh">dcerishabh</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2010 11:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p> </p>
+    <p>&nbsp;</p> 
+    <p>//rishabh jain</p> 
+    <p>#include&lt;iostream&gt;</p> 
+    <p>#include&lt;cstdio&gt;</p> 
+    <p>using namespace std;</p> 
+    <p>&nbsp;</p> 
+    <p>int main()</p> 
+    <p>{</p> 
+    <p>int a,n,k;</p> 
+    <p>cin&gt;&gt;a&gt;&gt;n&gt;&gt;k;</p> 
+    <p>for(int i=0;i&lt;k;i++)</p> 
+    <p>{</p> 
+    <p>cout&lt;&lt;a%(n+1);</p> 
+    <p>a=a/(n+1);</p> 
+    <p>}</p> 
+    <p>system("pause");</p> 
+    <p>return 0;</p> 
+    <p>}</p> 
+    <div>
+     my code is returning wrong answer on problem for nuclear reactor
+    </div> 
+    <div>
+     please check the code
+    </div> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-12621"></a> 
+ <div id="c12621" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-12621" class="active">Your code gives the wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/triplem">triplem</a></strong>
+   <span style="color:#828282"> @ 31 Dec 2010 02:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>Your code gives the wrong answer for the sample input. Read the <a href="/freelinking/FAQ" class="freelinking">FAQ</a> if you don't know how to test your code.</p>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-14395"></a> 
+ <div id="c14395" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-14395" class="active">@stephen : i'v tried a lot. I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anantc">anantc</a></strong>
+   <span style="color:#828282"> @ 25 Feb 2011 06:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <p>@stephen : i'v tried a lot. I can't point out any error in my logic.Codechef still says my solution is incorrect :/</p> 
+    <p>Please help.</p> 
+    <p> </p>
+    <p>#include&lt;stdio.h&gt;</p> 
+    <p>using namespace std;</p> 
+    <p>int main()</p> 
+    <p>{</p> 
+    <p>long int a,pow;</p> 
+    <p>int n,k,i=0,q=0,g,b,t;</p> 
+    <p>scanf("%ld",&amp;a);</p> 
+    <p>scanf("%d",&amp;n);</p> 
+    <p>scanf("%d",&amp;k);</p> 
+    <p>&nbsp;</p> 
+    <p>while(i&lt;k&amp;&amp;n!=0) {</p> 
+    <p>q=0;</p> 
+    <p>pow=(n+1);</p> 
+    <p>while(q&lt;(i-1)){</p> 
+    <p>&nbsp;</p> 
+    <p>pow=(n+1)*pow;</p> 
+    <p>if(pow&gt;a){break;}</p> 
+    <p>q++;</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+    <p>g=(a/pow);</p> 
+    <p>b=(n+1);</p> 
+    <p>t=g%b;</p> 
+    <p>printf("%d ",t);</p> 
+    <p>i++;</p> 
+    <p>}</p> 
+    <p>i=0;</p> 
+    <p>if(n==0){while(i&lt;k){printf("0 ");i++;}}</p> 
+    <p>&nbsp;</p> 
+    <p>return 0;</p> 
+    <p>&nbsp;</p> 
+    <p>}</p> 
+    <p>&nbsp;</p> 
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18105"></a> 
+ <div id="c18105" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18105" class="active">i don't get it!!! What's the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhi6691">abhi6691</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2011 08:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i don't get it!!! What's the algorithm???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18164"></a> 
+ <div id="c18164" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18164" class="active">@ admin where is the problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navin25">navin25</a></strong>
+   <span style="color:#828282"> @ 14 Aug 2011 08:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ admin where is the problem in my code as for only 1 condition it is giving error.. for all others it is accepted?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18187"></a> 
+ <div id="c18187" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18187" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/navin25">navin25</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2011 05:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/625658" title="http://www.codechef.com/viewsolution/625658">http://www.codechef.com/viewsolution/625658</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18271"></a> 
+ <div id="c18271" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18271" class="active">dear admin, i have been using</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/moody">moody</a></strong>
+   <span style="color:#828282"> @ 22 Aug 2011 02:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    dear admin, i have been using scanner for my inputs which as you say have proven to be very slow... The problem is that i do not know how to input more than one value in the same line with BufferedReader. Would you plz teach me.. thanks :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18318"></a> 
+ <div id="c18318" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18318" class="active">dear admin my code is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ankurnit">ankurnit</a></strong>
+   <span style="color:#828282"> @ 27 Aug 2011 09:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    dear admin my code is giving wrong answer for input 10 but for other inputs it is chowing accepted.plz can you check my code 
+    <a href="http://www.codechef.com/viewsolution/637461" title="http://www.codechef.com/viewsolution/637461">http://www.codechef.com/viewsolution/637461</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18342"></a> 
+ <div id="c18342" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18342" class="active">convert a number to ny base!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitin_surana">nitin_surana</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2011 03:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    convert a number to ny base! good messed up situation
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-18638"></a> 
+ <div id="c18638" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-18638" class="active">@rishabh: i think you should</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul09it64">rahul09it64</a></strong>
+   <span style="color:#828282"> @ 8 Sep 2011 03:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rishabh: i think you should not use iostreams header in c as per codechef..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19351"></a> 
+ <div id="c19351" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-19351" class="active">It says TLE for N values</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1aurabhpal_7">s1aurabhpal_7</a></strong>
+   <span style="color:#828282"> @ 7 Oct 2011 02:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    It says TLE for N values around 100... plz help my solution is 
+    <a href="http://www.codechef.com/viewsolution/691137" title="http://www.codechef.com/viewsolution/691137">http://www.codechef.com/viewsolution/691137</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19559"></a> 
+ <div id="c19559" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-19559" class="active">Hi Admin, can you check my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachin_nagar">sachin_nagar</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2011 11:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi Admin, can you check my code and tell me where is mistake , actually it is running good. but showing wrong answer when i submit it.. 
+    <a href="http://www.codechef.com/viewsolution/707929" title="http://www.codechef.com/viewsolution/707929">http://www.codechef.com/viewsolution/707929</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19786"></a> 
+ <div id="c19786" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-19786" class="active">Hi! somebody please tell</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/monikadaryani">monikadaryani</a></strong>
+   <span style="color:#828282"> @ 31 Oct 2011 07:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi! somebody please tell doesnt itoa work here??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-20934"></a> 
+ <div id="c20934" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-20934" class="active">the result list of top</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gkcoder">gkcoder</a></strong>
+   <span style="color:#828282"> @ 5 Jan 2012 02:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the result list of top submission shown on right side is not correct. why i always get memory used as 1.6M . Then i tried to submit 1st solution of "muthu m" which is now taking 0.01s and memory used as 1.6M then why that solution is on the top..????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24109"></a> 
+ <div id="c24109" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-24109" class="active">There is an O(k) solution. An</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prabhakaran">prabhakaran</a></strong>
+   <span style="color:#828282"> @ 8 Mar 2012 01:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    There is an O(k) solution. An awesome problem!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24440"></a> 
+ <div id="c24440" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-24440" class="active">hi admin... i m unable to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul1951991">rahul1951991</a></strong>
+   <span style="color:#828282"> @ 15 Mar 2012 01:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi admin... i m unable to understand why the code is giving wrong answer for some cases. pls have a look at code at 
+    <a href="http://www.codechef.com/viewsolution/915000" title="http://www.codechef.com/viewsolution/915000">http://www.codechef.com/viewsolution/915000</a> nd suggest me what m doing wrong.....!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-24759"></a> 
+ <div id="c24759" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-24759" class="active">can any buddy please make me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avinash_jain">avinash_jain</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2012 12:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any buddy please make me understand the logic behind this problem. How people are calculating the number of particles in any chamber just by taking mod ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28456"></a> 
+ <div id="c28456" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-28456" class="active">@admin :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/suneetk92">suneetk92</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2012 10:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin : 
+    <a href="http://www.codechef.com/viewsolution/57981" title="http://www.codechef.com/viewsolution/57981">http://www.codechef.com/viewsolution/57981</a> This code is accepted as correct answer. But it gives wrong answer for case : 5 2 3 -&gt;ans must be 2 1 0 but this code gives 0 1 1 This code is on 2nd number in the submission list.. now will @admin explain this?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28460"></a> 
+ <div id="c28460" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-28460" class="active">@admin :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/suneetk92">suneetk92</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2012 10:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin : 
+    <a href="http://www.codechef.com/viewsolution/60916" title="http://www.codechef.com/viewsolution/60916">http://www.codechef.com/viewsolution/60916</a> : gives infinite loop as output... this code is on 4th no in submission list..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-29448"></a> 
+ <div id="c29448" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-29448" class="active">@admin :1191914 My program is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/animesh_1993">animesh_1993</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2012 08:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin :1191914 My program is running good in my PC but showing wrong answer here. Please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31034"></a> 
+ <div id="c31034" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-31034" class="active">Nice one! But easy.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2012 10:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Nice one! But easy. Boundary conditions with regard to K need to be checked.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31394"></a> 
+ <div id="c31394" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-31394" class="active">@admin can you please check</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/learner12">learner12</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2012 02:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin can you please check why all my solutions are giving SIGSVEC error..its working fine on my system and I checked all conditions written in help section about this error
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36183"></a> 
+ <div id="c36183" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-36183" class="active">What does the runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rudra_101">rudra_101</a></strong>
+   <span style="color:#828282"> @ 14 Jan 2013 07:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What does the runtime error(SIGSEGV) means???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-38029"></a> 
+ <div id="c38029" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-38029" class="active">@rudra read faq</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshayaj">akshayaj</a></strong>
+   <span style="color:#828282"> @ 12 Feb 2013 03:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @rudra read faq
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-41546"></a> 
+ <div id="c41546" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-41546" class="active">my programs exceeds time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chanchal_rawat">chanchal_rawat</a></strong>
+   <span style="color:#828282"> @ 1 May 2013 03:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my programs exceeds time limit can anyone please explain why #include int main(){ int k,n; int a,i=0; scanf("%d %d %d",&amp;a,&amp;n,&amp;k); int ch[100]={0}; while(a&gt;0) { for(i=0;in){ ch[i]=0; ch[(i+1)]++; } } if(a&gt;0){ ch[0]++; a--; } } for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43567"></a> 
+ <div id="c43567" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-43567" class="active">@admin.. I am unable to post</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aayushikul">aayushikul</a></strong>
+   <span style="color:#828282"> @ 22 May 2013 08:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin.. I am unable to post my code for this problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43568"></a> 
+ <div id="c43568" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-43568" class="active">or for any other prob. the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aayushikul">aayushikul</a></strong>
+   <span style="color:#828282"> @ 22 May 2013 08:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    or for any other prob. the submit is not working.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52173"></a> 
+ <div id="c52173" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-52173" class="active">Hey please help me in getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avrat">avrat</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2013 01:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey please help me in getting what is wrong with my code. I am getting desired answer but it's stating wrong answer in codechef. I am a beginner so there may be some error which i am overlooking. my code : 
+    <a href="http://www.codechef.com/viewsolution/2538995" title="http://www.codechef.com/viewsolution/2538995">http://www.codechef.com/viewsolution/2538995</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-54510"></a> 
+ <div id="c54510" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-54510" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/subh7_1993">subh7_1993</a></strong>
+   <span style="color:#828282"> @ 8 Sep 2013 02:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/2622845" title="http://www.codechef.com/viewsolution/2622845">http://www.codechef.com/viewsolution/2622845</a> can any body help me... my solution is not being accepted for just 2 values...10^8 and 10^9.. how to optimize..??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59490"></a> 
+ <div id="c59490" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-59490" class="active">This was a piece of cake!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitshubh">mitshubh</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2013 10:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This was a piece of cake!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-59493"></a> 
+ <div id="c59493" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-59493" class="active">This was a piece of cake!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mitshubh">mitshubh</a></strong>
+   <span style="color:#828282"> @ 14 Oct 2013 10:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This was a piece of cake!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-60488"></a> 
+ <div id="c60488" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-60488" class="active">@admin</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swapnil2927">swapnil2927</a></strong>
+   <span style="color:#828282"> @ 18 Oct 2013 03:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin 
+    <a href="http://www.codechef.com/viewsolution/2845350" title="http://www.codechef.com/viewsolution/2845350">http://www.codechef.com/viewsolution/2845350</a> gave SIGFPE though i have used unsigned long int to accomodate the large value of a.Changing unsigned long int to int as in 
+    <a href="http://www.codechef.com/viewsolution/2845952" title="http://www.codechef.com/viewsolution/2845952">http://www.codechef.com/viewsolution/2845952</a> resulted in AC even though taking a as int should fail for a=10^9.weak test cases admin.Rejudge all submitted solutions.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65472"></a> 
+ <div id="c65472" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-65472" class="active">@ admin TLE for 10^9. How can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 1 Dec 2013 12:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ admin TLE for 10^9. How can it be reduced? 
+    <a href="http://www.codechef.com/viewsolution/3014966" title="http://www.codechef.com/viewsolution/3014966">http://www.codechef.com/viewsolution/3014966</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-65475"></a> 
+ <div id="c65475" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-65475" class="active">i guess there's a simpler</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 1 Dec 2013 12:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i guess there's a simpler algorithm than mine?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-67119"></a> 
+ <div id="c67119" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-67119" class="active">Can anyone help me reducing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/axuma">axuma</a></strong>
+   <span style="color:#828282"> @ 11 Dec 2013 10:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone help me reducing the time for this 
+    <a href="http://www.codechef.com/viewsolution/3069023" title="http://www.codechef.com/viewsolution/3069023">http://www.codechef.com/viewsolution/3069023</a>, getting TLE with 1000000000 and 100000000.Solved in java.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68967"></a> 
+ <div id="c68967" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-68967" class="active">can anyone tell the algorithm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 3 Jan 2014 12:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell the algorithm behind this question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75934"></a> 
+ <div id="c75934" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-75934" class="active">please provide more testcases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanki">sanki</a></strong>
+   <span style="color:#828282"> @ 1 Apr 2014 02:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please provide more testcases ..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76107"></a> 
+ <div id="c76107" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-76107" class="active">My result is failing for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/simararorarox9">simararorarox9</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2014 02:12 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My result is failing for the last test case only.all rest are getting passsed in 0.01 sec.. Please admins help.. cnt figure out why :/ 
+    <a href="http://www.codechef.com/viewsolution/3670647" title="http://www.codechef.com/viewsolution/3670647">http://www.codechef.com/viewsolution/3670647</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76108"></a> 
+ <div id="c76108" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-76108" class="active">Submitted .. nice question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/simararorarox9">simararorarox9</a></strong>
+   <span style="color:#828282"> @ 4 Apr 2014 02:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Submitted .. nice question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78196"></a> 
+ <div id="c78196" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-78196" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tulika_agrawal">tulika_agrawal</a></strong>
+   <span style="color:#828282"> @ 16 May 2014 08:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3912144" title="http://www.codechef.com/viewsolution/3912144">http://www.codechef.com/viewsolution/3912144</a> Somebody please tell me what's wrong. I'm getting wrong output for n=10 and the time limit exceeds for n=100. Please help!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78197"></a> 
+ <div id="c78197" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-78197" class="active">@admin, I'm getting correct</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tulika_agrawal">tulika_agrawal</a></strong>
+   <span style="color:#828282"> @ 16 May 2014 08:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, I'm getting correct answer for all values greater than 100. On my machine the code seems to work fine. Please help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78664"></a> 
+ <div id="c78664" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-78664" class="active">one of the easy codechef</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pandeyiyer">pandeyiyer</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2014 04:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    one of the easy codechef problems
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79995"></a> 
+ <div id="c79995" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-79995" class="active">so take the no of particles </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 03:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    so take the no of particles A and write it in a base one greater than max holding capacity and final ans is the reverse of this ans
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79996"></a> 
+ <div id="c79996" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-79996" class="active">say ex 6 is the no of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 03:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    say ex 6 is the no of particles and max no of particles =3 so base =3+1 =4 (which i said increase the base ) and then write 6 in base of 4 = 1 2 but as i said the final ans is the reverse of this so ans is 2 1
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79997"></a> 
+ <div id="c79997" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-79997" class="active">writing any no in any base is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 03:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    writing any no in any base is same as writing it into binary number(base 2) so if you know how to convert any decimal no to binary no follow the same procedure for any base and the representation you get just reverse to get the final ans ..... welcome and HAPPY CODING
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79998"></a> 
+ <div id="c79998" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-79998" class="active">just take some examples and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chomu1850">chomu1850</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 03:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    just take some examples and see how the ans varies see ans in the reverse form then you will see it is just the representation of that no with one extra base
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80105"></a> 
+ <div id="c80105" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-80105" class="active">For the first seven test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachi123">sachi123</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2014 11:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    For the first seven test cases, my code has been running right with a correct answer but for the eighth test case it says run time error.I dont understand.the AAROX_N_VALUE is given to be 100. Could someone help me??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80150"></a> 
+ <div id="c80150" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-80150" class="active">my code that fails for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachi123">sachi123</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2014 08:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code that fails for the last test case... 
+    <a href="http://www.codechef.com/viewsolution/4153619" title="http://www.codechef.com/viewsolution/4153619">http://www.codechef.com/viewsolution/4153619</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80163"></a> 
+ <div id="c80163" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-80163" class="active">i m getng SIGSEGV error for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashubaba">ashubaba</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2014 02:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i m getng SIGSEGV error for apprx n=1000000000..plz help me..to solve this error problm 
+    <a href="http://www.codechef.com/viewsolution/4165758" title="http://www.codechef.com/viewsolution/4165758">http://www.codechef.com/viewsolution/4165758</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84409"></a> 
+ <div id="c84409" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-84409" class="active">Problem in this solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajat12a">rajat12a</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2014 04:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Problem in this solution 
+    <a href="http://www.codechef.com/viewsolution/64159" title="http://www.codechef.com/viewsolution/64159">http://www.codechef.com/viewsolution/64159</a> yet it is accepted... why??? check the answer for input 6 1 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84410"></a> 
+ <div id="c84410" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-84410" class="active">any reply would be most</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rajat12a">rajat12a</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2014 04:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    any reply would be most appreciated...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84859"></a> 
+ <div id="c84859" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-84859" class="active">my code works perfectly in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tigercook">tigercook</a></strong>
+   <span style="color:#828282"> @ 7 Sep 2014 11:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code works perfectly in all but one case acc to codechef.That one case is when N is extremely large.but in question it is given that n is less than 100.my code can be seen here 
+    <a href="http://www.codechef.com/viewsolution/4741346" title="http://www.codechef.com/viewsolution/4741346">http://www.codechef.com/viewsolution/4741346</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84861"></a> 
+ <div id="c84861" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-84861" class="active">please anyone help here</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tigercook">tigercook</a></strong>
+   <span style="color:#828282"> @ 7 Sep 2014 11:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please anyone help here
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85461"></a> 
+ <div id="c85461" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-85461" class="active">on submitting the solution in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pallavi0506">pallavi0506</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2014 03:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    on submitting the solution in Java, it is throwing an error " The language selected is not allowed for this problem.". Please check this out.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88145"></a> 
+ <div id="c88145" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-88145" class="active">hey i am new to codechef and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/parasjindal">parasjindal</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2014 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey i am new to codechef and i m not able to understand that table which is comming when my answer is wrong pls help me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90909"></a> 
+ <div id="c90909" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-90909" class="active">one extra "\n" made it submit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mb13mb13_1995">mb13mb13_1995</a></strong>
+   <span style="color:#828282"> @ 26 Nov 2014 12:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    one extra "n" made it submit 14 times.... oops..... :O
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90910"></a> 
+ <div id="c90910" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-90910" class="active">* "\n"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mb13mb13_1995">mb13mb13_1995</a></strong>
+   <span style="color:#828282"> @ 26 Nov 2014 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    * "n"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91581"></a> 
+ <div id="c91581" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-91581" class="active">Beautiful problem. It</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 9 Dec 2014 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Beautiful problem. It implements conversion of a number from one base to another through a completely different scenario. For people having TLE, try the logic here(2nd comment DO WATCH THE VIDEO) 
+    <a href="http://discuss.codechef.com/questions/4617/need-help-in-nuclear-reactors-problem" title="http://discuss.codechef.com/questions/4617/need-help-in-nuclear-reactors-problem">http://discuss.codechef.com/questions/4617/need-help-in-nuclear-reactors...</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91901"></a> 
+ <div id="c91901" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-91901" class="active">loved the question!! bitmagic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coolsduy">coolsduy</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 02:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    loved the question!! bitmagic !!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91910"></a> 
+ <div id="c91910" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-91910" class="active">Great question. And yes an</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/babhishek21">babhishek21</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 06:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Great question. And yes an appropriate code will work for O(k). :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92480"></a> 
+ <div id="c92480" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-92480" class="active">@admin, can you please give</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/new_bie">new_bie</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2015 11:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin, can you please give tutorial on this question ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92483"></a> 
+ <div id="c92483" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-92483" class="active">My code is submitted but its</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhinav_rai">abhinav_rai</a></strong>
+   <span style="color:#828282"> @ 1 Jan 2015 12:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is submitted but its complex. How to do with it bit manipulation?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94920"></a> 
+ <div id="c94920" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-94920" class="active">@admin I'm completely stuck</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dnema">dnema</a></strong>
+   <span style="color:#828282"> @ 28 Jan 2015 12:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin I'm completely stuck with this problem. My solution is at 
+    <a href="http://www.codechef.com/viewsolution/6023754" title="http://www.codechef.com/viewsolution/6023754">http://www.codechef.com/viewsolution/6023754</a> and it is showing TLE. I don't know how to optimize my code any further...Any hint would be greatly appreciated.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97158"></a> 
+ <div id="c97158" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-97158" class="active">Very easy.. was stuck because</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r1s23">r1s23</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2015 05:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Very easy.. was stuck because problem description described input order as K N A, where as input description said A N K.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102204"></a> 
+ <div id="c102204" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-102204" class="active">Hi @admin, I am getting and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/itsdennian">itsdennian</a></strong>
+   <span style="color:#828282"> @ 20 Apr 2015 03:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi @admin, I am getting and NZEC for my code. I got a table with 3 labels, one being "Approx_N_value". There were certain values listed which were more than 100 (some were 10). And it showed an NZEC error in Approx_N_value=100. Why will that occur? my code is here 
+    <a href="http://www.codechef.com/viewsolution/6801361" title="http://www.codechef.com/viewsolution/6801361">http://www.codechef.com/viewsolution/6801361</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104654"></a> 
+ <div id="c104654" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-104654" class="active">A very nice task and, if you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madgod">madgod</a></strong>
+   <span style="color:#828282"> @ 28 May 2015 07:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    A very nice task and, if you see through its disguise, very easy one. :) Another good one, admin!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107252"></a> 
+ <div id="c107252" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-107252" class="active">Can we have the editorial for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rawatadit">rawatadit</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2015 12:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can we have the editorial for this problem?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107266"></a> 
+ <div id="c107266" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-107266" class="active"># Nuclear Reactors.py def</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/viv709">viv709</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2015 12:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    # Nuclear Reactors.py def modulus(i,overflow): if(i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-109104"></a> 
+ <div id="c109104" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-109104" class="active">my code is not getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/menka">menka</a></strong>
+   <span style="color:#828282"> @ 16 Jul 2015 01:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code is not getting accepted on n=100.cant understand why coz its giving ri8 output on my pc
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111185"></a> 
+ <div id="c111185" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-111185" class="active">why code isnt working for 100</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditya9211">aditya9211</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2015 07:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why code isnt working for 100 
+    <a href="https://www.codechef.com/viewsolution/7568047" title="https://www.codechef.com/viewsolution/7568047">https://www.codechef.com/viewsolution/7568047</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111569"></a> 
+ <div id="c111569" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-111569" class="active">I got an execution time of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ronaktanna">ronaktanna</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2015 01:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I got an execution time of 0.21s for the test case with the biggest N value because I used cout and cin and hence, my code was under "time exceeded". Then, I used the same code, switched over to C, and got an execution time of 0.20s and boom! Now, it's under "Successful submission". What difference a 0.01s gap makes, now I know!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111777"></a> 
+ <div id="c111777" class="comment clear-block"> 
+  <h3><a href="/problems/NUKES#comment-111777" class="active">i am unable to figure out my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishantm">nishantm</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2015 10:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am unable to figure out my problem in one of the cases case 3 to be specific,rest all passes.Kindly help me out. link to my code 
+    <a href="https://www.codechef.com/viewsolution/7634170" title="https://www.codechef.com/viewsolution/7634170">https://www.codechef.com/viewsolution/7634170</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
