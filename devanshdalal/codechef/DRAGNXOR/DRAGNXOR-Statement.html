@@ -1,0 +1,307 @@
+<div id="node-725336" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p align="justify">Did you ever hear about 'Dragon Food' ? Its used to refer to the chocolates bought for your loved ones :). Po offers dragon food to master Shifu, who is a famous cook in the valley of food. In return, Shifu hands over the dragon scroll to Po, which is said to hold the ingredients of the secret recipe. To open the dragon scroll, one has to solve the following puzzle. </p> 
+  <p>1. Consider a N-bit integer A. We call an integer A' as shuffle-A, if A' can be obtained by shuffling the bits of A in its binary representation. For eg. if N = 5 and A = 6 = (00110)<sub>2</sub>, A' can be any 5-bit integer having exactly two 1s in it i.e., any of (00011)<sub>2</sub>, (00101)<sub>2</sub>, (00110)<sub>2</sub>, (01010)<sub>2</sub>, ...., (11000)<sub>2</sub>.</p> 
+  <p>2. Given two N-bit integers A and B, find the maximum possible value of (A' xor B') where A' is a shuffle-A, B' is a shuffle-B and xor is the bit-wise xor operator.</p> 
+  <p>Given N, A and B, please help Po in opening the dragon scroll.</p> 
+  <p><b>Notes</b><br> 1. xor operator takes two bit strings of equal length and performs the logical XOR operation on each pair of corresponding bits. The result in each position is 1 if only the first bit is 1 OR only the second bit is 1, but will be 0 if both are 1 or both are 0. For eg: 5 (0101) xor 3(0011) = 6(0110). In most languages it is represented using ^ symbol. 5 ^ 3 = 6.<br> 2. If the integer actually needs less than N bits to represent in binary, append sufficient number of leading 0 bits. For eg. as shown in the problem statement for N = 5, A = 6 = (00110)<sub>2</sub></p> 
+  <h3>Input</h3> 
+  <p align="justify">First line contains an integer T ( number of test cases, around 100 ). T cases follow, each having N A B in a single line, separated by a space. ( 1 &lt;= N &lt;= 30, 0 &lt;= A,B &lt; 2<sup>N</sup> )</p> 
+  <h3>Output</h3> 
+  <p align="justify">For each case, output the maximum possible value of (shuffle-A xor shuffle-B) in a separate line.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+3
+3 5 4
+5 0 1
+4 3 7
+
+
+<b>Output:</b>
+7
+16
+14
+</pre>
+  <p> <b>Explanation:</b> </p> 
+  <p align="justify"> Case 1: 5 and 4 as 3-bit binary strings are (101)<sub>2</sub> and (100)<sub>2</sub> respectively. After shuffling, xor can be maximum for (110)<sub>2</sub> ^ (001)<sub>2</sub> = (111)<sub>2</sub> = 7<br> Case 2: Maximum Possible result can be for (00000)<sub>2</sub> ^ (10000)<sub>2</sub> = (10000)<sub>2</sub> = 16<br> Case 3: Maximum Possible result can be for (0011)<sub>2</sub> ^ (1101)<sub>2</sub> = (1110)<sub>2</sub> = 14</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/flying_ant">flying_ant</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/masked_zorro">masked_zorro</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DRAGNXOR">http://discuss.codechef.com/problems/DRAGNXOR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook13"> cook13 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/flying_ant"> flying_ant </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>2-08-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DRAGNXOR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-19462"></a> 
+ <div id="c19462" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-19462" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jolly93">jolly93</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2011 10:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main() { int t,N,A,B,i,A1=0,A0=0,B1=0,B0=0,x,y,a,b,zero,one,total; int final=0,j; scanf("%d",&amp;t); for(i=0;iB1)?B1:A0; one=(A1&gt;B0)?B0:A1; total=zero+one; for(j=N-total;j
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19923"></a> 
+ <div id="c19923" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-19923" class="active">Binary of 7 is 111 or 1101.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/in3xes">in3xes</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2011 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Binary of 7 is 111 or 1101. Please correct it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19924"></a> 
+ <div id="c19924" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-19924" class="active">Err.. I meant "not 1101"</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/in3xes">in3xes</a></strong>
+   <span style="color:#828282"> @ 7 Nov 2011 01:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Err.. I meant "not 1101"
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28490"></a> 
+ <div id="c28490" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-28490" class="active">pls tell me any test case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/alphaplus">alphaplus</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2012 12:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    pls tell me any test case where my code fails : im getting wa even though the program gives correct output for many test cases i tried...... #include #include void binary(int *,int,int); int decimal(int *,int); int main(void) { int t; scanf("%d",&amp;t); while(t--) { int n,i,j,k,p=0,q,r,sum; scanf("%d",&amp;n); int arr1[n],arr2[n],arr3[n]; int x,y; scanf("%d%d",&amp;x,&amp;y); binary(arr1,n,x); binary(arr2,n,y); for(i=0;i&lt;=n-1;i++) { if(arr1[i]==1) p++; if(arr2[i]==1) p++; } if(p&gt;=n) { q=p-n; r=n-q; for(j=0;j&lt;=r-1;j++) arr3[j]=1; for(k=j;k&lt;=n-1;k++) arr3[k]=0; sum=decimal(arr3,n); printf("%dn",sum); } else { for(j=0;j&lt;=p-1;j++) arr3[j]=1; for(k=p;k&lt;=n-1;k++) arr3[k]=0; sum=decimal(arr3,n); printf("%dn",sum); } } return 0; } void binary(int*p,int n,int x) { int i,j,*q,flag=0; q=p+n-1; while(x!=0) { i=x%2; *q=i; x=x/2; if(q!=p) q--; } while(q!=p) { *q=0; q--; flag=1; } if(flag==1) *q=0; return 0; } int decimal(int *p,int n) { int i,j,sum=0,*q; q=p; for(i=n-1;i&gt;=0;i--) { sum=sum+(*q)*pow(2,i); if(q!=p+n-1) q++; } return sum; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30359"></a> 
+ <div id="c30359" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-30359" class="active">Can someone provide different</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahullak">rahullak</a></strong>
+   <span style="color:#828282"> @ 16 Aug 2012 12:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone provide different test cases please? Everything I've tried works correctly for me, but I get "Wrong Answer" after submitting.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-32411"></a> 
+ <div id="c32411" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-32411" class="active">Different test Cases please??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pratik141">pratik141</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2012 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Different test Cases please??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35119"></a> 
+ <div id="c35119" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-35119" class="active">Why are they saying it is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitinyadav">nitinyadav</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2012 03:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why are they saying it is wrong answer? I have checked a lot of test cases. :( 
+    <a href="http://www.codechef.com/viewsolution/1638574" title="http://www.codechef.com/viewsolution/1638574">http://www.codechef.com/viewsolution/1638574</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-55636"></a> 
+ <div id="c55636" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-55636" class="active">lol, funny problem statement</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1h33p">s1h33p</a></strong>
+   <span style="color:#828282"> @ 15 Sep 2013 10:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    lol, funny problem statement :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77585"></a> 
+ <div id="c77585" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-77585" class="active">I submited the fastest</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kidfeng">kidfeng</a></strong>
+   <span style="color:#828282"> @ 4 May 2014 03:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I submited the fastest code(0.00 1.6M) in submisstions list and got a different result (0.04 2.2M) =_="
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79269"></a> 
+ <div id="c79269" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-79269" class="active">Copyright Claim!!, King-Fu</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2014 05:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Copyright Claim!!, King-Fu panda :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84459"></a> 
+ <div id="c84459" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-84459" class="active">can somebody tell the test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surbhi23">surbhi23</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2014 11:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody tell the test cases for which my code fails. i have tried with a lot many cases n it works but chef shows wa 
+    <a href="http://www.codechef.com/viewsolution/4691225" title="http://www.codechef.com/viewsolution/4691225">http://www.codechef.com/viewsolution/4691225</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84460"></a> 
+ <div id="c84460" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-84460" class="active">the test cases for which my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surbhi23">surbhi23</a></strong>
+   <span style="color:#828282"> @ 2 Sep 2014 11:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the test cases for which my code fails??? 
+    <a href="http://www.codechef.com/viewsolution/4691225" title="http://www.codechef.com/viewsolution/4691225">http://www.codechef.com/viewsolution/4691225</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92084"></a> 
+ <div id="c92084" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-92084" class="active">Awww yea. Did it without</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2014 02:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Awww yea. Did it without bitwise operators :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92428"></a> 
+ <div id="c92428" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-92428" class="active">Nice problem</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/limasdf">limasdf</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 10:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Nice problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111278"></a> 
+ <div id="c111278" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-111278" class="active">kunfu panda</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeeater">codeeater</a></strong>
+   <span style="color:#828282"> @ 30 Jul 2015 01:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    kunfu panda
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111566"></a> 
+ <div id="c111566" class="comment clear-block"> 
+  <h3><a href="/problems/DRAGNXOR#comment-111566" class="active">This Question does not belong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tejasbedi1">tejasbedi1</a></strong>
+   <span style="color:#828282"> @ 2 Aug 2015 12:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This Question does not belong in EASY... damn challenging...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
