@@ -1,0 +1,569 @@
+<div id="node-1277423" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p> Tomya is a girl. She loves Chef Ciel very much. </p> 
+  <p> Tomya like a positive integer <b>p</b>, and now she wants to get a receipt of Ciel's restaurant whose total price is exactly <b>p</b>.<br> The current menus of Ciel's restaurant are shown the following table. </p> 
+  <table border="1" align="center"> 
+   <tbody>
+    <tr> 
+     <td><b>Name of Menu</b></td> 
+     <td align="right"><b>price</b></td> 
+    </tr> 
+    <tr> 
+     <td>eel flavored water</td> 
+     <td align="right">1</td> 
+    </tr> 
+    <tr> 
+     <td>deep-fried eel bones</td> 
+     <td align="right">2</td> 
+    </tr> 
+    <tr> 
+     <td>clear soup made with eel livers</td> 
+     <td align="right">4</td> 
+    </tr> 
+    <tr> 
+     <td>grilled eel livers served with grated radish</td> 
+     <td align="right">8</td> 
+    </tr> 
+    <tr> 
+     <td>savory egg custard with eel</td> 
+     <td align="right">16</td> 
+    </tr> 
+    <tr> 
+     <td>eel fried rice (S)</td> 
+     <td align="right">32</td> 
+    </tr> 
+    <tr> 
+     <td>eel fried rice (L)</td> 
+     <td align="right">64</td> 
+    </tr> 
+    <tr> 
+     <td>grilled eel wrapped in cooked egg</td> 
+     <td align="right">128</td> 
+    </tr> 
+    <tr> 
+     <td>eel curry rice</td> 
+     <td align="right">256</td> 
+    </tr> 
+    <tr> 
+     <td>grilled eel over rice</td> 
+     <td align="right">512</td> 
+    </tr> 
+    <tr> 
+     <td>deluxe grilled eel over rice</td> 
+     <td align="right">1024</td> 
+    </tr> 
+    <tr> 
+     <td>eel full-course</td> 
+     <td align="right">2048</td> 
+    </tr> 
+   </tbody>
+  </table> 
+  <p> Note that the <b>i</b>-th menu has the price 2<sup><b>i</b>-1</sup> (1 ≤ <b>i</b> ≤ 12). </p> 
+  <p> Since Tomya is a pretty girl, she cannot eat a lot.<br> So please find the minimum number of menus whose total price is exactly <b>p</b>.<br> Note that if she orders the same menu twice, then it is considered as two menus are ordered. (See <b>Explanations</b> for details) </p> 
+  <h3>Input</h3> 
+  <p> The first line contains an integer <strong>T</strong>, the number of test cases.<br> Then <strong>T</strong> test cases follow.<br> Each test case contains an integer <b>p</b>. </p> 
+  <h3>Output</h3> 
+  <p> For each test case, print the minimum number of menus whose total price is exactly <b>p</b>. </p> 
+  <h3>Constraints</h3> 
+  <p> 1 ≤ <b>T</b> ≤ 5<br> 1 ≤ <b>p</b> ≤ 100000 (10<sup>5</sup>)<br> There exists combinations of menus whose total price is exactly <b>p</b>. </p> 
+  <h3>Sample Input</h3> 
+  <pre>4
+10
+256
+255
+4096</pre>
+  <h3>Sample Output</h3> 
+  <pre>2
+1
+8
+2</pre>
+  <h3>Explanations</h3> 
+  <p> In the first sample, examples of the menus whose total price is 10 are the following:<br> 1+1+1+1+1+1+1+1+1+1 = 10 (10 menus)<br> 1+1+1+1+1+1+1+1+2 = 10 (9 menus)<br> 2+2+2+2+2 = 10 (5 menus)<br> 2+4+4 = 10 (3 menus)<br> 2+8 = 10 (2 menus)<br> Here the minimum number of menus is 2. </p> 
+  <p> In the last sample, the optimal way is 2048+2048=4096 (2 menus).<br> Note that there is no menu whose price is 4096. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CIELRCPT">http://discuss.codechef.com/problems/CIELRCPT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook24"> cook24 </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a><a class="problem-tag-small " href="/tags/problems/laycurse"> laycurse </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-07-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CIELRCPT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-31031"></a> 
+ <div id="c31031" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-31031" class="active">where to get more test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vidit">vidit</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2012 12:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where to get more test cases???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33088"></a> 
+ <div id="c33088" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-33088" class="active">can any body tell me d error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vidit">vidit</a></strong>
+   <span style="color:#828282"> @ 12 Oct 2012 05:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any body tell me d error wid ma code i have considered 10^5
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33394"></a> 
+ <div id="c33394" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-33394" class="active">i made some test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/magie007">magie007</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2012 12:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i made some test cases: Input: 5 1 0 2048 2049 100000 Output: 1 0 1 2 52
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-33395"></a> 
+ <div id="c33395" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-33395" class="active">Input: 5 32768 515 2000 111 8</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/magie007">magie007</a></strong>
+   <span style="color:#828282"> @ 25 Oct 2012 12:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Input: 5 32768 515 2000 111 88 Output: 16 3 6 6 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43540"></a> 
+ <div id="c43540" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-43540" class="active">Help! The eel fried rice(L)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/juna1d0_0">juna1d0_0</a></strong>
+   <span style="color:#828282"> @ 21 May 2013 03:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Help! The eel fried rice(L) wont cook!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46143"></a> 
+ <div id="c46143" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-46143" class="active">RUN TIME ERROR NZEC didn't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gargumesh">gargumesh</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2013 02:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    RUN TIME ERROR NZEC didn't got reason for that ?..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46570"></a> 
+ <div id="c46570" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-46570" class="active">3 lines of code!! loved it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kcahdog">kcahdog</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2013 12:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    3 lines of code!! loved it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-47374"></a> 
+ <div id="c47374" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-47374" class="active">The term 'menus' got me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhik_cdr4">abhik_cdr4</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2013 09:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The term 'menus' got me confused, 'dishes' would be more appropriate
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49402"></a> 
+ <div id="c49402" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-49402" class="active">really it is a cakewalk :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/the_luc1f3r">the_luc1f3r</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2013 08:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    really it is a cakewalk :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51128"></a> 
+ <div id="c51128" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-51128" class="active">"Since Tomya is a pretty</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kpark91">kpark91</a></strong>
+   <span style="color:#828282"> @ 7 Aug 2013 01:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    "Since Tomya is a pretty girl, she cannot eat a lot." LOL. If she eats alot, she's not a pretty girl? Bad bad bad stereotype! jkz.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-62314"></a> 
+ <div id="c62314" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-62314" class="active">Can U increase the time limit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cheffe">cheffe</a></strong>
+   <span style="color:#828282"> @ 2 Nov 2013 04:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can U increase the time limit pls :) I think it is impossible to write a working clojure program.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68120"></a> 
+ <div id="c68120" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-68120" class="active">the easiest problem at this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/piyushmahatkar">piyushmahatkar</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2013 04:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the easiest problem at this level.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75039"></a> 
+ <div id="c75039" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-75039" class="active">why is coin change algo</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aravindhramu">aravindhramu</a></strong>
+   <span style="color:#828282"> @ 11 Mar 2014 03:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is coin change algo giving TLE ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78549"></a> 
+ <div id="c78549" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-78549" class="active">#include #include #include</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/alby">alby</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 02:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include #include int func(long long int p, int * a) { int i; int j; int temp; int diff; int menu; int aa; menu = 0; temp = p; for (i = 0;i &lt; 12;i++) { if (p &gt;= a[i]) { aa = a[i]; } else { continue; } } if (p == aa) { menu = 1; } else { menu = 1; while (diff &gt; 1) { diff = temp - aa; for (i = 0;i &lt; 12;i++) { if (diff &gt;= a[i]) { aa = a[i]; } else { continue; } } if (diff == aa) { menu++; break; } else { menu++; temp = diff; } } } return menu; } int main() { int i; int a[12]; int t; int j; long long int p; int k; int l; int menu; menu = 0; for (i = 0;i &lt; 12;i++) { a[i] = pow(2, i); } scanf("%d", &amp;t); if (t &gt;= 1 &amp;&amp; t &lt;= 5) { while (t) { scanf("%lld", &amp;p); menu = func(p, a); printf("%dn", menu); t--; } } system ("pause"); return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79307"></a> 
+ <div id="c79307" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-79307" class="active">Why it's giving runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pandeyiyer">pandeyiyer</a></strong>
+   <span style="color:#828282"> @ 11 Jun 2014 10:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why it's giving runtime error?? here's my solution: 
+    <a href="http://www.codechef.com/viewsolution/4044934" title="http://www.codechef.com/viewsolution/4044934">http://www.codechef.com/viewsolution/4044934</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79973"></a> 
+ <div id="c79973" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-79973" class="active">Good question. AC in 1 go :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brobear1995">brobear1995</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 11:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Good question. AC in 1 go :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83492"></a> 
+ <div id="c83492" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-83492" class="active">Hi. Any idea why it shows my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shreyaspadhy">shreyaspadhy</a></strong>
+   <span style="color:#828282"> @ 10 Aug 2014 05:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi. Any idea why it shows my solution as wrong? Gives me correct answers for all the test cases here. 
+    <a href="http://www.codechef.com/viewsolution/4534705" title="http://www.codechef.com/viewsolution/4534705">http://www.codechef.com/viewsolution/4534705</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83602"></a> 
+ <div id="c83602" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-83602" class="active">It is interesting to consider</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/starfys">starfys</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 07:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    It is interesting to consider that this is a modified hamming weight problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84074"></a> 
+ <div id="c84074" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-84074" class="active">Dumb question.......</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/umesh95">umesh95</a></strong>
+   <span style="color:#828282"> @ 25 Aug 2014 01:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Dumb question.......
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85781"></a> 
+ <div id="c85781" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-85781" class="active">Hi! Any idea why it shows my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mukulgarg">mukulgarg</a></strong>
+   <span style="color:#828282"> @ 28 Sep 2014 01:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi! Any idea why it shows my solution as wrong?http://www.codechef.com/viewsolution/4906336
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92205"></a> 
+ <div id="c92205" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-92205" class="active">It would be better if you</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shw123">shw123</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 12:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    It would be better if you could atleast give an example where in one 's code fails to give correct answer if its running successfully according to the given test case but not all test cases.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92207"></a> 
+ <div id="c92207" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-92207" class="active">can anyone tell me the ans</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shw123">shw123</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 01:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me the ans when p=100000.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92217"></a> 
+ <div id="c92217" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-92217" class="active">@shw123 answer for p=100000</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saransh1998">saransh1998</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 02:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shw123 answer for p=100000 is 52. 100000=48 x 2048 + 1 x 1024 + 1 x 512 + 1 x 128 + 1 x 32
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93360"></a> 
+ <div id="c93360" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-93360" class="active">here</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harishhari">harishhari</a></strong>
+   <span style="color:#828282"> @ 9 Jan 2015 05:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    here 
+    <a href="http://www.codechef.com/viewsolution/5829907" title="http://www.codechef.com/viewsolution/5829907">http://www.codechef.com/viewsolution/5829907</a> is mycode ... it is giving wrong when iam getting correct solution.. plz any1 explain....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93420"></a> 
+ <div id="c93420" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-93420" class="active">very easy problem not a good</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhisalbertis1">abhisalbertis1</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2015 09:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    very easy problem not a good problem
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95519"></a> 
+ <div id="c95519" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-95519" class="active">The challenge here is to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/makandriaco">makandriaco</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 01:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The challenge here is to get it working at 0.00 secs, I got 0.01 so far. LOL
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96993"></a> 
+ <div id="c96993" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-96993" class="active">I am unble to exceute this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil ponnuru">nikhil ponnuru</a></strong>
+   <span style="color:#828282"> @ 17 Feb 2015 03:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am unble to exceute this code in required time,please help me 
+    <a href="http://www.codechef.com/viewsolution/6304377" title="http://www.codechef.com/viewsolution/6304377">http://www.codechef.com/viewsolution/6304377</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97920"></a> 
+ <div id="c97920" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-97920" class="active">Main.java:5: class</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/avijit1258">avijit1258</a></strong>
+   <span style="color:#828282"> @ 1 Mar 2015 12:24 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Main.java:5: class CielAndReciept is public, should be declared in a file named CielAndReciept.java public class CielAndReciept { ^ 1 error dear #admin i am having this compilation error.can you give me any clue.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98387"></a> 
+ <div id="c98387" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-98387" class="active">I use DEV C++5.5.1 to write</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/lahoti_20">lahoti_20</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2015 11:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I use DEV C++5.5.1 to write programs. which compiler should i select while submitting the code?? plz tell
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-116303"></a> 
+ <div id="c116303" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-116303" class="active">Nice q</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deepanshu36">deepanshu36</a></strong>
+   <span style="color:#828282"> @ 5 Sep 2015 08:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Nice q
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117035"></a> 
+ <div id="c117035" class="comment clear-block"> 
+  <h3><a href="/problems/CIELRCPT#comment-117035" class="active">what is p here and did't get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/himanshu501">himanshu501</a></strong>
+   <span style="color:#828282"> @ 9 Sep 2015 01:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is p here and did't get it well please can someone explain it. thanx in advance.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
