@@ -1,0 +1,414 @@
+<div id="node-755160" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>A holiday weekend is coming up,<br> and Hotel Bytelandia needs to find out if it has enough rooms to accommodate all potential guests.<br> A number of guests have made reservations.<br> Each reservation consists of an arrival time, and a departure time.<br> The hotel management has hired you to calculate the maximum number of guests that will be at the hotel simultaneously.<br> Note that if one guest arrives at the same time another leaves, they are never considered to be at the hotel simultaneously<br> (see the second example). </p> 
+  <h3>Input</h3> 
+  <p>Input will begin with an integer T, the number of test cases.<br> Each test case begins with an integer N, the number of guests.<br> Two lines follow, each with exactly N positive integers.<br> The i-th integer of the first line is the arrival time of the i-th guest,<br> and the i-th integer of the second line is the departure time of the i-th guest<br> (which will be strictly greater than the arrival time). </p> 
+  <h3>Output</h3> 
+  <p>For each test case, print the maximum number of guests that are simultaneously at the hotel.</p> 
+  <h3>Sample Input</h3> 
+  <pre>3
+3
+1 2 3
+4 5 6
+5
+1 2 3 4 5
+2 3 4 5 6
+7
+13 6 5 8 2 10 12
+19 18 6 9 9 11 15
+</pre>
+  <h3>Sample Output</h3> 
+  <pre>3
+1
+3
+</pre>
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>T≤100</li> 
+   <li>N≤100</li> 
+   <li>All arrival/departure times will be between 1 and 1000, inclusive</li> 
+  </ul> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pieguy">pieguy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/chmel_tolstiy">chmel_tolstiy</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/HOTEL">http://discuss.codechef.com/problems/HOTEL</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook14"> cook14 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/pieguy"> pieguy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>7-09-2011</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/HOTEL">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-18857"></a> 
+ <div id="c18857" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-18857" class="active">can anyone tell where my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachdeva">sachdeva</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2011 02:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell where my code is lacking... 
+    <a href="http://www.codechef.com/viewsolution/669894" title="http://www.codechef.com/viewsolution/669894">http://www.codechef.com/viewsolution/669894</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-19099"></a> 
+ <div id="c19099" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-19099" class="active">isn't the output of last</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/govind8feb">govind8feb</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2011 01:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    isn't the output of last sample input should be 5??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26813"></a> 
+ <div id="c26813" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-26813" class="active">somebody plz xplain first</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atshikhar">atshikhar</a></strong>
+   <span style="color:#828282"> @ 15 May 2012 09:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    somebody plz xplain first test case...how is output 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26814"></a> 
+ <div id="c26814" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-26814" class="active">got it...</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/atshikhar">atshikhar</a></strong>
+   <span style="color:#828282"> @ 15 May 2012 09:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    got it...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26846"></a> 
+ <div id="c26846" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-26846" class="active">@at -code hard, go pro !!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/neel0711">neel0711</a></strong>
+   <span style="color:#828282"> @ 17 May 2012 04:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @at -code hard, go pro !!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-26847"></a> 
+ <div id="c26847" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-26847" class="active">@at...got it...to code submit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cipher007">cipher007</a></strong>
+   <span style="color:#828282"> @ 17 May 2012 04:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @at...got it...to code submit bhi kar deta :P
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43599"></a> 
+ <div id="c43599" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-43599" class="active">Somebody help me, why I'm</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiabhishek">abhiabhishek</a></strong>
+   <span style="color:#828282"> @ 24 May 2013 08:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Somebody help me, why I'm getting wrong answer. My code seems to work for every testcase. Maybe I'm missing some corner cases. Here's my code 
+    <a href="http://www.codechef.com/viewsolution/2177629" title="http://www.codechef.com/viewsolution/2177629">http://www.codechef.com/viewsolution/2177629</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-58643"></a> 
+ <div id="c58643" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-58643" class="active">my code gave same results as</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fierywake">fierywake</a></strong>
+   <span style="color:#828282"> @ 9 Oct 2013 04:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code gave same results as stated in example. the site says it's wrong. someone please help me with my code: 
+    <a href="http://www.codechef.com/viewsolution/2793690" title="http://www.codechef.com/viewsolution/2793690">http://www.codechef.com/viewsolution/2793690</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-61286"></a> 
+ <div id="c61286" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-61286" class="active">weak test cases !</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dkrdharmesh">dkrdharmesh</a></strong>
+   <span style="color:#828282"> @ 26 Oct 2013 10:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    weak test cases !
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71531"></a> 
+ <div id="c71531" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-71531" class="active">in thired test case output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jagdishbairer">jagdishbairer</a></strong>
+   <span style="color:#828282"> @ 24 Jan 2014 02:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    in thired test case output should be 5
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71688"></a> 
+ <div id="c71688" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-71688" class="active">I am getting TLE in Python.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahil2305dua">sahil2305dua</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2014 12:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting TLE in Python. Please point out the probable problem. 
+    <a href="http://www.codechef.com/viewsolution/3292314" title="http://www.codechef.com/viewsolution/3292314">http://www.codechef.com/viewsolution/3292314</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73426"></a> 
+ <div id="c73426" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-73426" class="active">TLE Help me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adityabhagat95">adityabhagat95</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2014 10:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    TLE Help me pls 
+    <a href="http://www.codechef.com/viewsolution/3450081" title="http://www.codechef.com/viewsolution/3450081">http://www.codechef.com/viewsolution/3450081</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75442"></a> 
+ <div id="c75442" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-75442" class="active">got correct correct ans in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asvikr">asvikr</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2014 07:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    got correct correct ans in first attempt with 0.00 exucution time feeling good
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75469"></a> 
+ <div id="c75469" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-75469" class="active">please spot out the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishanth9">nishanth9</a></strong>
+   <span style="color:#828282"> @ 21 Mar 2014 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please spot out the error 
+    <a href="http://www.codechef.com/viewsolution/3624542" title="http://www.codechef.com/viewsolution/3624542">http://www.codechef.com/viewsolution/3624542</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-76419"></a> 
+ <div id="c76419" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-76419" class="active">please any one help me where</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surendrasingh1">surendrasingh1</a></strong>
+   <span style="color:#828282"> @ 8 Apr 2014 05:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please any one help me where my code is lacking ?? 
+    <a href="http://ideone.com/Hzbd2h" title="http://ideone.com/Hzbd2h">http://ideone.com/Hzbd2h</a> when i am submitting this code it is showing wrong answer ...thanx in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79979"></a> 
+ <div id="c79979" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-79979" class="active">both my solution doing the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarkaramrit2">sarkaramrit2</a></strong>
+   <span style="color:#828282"> @ 24 Jun 2014 07:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    both my solution doing the same thing. sorting any of the array and getting the maximum result. though my naive approach gave me AC while the better one getting WA. add test cases buddy. they are causing probs. Naive approach: 
+    <a href="http://www.codechef.com/viewsolution/4138622" title="http://www.codechef.com/viewsolution/4138622">http://www.codechef.com/viewsolution/4138622</a> Better one: 
+    <a href="http://www.codechef.com/viewsolution/4138614" title="http://www.codechef.com/viewsolution/4138614">http://www.codechef.com/viewsolution/4138614</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80075"></a> 
+ <div id="c80075" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-80075" class="active">How output for third testcase</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeaholic">codeaholic</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2014 03:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How output for third testcase is 3 ? Shouldn't it be 5 ? There are four guests between 6 and 18 whose arrival and departure times are as follows: (8,9),(10,11),(12,15),(13,19).Including the guest with arrival and departure time (6,18),there are maximum five guests simultaneously.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81644"></a> 
+ <div id="c81644" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-81644" class="active">@codeaholic I think output</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nytochin">nytochin</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2014 02:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @codeaholic I think output for third case should be 6. You forgot the (2,9). (2,9) arrived earlier than (6,18) but they are at the hotel simultaneously between 6 and 9. But yeah, why is the output 3 in the example ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81645"></a> 
+ <div id="c81645" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-81645" class="active">Oh I got it ! In fact, (6,18)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nytochin">nytochin</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2014 02:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Oh I got it ! In fact, (6,18) was at the hotel at the same time as the one mentioned above, but these others were not necessarily at the same time present. (10,11) was not present when (12,15) was present.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85287"></a> 
+ <div id="c85287" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-85287" class="active">for test case 3, what i think</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav247">gaurav247</a></strong>
+   <span style="color:#828282"> @ 13 Sep 2014 03:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for test case 3, what i think the answer is 3. first sort the test case according to arrival time in ascending order. lets start the clock from 0..... when clock strikes 2, guest no. 5 arrives when clock strikes 5, guest no. 3 arrives when clock strikes 6, guest no. 3 leaves and guest no. 2 arrives when clock strikes 8, guest no. 4 arrives when clock strikes 9, guest no. 4 and 5 leave upto here, the count was 3 guests who were staying simultaneously when clock strikes 10, guest no. 6 arrives when clock strikes 11, guest no. 6 leaves count is 1 during this period when clock strikes 12, guest no. 7 arrives when clock strikes 13, guest no. 1 arrives now all the guests have either arrived or left and so we stop here. at the last the count was 2, but the max count went upto 3. So the answer should be 3
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91906"></a> 
+ <div id="c91906" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-91906" class="active">bhen ka takka chal gaya. I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 04:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    bhen ka takka chal gaya. I spent almost a week on this. I tried 3 approaches. The first was wrong. However the 2nd was almost definitely correct. The third one set back my time but here was the approach. You sort out the arrival and departure timings. The catch here is that it doesnt matter which guest enters and leaves. Basically, you just check if the arrival time is less than the departure. If it is then,flag++. Else flag-- and increase the index of the departure time. There's a special way to solve is arrival equals departure. Figure it out yourself or check my solution. Just wanted to help out those struggling with other approaches and not getting the right answer. Oh and i didnt really get most of the other logic. Maybe its just me
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107322"></a> 
+ <div id="c107322" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-107322" class="active">well here's what I found</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akartik80">akartik80</a></strong>
+   <span style="color:#828282"> @ 26 Jun 2015 10:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    well here's what I found (execution times) : seg tree - 0.17s seg tree with lazy approach - 0.20s (why??) bit - 0.00s :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107409"></a> 
+ <div id="c107409" class="comment clear-block"> 
+  <h3><a href="/problems/HOTEL#comment-107409" class="active">This problem is simple,though</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiroj786">abhiroj786</a></strong>
+   <span style="color:#828282"> @ 29 Jun 2015 12:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This problem is simple,though I did it in second go, there is just one thing you need to catch, that is you have to print maximum number of customers present simultaneously at a given departure time. for ex:- In 3rd case, at departure time 9, total customers present are 3 which is more than the total no. of customers at departure time 6.Find total customers for each departure time &amp; print maximum.Similarly, for test case 2, at any departure time, total no. of customers present will always be 1, so the maximum is 1.*Consider all arrival &amp; departure times to calculate total no. at a given departure at time.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
