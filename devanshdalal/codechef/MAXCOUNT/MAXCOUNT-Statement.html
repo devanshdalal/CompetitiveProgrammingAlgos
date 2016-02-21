@@ -1,0 +1,1702 @@
+<div id="node-931539" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Given an array A of length N, your task is to find the element which repeats in A maximum number of times as well as the corresponding count. In case of ties, choose the smaller element first.</p> 
+  <h3>Input</h3> 
+  <p>First line of input contains an integer T, denoting the number of test cases. Then follows description of T cases. Each case begins with a single integer N, the length of A. Then follow N space separated integers in next line. Assume that 1 &lt;= T &lt;= 100, 1 &lt;= N &lt;= 100 and for all i in [1..N] : 1 &lt;= A[i] &lt;= 10000</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output two space separated integers V &amp; C. V is the value which occurs maximum number of times and C is its count.</p> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+5
+1 2 3 2 5
+6
+1 2 2 1 1 2
+
+<b>Output:</b>
+2 2
+1 3
+
+<b>Description:</b>
+In first case 2 occurs twice whereas all other elements occur only once. 
+In second case, both 1 and 2 occur 3 times but 1 is smaller than 2.
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/yellow_agony">yellow_agony</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MAXCOUNT">http://discuss.codechef.com/problems/MAXCOUNT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/feb12"> feb12 </a><a class="problem-tag-small " href="/tags/problems/yellow_agony"> yellow_agony </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>18-01-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MAXCOUNT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-23802"></a> 
+ <div id="c23802" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-23802" class="active">how can i solve this??? what</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mishu_cse">mishu_cse</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2012 01:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how can i solve this??? what is the logic???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25992"></a> 
+ <div id="c25992" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-25992" class="active">@Admin, My code is working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipul4vb">vipul4vb</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2012 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin, My code is working correct for all pontential test cases.. It'd give a great motivation boost-up, if you have a look at it and provide the case for wrong answer.. 
+    <a href="http://www.codechef.com/viewsolution/990631" title="http://www.codechef.com/viewsolution/990631">http://www.codechef.com/viewsolution/990631</a> Can you start providing the test input, so that we can test locally???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25993"></a> 
+ <div id="c25993" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-25993" class="active">what would be the output in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipul4vb">vipul4vb</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2012 01:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what would be the output in case of 1,1,1,2,2,2,3,3,3 ??? Will it be 2 or 1????
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-25996"></a> 
+ <div id="c25996" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-25996" class="active">I figured out, that in the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipul4vb">vipul4vb</a></strong>
+   <span style="color:#828282"> @ 24 Apr 2012 05:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I figured out, that in the former case, aswer will be 1; not 2.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-28757"></a> 
+ <div id="c28757" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-28757" class="active">why i am getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaifz">shaifz</a></strong>
+   <span style="color:#828282"> @ 28 Jun 2012 12:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why i am getting wrong answer for this problem???i have checked it out many times;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30146"></a> 
+ <div id="c30146" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-30146" class="active">my code works in my lap but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/barath0839">barath0839</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2012 04:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code works in my lap but when i upload it , its showing wrong ans can anyone help me with this
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-30898"></a> 
+ <div id="c30898" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-30898" class="active">What's wrong with this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mymane">mymane</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2012 06:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What's wrong with this code? #include void selsort(int a[], int size) { int i,j ,temp, min; for(i=0; i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-31064"></a> 
+ <div id="c31064" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-31064" class="active">#include int main() { </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/arnabthepro">arnabthepro</a></strong>
+   <span style="color:#828282"> @ 31 Aug 2012 12:10 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int t,c,i,j,countmax,max,n,count; scanf("%d",&amp;t); c=0; while(ccountmax) { countmax=count; max=a[i]; } } printf("%d %dn",max,countmax); c++; } return 0; } Ideone gives the right answer but online judge certifies as wrong
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34797"></a> 
+ <div id="c34797" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-34797" class="active">When we first sort the array</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/programme">programme</a></strong>
+   <span style="color:#828282"> @ 5 Dec 2012 09:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    When we first sort the array and then find the element with the maximum frequency, it should also give the correct result. Can anyone point out the mistake in this algorithm ? 
+    <a href="http://www.codechef.com/viewsolution/1598324" title="http://www.codechef.com/viewsolution/1598324">http://www.codechef.com/viewsolution/1598324</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34798"></a> 
+ <div id="c34798" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-34798" class="active">@Admin any help in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/programme">programme</a></strong>
+   <span style="color:#828282"> @ 5 Dec 2012 09:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin any help in this regard would be really appreciated. Thanking you in anticipation.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-34937"></a> 
+ <div id="c34937" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-34937" class="active">What is wrong with my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sreeram123">sreeram123</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2012 11:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is wrong with my code ?? 
+    <a href="http://www.codechef.com/viewsolution/1612912" title="http://www.codechef.com/viewsolution/1612912">http://www.codechef.com/viewsolution/1612912</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35060"></a> 
+ <div id="c35060" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-35060" class="active">@Admin. I am also seeing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shanmu2004">shanmu2004</a></strong>
+   <span style="color:#828282"> @ 15 Dec 2012 08:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin. I am also seeing wrong answer. Here is my code 
+    <a href="http://www.codechef.com/viewsolution/1631536" title="http://www.codechef.com/viewsolution/1631536">http://www.codechef.com/viewsolution/1631536</a>. Can you please let me know on which case it is failing?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35599"></a> 
+ <div id="c35599" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-35599" class="active">What is wrong with this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahilpruthi92">sahilpruthi92</a></strong>
+   <span style="color:#828282"> @ 5 Jan 2013 01:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is wrong with this code? 
+    <a href="http://www.codechef.com/viewsolution/1676370" title="http://www.codechef.com/viewsolution/1676370">http://www.codechef.com/viewsolution/1676370</a> Someone help please!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-35720"></a> 
+ <div id="c35720" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-35720" class="active">Dear "sahilpruthi92" when i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/real_amateur">real_amateur</a></strong>
+   <span style="color:#828282"> @ 6 Jan 2013 07:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Dear "sahilpruthi92" when i checked your code, i understood you made a mistake and it is that you should print every array exactly after it not all the arrays answers together Like This ( 1 2 3 2 5 6) --&gt;(2 2) Or (1 2 2 1 1 2)--&gt;(1 3) it was the first thing i faced to ,hope help you :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-36695"></a> 
+ <div id="c36695" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-36695" class="active">plz hlp me wid this prob</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sagar1pant7">sagar1pant7</a></strong>
+   <span style="color:#828282"> @ 29 Jan 2013 09:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz hlp me wid this prob 
+    <a href="http://www.codechef.com/viewsolution/1753984" title="http://www.codechef.com/viewsolution/1753984">http://www.codechef.com/viewsolution/1753984</a> its showing wrong ans
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39613"></a> 
+ <div id="c39613" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-39613" class="active">please tell me what's the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ak92">ak92</a></strong>
+   <span style="color:#828282"> @ 12 Mar 2013 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell me what's the mistake in my code 
+    <a href="http://www.codechef.com/viewsolution/1935955" title="http://www.codechef.com/viewsolution/1935955">http://www.codechef.com/viewsolution/1935955</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-39614"></a> 
+ <div id="c39614" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-39614" class="active">please tell me what's the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ak92">ak92</a></strong>
+   <span style="color:#828282"> @ 12 Mar 2013 12:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell me what's the mistake in my code 
+    <a href="http://www.codechef.com/viewsolution/1935955" title="http://www.codechef.com/viewsolution/1935955">http://www.codechef.com/viewsolution/1935955</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40173"></a> 
+ <div id="c40173" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-40173" class="active">What's wrong with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/guptakeshav94">guptakeshav94</a></strong>
+   <span style="color:#828282"> @ 28 Mar 2013 09:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What's wrong with my solution? :/ 
+    <a href="http://www.codechef.com/viewsolution/1969261" title="http://www.codechef.com/viewsolution/1969261">http://www.codechef.com/viewsolution/1969261</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-40226"></a> 
+ <div id="c40226" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-40226" class="active">Can any one give me a bigger</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/divyenduz">divyenduz</a></strong>
+   <span style="color:#828282"> @ 2 Apr 2013 08:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can any one give me a bigger test case -_-
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-43381"></a> 
+ <div id="c43381" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-43381" class="active">import</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codingguru">codingguru</a></strong>
+   <span style="color:#828282"> @ 15 May 2013 07:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    import java.util.Scanner; /*Ambiguous Permutations*/ public class Main { /** * @param args */ public static void main(String[] args) { // TODO Auto-generated method stub Scanner sc=new Scanner(System.in); int T; T=sc.nextInt(); int N; int num[]=new int[10001]; while(T--&gt;0) { N=sc.nextInt(); for (int i = 1; i &lt;= N; i++) { num[i]=0;} //input array for (int i = 1; i &lt;= N; i++) { num[sc.nextInt()]++; } int max=1;int index=1; for (int i = 1; i &lt;= N; i++) { if(num[i]&gt;max) {max=num[i];index=i;} } System.out.printf("%d %d", index,max); } } } WA????? why?? its giving me right answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-46356"></a> 
+ <div id="c46356" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-46356" class="active">So many silly mistakes I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/while1">while1</a></strong>
+   <span style="color:#828282"> @ 21 Jun 2013 02:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    So many silly mistakes I committed for a simple problem. Lessons learnt. Nothing is simple.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-48628"></a> 
+ <div id="c48628" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-48628" class="active">it gives correct output for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit2codechef">rohit2codechef</a></strong>
+   <span style="color:#828282"> @ 12 Jul 2013 11:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    it gives correct output for the given test case but uploading gives WRONG ANSWER plzz help 
+    <a href="http://www.codechef.com/viewsolution/2364215" title="http://www.codechef.com/viewsolution/2364215">http://www.codechef.com/viewsolution/2364215</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49399"></a> 
+ <div id="c49399" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-49399" class="active">my solution passed all test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shibinkv54">shibinkv54</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2013 07:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my solution passed all test cases in 0.03 sec..then i changed initial condition of a for loop from i=1 to i=2,then it took 0.08 sec.. then copied the code from my submission with 0.03 sec and submitted again..this time it took 0.06 sec.. why this happens..? 
+    <a href="http://www.codechef.com/viewsolution/1897958" title="http://www.codechef.com/viewsolution/1897958">http://www.codechef.com/viewsolution/1897958</a> thank you..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-49593"></a> 
+ <div id="c49593" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-49593" class="active">@Admin. I am seeing wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deepak673">deepak673</a></strong>
+   <span style="color:#828282"> @ 29 Jul 2013 04:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin. I am seeing wrong answer. Here is my code 
+    <a href="http://www.codechef.com/viewsolution/2411474" title="http://www.codechef.com/viewsolution/2411474">http://www.codechef.com/viewsolution/2411474</a>. Can you please let me know on which case it is failing?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-50047"></a> 
+ <div id="c50047" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-50047" class="active">Hello, I'm trying to submit</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/simonmay">simonmay</a></strong>
+   <span style="color:#828282"> @ 3 Aug 2013 01:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hello, I'm trying to submit an executable jar file but get NZEC error. When i submit the source code into the editor i get a successful submission. What is the right way to submit a jar executable?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-51586"></a> 
+ <div id="c51586" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-51586" class="active">Why m getting Wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/san00719">san00719</a></strong>
+   <span style="color:#828282"> @ 10 Aug 2013 04:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why m getting Wrong answer? Even though the solutions are coming right! 
+    <a href="http://www.codechef.com/viewsolution/2505446" title="http://www.codechef.com/viewsolution/2505446">http://www.codechef.com/viewsolution/2505446</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52205"></a> 
+ <div id="c52205" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-52205" class="active">0 instead of hashing i just</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_billmark">code_billmark</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2013 11:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    0 instead of hashing i just used bubble sort technique,, works well on your test cases..!! why does it give wrong ans. here..!! plz check my code /count of maximum MAXCOUNT / include int main() { int t,k,n,swap,maxfreq,freq,no,nomax,i,j; scanf("%d",&amp;t); for(i=0;iarr[k+1]) { swap=arr[k]; arr[k]=arr[k+1]; arr[k+1]=swap; } } } maxfreq=1;nomax=arr[0];freq=1;no=arr[0]; for(j=1;jmaxfreq) { maxfreq=freq; nomax=arr[j-1]; } freq=1; no=arr[j]; } printf("%d %dn",nomax,maxfreq); } return 0; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-52905"></a> 
+ <div id="c52905" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-52905" class="active">@all who are getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aakashanuj">aakashanuj</a></strong>
+   <span style="color:#828282"> @ 21 Aug 2013 01:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all who are getting wrong answer. The limits specified are wrong. It should be 1&lt;=N&lt;=10000
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-53818"></a> 
+ <div id="c53818" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-53818" class="active">@all-Iam getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/n1n8_3">n1n8_3</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2013 12:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all-Iam getting wrong answer,my code works for given test cases Can anyone tell what i could be possibly doing wrong. 
+    <a href="http://www.codechef.com/viewsolution/2585912" title="http://www.codechef.com/viewsolution/2585912">http://www.codechef.com/viewsolution/2585912</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-56944"></a> 
+ <div id="c56944" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-56944" class="active">I got the correct answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rccroshan1">rccroshan1</a></strong>
+   <span style="color:#828282"> @ 2 Oct 2013 04:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I got the correct answer using scanf but the execution time was 0.15 so i used getchar replacing scanf in the same program....however the latter one shows wrong answer....can any one help me with this....the two programs are 
+    <a href="http://www.codechef.com/viewsolution/2740966" title="http://www.codechef.com/viewsolution/2740966">http://www.codechef.com/viewsolution/2740966</a> 
+    <a href="http://www.codechef.com/viewsolution/2736901" title="http://www.codechef.com/viewsolution/2736901">http://www.codechef.com/viewsolution/2736901</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70814"></a> 
+ <div id="c70814" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-70814" class="active">Please help me find mistake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/adityabhagat95">adityabhagat95</a></strong>
+   <span style="color:#828282"> @ 11 Jan 2014 02:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help me find mistake in my code. Help would be highly appreciated. 
+    <a href="http://www.codechef.com/viewsolution/3234994" title="http://www.codechef.com/viewsolution/3234994">http://www.codechef.com/viewsolution/3234994</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70915"></a> 
+ <div id="c70915" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-70915" class="active">I have got A.C .I compared my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harish__jagtap">harish__jagtap</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2014 02:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have got A.C .I compared my own test cases with meap4aa 's code and my code . meap4aa is shown in successful submission. test case : 1 50 1 2 4 8 2 3 7 6 4 6 1 2 3 4 5 7 8 4 8 5 2 4 3 4 5 4 6 3 4 5 6 6 6 5 6 5 4 5 5 4 7 7 5 5 5 6 5 6 8 5 2 3 For this my code show answer as 5 13 whereas meap4aa 's code shows 5 12 And also by manual calculation, the answer must be 5 13 meap4aa (No Offense)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70916"></a> 
+ <div id="c70916" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-70916" class="active">Also meap4aa 's code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harish__jagtap">harish__jagtap</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2014 02:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Also meap4aa 's code is 
+    <a href="http://www.codechef.com/viewsolution/2071799" title="http://www.codechef.com/viewsolution/2071799">http://www.codechef.com/viewsolution/2071799</a> . My code is 
+    <a href="http://www.codechef.com/viewsolution/3242058" title="http://www.codechef.com/viewsolution/3242058">http://www.codechef.com/viewsolution/3242058</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-73362"></a> 
+ <div id="c73362" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-73362" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codeluv">codeluv</a></strong>
+   <span style="color:#828282"> @ 19 Feb 2014 12:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3443479" title="http://www.codechef.com/viewsolution/3443479">http://www.codechef.com/viewsolution/3443479</a> plzz help wrong answer but satisfies all test cases on laptop
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-74886"></a> 
+ <div id="c74886" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-74886" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/spiderweb">spiderweb</a></strong>
+   <span style="color:#828282"> @ 9 Mar 2014 07:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/3539720" title="http://www.codechef.com/viewsolution/3539720">http://www.codechef.com/viewsolution/3539720</a> what's wrong with solution ?... it's not accepting this solution
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-75434"></a> 
+ <div id="c75434" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-75434" class="active">I am getting W.A in python</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/soulmate">soulmate</a></strong>
+   <span style="color:#828282"> @ 18 Mar 2014 02:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting W.A in python @admin please check 
+    <a href="http://www.codechef.com/viewsolution/3617578" title="http://www.codechef.com/viewsolution/3617578">http://www.codechef.com/viewsolution/3617578</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78359"></a> 
+ <div id="c78359" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-78359" class="active">piece of cake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/fast">fast</a></strong>
+   <span style="color:#828282"> @ 22 May 2014 02:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    piece of cake
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78375"></a> 
+ <div id="c78375" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-78375" class="active">can anyone give me the most</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineet9888">vineet9888</a></strong>
+   <span style="color:#828282"> @ 23 May 2014 12:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone give me the most limiting case which must throw errors ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78376"></a> 
+ <div id="c78376" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-78376" class="active">"http://www.codechef.com/stat</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vineet9888">vineet9888</a></strong>
+   <span style="color:#828282"> @ 23 May 2014 12:43 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    "http://www.codechef.com/status/MAXCOUNT,vineet9888" please help me out where the error is arising....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78672"></a> 
+ <div id="c78672" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-78672" class="active">I have submitted the solution</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coding_learner">coding_learner</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2014 01:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I have submitted the solution but it shows NZEC, while it runs fine on my system as well as on Ideone.com. Please someone help me out what is the problem with this solution. The link to my solution is: 
+    <a href="http://www.codechef.com/viewsolution/3968420" title="http://www.codechef.com/viewsolution/3968420">http://www.codechef.com/viewsolution/3968420</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79497"></a> 
+ <div id="c79497" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-79497" class="active">#include int main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rockerszone">rockerszone</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2014 01:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { int a[100]; int t,n; int i,j,m,cnt; int max=0; scanf("%dn",&amp;t); while(t--) { scanf("%d",&amp;n); for(i=0;imax) { max=cnt; m=a[i]; } } printf("%d %dn",m,max); } return 0; } //where is the problem ? what is it giving wrong answer whereas it is giving correect output while doing in my computer!!!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79520"></a> 
+ <div id="c79520" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-79520" class="active">Why are we not provided with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubhamjethwa">shubhamjethwa</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2014 06:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why are we not provided with the test cases? Test cases will help us to know our mistakes.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80185"></a> 
+ <div id="c80185" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-80185" class="active">sorry, range of N is within</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachi123">sachi123</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2014 08:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sorry, range of N is within 10000 and not 100.@admin... please modify the qos I got it right after I made this change.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83407"></a> 
+ <div id="c83407" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83407" class="active">WHAT DOES THIS MEAN</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/suraj_singh89">suraj_singh89</a></strong>
+   <span style="color:#828282"> @ 9 Aug 2014 03:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WHAT DOES THIS MEAN ??? Main.java:38: remove(java.lang.Object) in java.util.Map cannot be applied to (int,int) m.remove(a[i], count); ^ Note: Main.java uses unchecked or unsafe operations. Note: Recompile with -Xlint:unchecked for details. 1 error
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83651"></a> 
+ <div id="c83651" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83651" class="active">Can anyone provide the corner</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sj1_sj2_3134">sj1_sj2_3134</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 11:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone provide the corner case input numbers against which we can test our code?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83657"></a> 
+ <div id="c83657" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83657" class="active">You can try these cases</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 03:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    You can try these cases 2 4 1 1 1 1 6 211222 Ans: 1 4 2 4
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83658"></a> 
+ <div id="c83658" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83658" class="active">@abhishek I have tried and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sj1_sj2_3134">sj1_sj2_3134</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 03:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @abhishek I have tried and getting the correct answer for these test cases and all other test cases as well but still getting wrong answer on submitting the code.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83659"></a> 
+ <div id="c83659" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83659" class="active">@admin Just a suggestion it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sj1_sj2_3134">sj1_sj2_3134</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 03:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin Just a suggestion it would be great if you guys will provide any failing test case along with wrong answer result so that it would be easier for us to correct the code and get the perfect solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83667"></a> 
+ <div id="c83667" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83667" class="active">@sj1_sj2_3134 your writing in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek971">abhishek971</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 09:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sj1_sj2_3134 your writing in C or C++ ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83668"></a> 
+ <div id="c83668" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83668" class="active">@abhishek...I am writing in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sj1_sj2_3134">sj1_sj2_3134</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 10:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @abhishek...I am writing in java...Here is my code :http://www.codechef.com/viewsolution/4556805
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83763"></a> 
+ <div id="c83763" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83763" class="active">My code is giving</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pallavi0506">pallavi0506</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2014 04:50 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is giving complilation error here, but its running in my system. Can anyone please guide me?Error is "inconvertible types found : java.lang.Object required: int return ((int)o1.getValue()-(int)o2.getValue());" you can view my solution here : 
+    <a href="http://www.codechef.com/viewsolution/4573014" title="http://www.codechef.com/viewsolution/4573014">http://www.codechef.com/viewsolution/4573014</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83774"></a> 
+ <div id="c83774" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83774" class="active">@Pallavi... I am also getting</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/suraj_singh89">suraj_singh89</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2014 02:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Pallavi... I am also getting similar kind of problem on this problem... Somebody please help me....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83854"></a> 
+ <div id="c83854" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-83854" class="active">hey guys ... can we use the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranavjain1007">pranavjain1007</a></strong>
+   <span style="color:#828282"> @ 23 Aug 2014 12:35 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey guys ... can we use the linked list in the above problem?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84098"></a> 
+ <div id="c84098" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-84098" class="active">My code works great on all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishabh_iit">rishabh_iit</a></strong>
+   <span style="color:#828282"> @ 26 Aug 2014 02:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code works great on all platforms. But codechef shows wrong answer&lt; can anyone help me.... 
+    <a href="http://www.codechef.com/viewsolution/4635110" title="http://www.codechef.com/viewsolution/4635110">http://www.codechef.com/viewsolution/4635110</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84191"></a> 
+ <div id="c84191" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-84191" class="active">What does run-time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/roundrobin">roundrobin</a></strong>
+   <span style="color:#828282"> @ 29 Aug 2014 07:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What does run-time error(NZEC) mean?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84213"></a> 
+ <div id="c84213" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-84213" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rayofhope">rayofhope</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2014 08:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4668518" title="http://www.codechef.com/viewsolution/4668518">http://www.codechef.com/viewsolution/4668518</a> Please help me with this. I am getting NZEC error. In my system I am getting correct output
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-84363"></a> 
+ <div id="c84363" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-84363" class="active">can i solve this in quadratic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chhristov">chhristov</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2014 02:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can i solve this in quadratic time and how can I reason about how much time it's going to take?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85775"></a> 
+ <div id="c85775" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-85775" class="active">@admin my code give right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sychotomo">sychotomo</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 07:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin my code give right answer for all the case,even i have checked for 4-5 case....but on submission it give wrong answer....please check it out.....http://www.codechef.com/viewsolution/4904864
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85778"></a> 
+ <div id="c85778" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-85778" class="active">@sychotomo try the test case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalranjan">pranjalranjan</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 09:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sychotomo try the test case t=1, n=5, 10000 10000 10000 10000 10000 U'll know the problem yourself buddy ;-) minor error, dont worry
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85957"></a> 
+ <div id="c85957" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-85957" class="active">http://ideone.com/PtQUnB sir</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sasha92">sasha92</a></strong>
+   <span style="color:#828282"> @ 29 Sep 2014 09:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://ideone.com/PtQUnB" title="http://ideone.com/PtQUnB">http://ideone.com/PtQUnB</a> sir i run this program on ideone its perfectly fine therebut its showing wrong answer on your executor..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86163"></a> 
+ <div id="c86163" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-86163" class="active">Can taking an array of size</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mansigupta19">mansigupta19</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2014 10:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can taking an array of size 10000 result in runtime error?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88262"></a> 
+ <div id="c88262" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-88262" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil_152">nikhil_152</a></strong>
+   <span style="color:#828282"> @ 15 Oct 2014 09:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5153539" title="http://www.codechef.com/viewsolution/5153539">http://www.codechef.com/viewsolution/5153539</a> Help Help Help! My code is working fine but it says wrong answer! Please someone explain why!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88795"></a> 
+ <div id="c88795" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-88795" class="active">fixed some of bugs in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhaskar_123">bhaskar_123</a></strong>
+   <span style="color:#828282"> @ 23 Oct 2014 12:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    fixed some of bugs in previous code...still it is showing wrong answer... 
+    <a href="http://www.codechef.com/viewsolution/5207250" title="http://www.codechef.com/viewsolution/5207250">http://www.codechef.com/viewsolution/5207250</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90407"></a> 
+ <div id="c90407" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-90407" class="active">@Admin: How can u say</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sreejish">sreejish</a></strong>
+   <span style="color:#828282"> @ 16 Nov 2014 06:11 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Admin: How can u say A[i]&lt;10000 and in the test case u have values upto 10010? When I increased my array size from 10000 to 10010 it worked. How many people wasted their time debugging their code when the constraints in the question itself was wrong!! Hope u will give an explanation..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90978"></a> 
+ <div id="c90978" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-90978" class="active">what's worng with this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ravit007">ravit007</a></strong>
+   <span style="color:#828282"> @ 28 Nov 2014 01:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's worng with this code .http://www.codechef.com/viewsolution/5463702 it got correct answer in my lapy (compiler dev c++) but doesn't here .
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-90990"></a> 
+ <div id="c90990" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-90990" class="active">OK there's an issue with this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 28 Nov 2014 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    OK there's an issue with this problem in java. I solved it using Scanner an it was accepted(5.something). However when i change the scanner to buffered reader(just 2 trivial statements), i get the NZEC runtime error. I've solved several previous problems with buffered reader and had no problem Anyone?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91463"></a> 
+ <div id="c91463" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-91463" class="active">The Max Value of N is 100,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/johnVerdict">johnVerdict</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2014 02:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The Max Value of N is 100, not 10000, it works with 100.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91484"></a> 
+ <div id="c91484" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-91484" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2014 09:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5523996" title="http://www.codechef.com/viewsolution/5523996">http://www.codechef.com/viewsolution/5523996</a>. johnVerdict, Please help me to debug.. where did I go wrong?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91494"></a> 
+ <div id="c91494" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-91494" class="active">@s1x13 for test-case 6 3 3 3</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/amitvishw">amitvishw</a></strong>
+   <span style="color:#828282"> @ 8 Dec 2014 02:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @s1x13 for test-case 6 3 3 3 1 1 1 giving wrong output for that problem. sorting the given array may be a solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91842"></a> 
+ <div id="c91842" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-91842" class="active">Thank you very much</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 15 Dec 2014 10:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Thank you very much @amitvishw here's is modified one... 
+    <a href="http://www.codechef.com/viewsolution/5597929" title="http://www.codechef.com/viewsolution/5597929">http://www.codechef.com/viewsolution/5597929</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91917"></a> 
+ <div id="c91917" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-91917" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ism_syed">ism_syed</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 09:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5606800" title="http://www.codechef.com/viewsolution/5606800">http://www.codechef.com/viewsolution/5606800</a> why it is showing wrong answer?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92283"></a> 
+ <div id="c92283" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-92283" class="active">where is mistake in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dev987">dev987</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2014 03:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where is mistake in this code.... #include int main() { int n,m,i,j,t,a[100],b[50],count,max,k,p; scanf("%d",&amp;n); while(n--) { scanf("%d",&amp;m); i=0; while(i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92308"></a> 
+ <div id="c92308" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-92308" class="active">constraints are absolutely</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rd10">rd10</a></strong>
+   <span style="color:#828282"> @ 26 Dec 2014 01:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    constraints are absolutely correct, for n as well as a[i]. i was getting error cause i was using array with size 10000 and no variable to store a[i]=10000. have an array a[10001] and get locations for each 0&lt;=a[i]&lt;=10000.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92401"></a> 
+ <div id="c92401" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-92401" class="active">Can somebody help me with the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stronghold">stronghold</a></strong>
+   <span style="color:#828282"> @ 29 Dec 2014 12:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can somebody help me with the problem. Using indexing I am trying to solve, works fine with above test cases and some of my own. Have I missed something: 
+    <a href="http://www.codechef.com/viewsolution/5665139" title="http://www.codechef.com/viewsolution/5665139">http://www.codechef.com/viewsolution/5665139</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92439"></a> 
+ <div id="c92439" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-92439" class="active">@ admin my code is running</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivgarg5676">shivgarg5676</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 07:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @ admin my code is running good on my pc and is satisfying all the potential test cases.but aftersubmission it is showing the wrong answer . 
+    <a href="http://www.codechef.com/viewsolution/5671077" title="http://www.codechef.com/viewsolution/5671077">http://www.codechef.com/viewsolution/5671077</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93045"></a> 
+ <div id="c93045" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-93045" class="active">@admin I am not able to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yolo_96">yolo_96</a></strong>
+   <span style="color:#828282"> @ 5 Jan 2015 02:00 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin I am not able to figure out why my solution is wrong. I have checked many cases and it works fine. Could you please help me out: 
+    <a href="http://www.codechef.com/viewsolution/5757132" title="http://www.codechef.com/viewsolution/5757132">http://www.codechef.com/viewsolution/5757132</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93421"></a> 
+ <div id="c93421" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-93421" class="active">I've tried all the given</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/animeshk08">animeshk08</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2015 10:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I've tried all the given sample cases, and also the cases that were given in the comments.. I'm getting correct answer for all of them on my PC but still here it is giving Wrong Answer.. Can someone help me..? Please..! 
+    <a href="http://www.codechef.com/viewsolution/5847645" title="http://www.codechef.com/viewsolution/5847645">http://www.codechef.com/viewsolution/5847645</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93948"></a> 
+ <div id="c93948" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-93948" class="active">@all who are getting wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gr8manish">gr8manish</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2015 01:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all who are getting wrong answer. The limits specified are wrong. It should be 1&lt;=N&lt;=10000
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94347"></a> 
+ <div id="c94347" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-94347" class="active">@admin why is my code showing</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit2811995">rohit2811995</a></strong>
+   <span style="color:#828282"> @ 23 Jan 2015 02:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin why is my code showing wrong answer 
+    <a href="http://www.codechef.com/viewsolution/5968244" title="http://www.codechef.com/viewsolution/5968244">http://www.codechef.com/viewsolution/5968244</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95327"></a> 
+ <div id="c95327" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-95327" class="active">whats wrong in my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dinesh_117">dinesh_117</a></strong>
+   <span style="color:#828282"> @ 1 Feb 2015 05:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong in my code???..http://www.codechef.com/viewsolution/6061816
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97012"></a> 
+ <div id="c97012" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-97012" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_smith">code_smith</a></strong>
+   <span style="color:#828282"> @ 18 Feb 2015 06:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6307353" title="http://www.codechef.com/viewsolution/6307353">http://www.codechef.com/viewsolution/6307353</a> can anyone please tell me the mistake
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97166"></a> 
+ <div id="c97166" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-97166" class="active">it's backslash n</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ambicio">ambicio</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2015 11:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    it's backslash n
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99734"></a> 
+ <div id="c99734" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-99734" class="active">I am getting right ouput for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohan2020">rohan2020</a></strong>
+   <span style="color:#828282"> @ 21 Mar 2015 09:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting right ouput for many values i tried but its showing wrong can anybody tell whats wrong with my code 
+    <a href="http://www.codechef.com/viewsolution/6558817" title="http://www.codechef.com/viewsolution/6558817">http://www.codechef.com/viewsolution/6558817</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99914"></a> 
+ <div id="c99914" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-99914" class="active">I am getting right ouput for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/awsdcot">awsdcot</a></strong>
+   <span style="color:#828282"> @ 27 Mar 2015 01:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting right ouput for many values.please check for which test case my answer is wrong. 
+    <a href="http://www.codechef.com/viewsolution/6583714" title="http://www.codechef.com/viewsolution/6583714">http://www.codechef.com/viewsolution/6583714</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100228"></a> 
+ <div id="c100228" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-100228" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/blizrat">blizrat</a></strong>
+   <span style="color:#828282"> @ 2 Apr 2015 09:36 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6609711" title="http://www.codechef.com/viewsolution/6609711">http://www.codechef.com/viewsolution/6609711</a> Stuck on this problem for a long time. What am I doing wrong ? :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100297"></a> 
+ <div id="c100297" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-100297" class="active">My answer is coming out right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sebin">sebin</a></strong>
+   <span style="color:#828282"> @ 3 Apr 2015 09:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My answer is coming out right but its giving WA here can someone please check it.my code is: 
+    <a href="https://ideone.com/wfd2UK" title="https://ideone.com/wfd2UK">https://ideone.com/wfd2UK</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102460"></a> 
+ <div id="c102460" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-102460" class="active">what's wrong with my code it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/surendra006">surendra006</a></strong>
+   <span style="color:#828282"> @ 25 Apr 2015 02:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what's wrong with my code it will give the WA but my code show the correct output in ideone as well as terminal . can any one tell me the reason id 6812641
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104082"></a> 
+ <div id="c104082" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-104082" class="active">whats wrong with my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ccvachievers">ccvachievers</a></strong>
+   <span style="color:#828282"> @ 19 May 2015 05:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong with my code 
+    <a href="http://www.codechef.com/viewsolution/6981961" title="http://www.codechef.com/viewsolution/6981961">http://www.codechef.com/viewsolution/6981961</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104083"></a> 
+ <div id="c104083" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-104083" class="active">whats wrong with my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ccvachievers">ccvachievers</a></strong>
+   <span style="color:#828282"> @ 19 May 2015 05:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong with my code 
+    <a href="http://www.codechef.com/viewsolution/6981961" title="http://www.codechef.com/viewsolution/6981961">http://www.codechef.com/viewsolution/6981961</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105135"></a> 
+ <div id="c105135" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105135" class="active">Can any one tell me whats</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/martina">martina</a></strong>
+   <span style="color:#828282"> @ 4 Jun 2015 11:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can any one tell me whats wrong with my code 
+    <a href="http://www.codechef.com/viewsolution/7077066" title="http://www.codechef.com/viewsolution/7077066">http://www.codechef.com/viewsolution/7077066</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105137"></a> 
+ <div id="c105137" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105137" class="active">Easy one.. :)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 12:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Easy one.. :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105139"></a> 
+ <div id="c105139" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105139" class="active">@Martina u need to print '\n'</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 12:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Martina u need to print 'n' as well
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105140"></a> 
+ <div id="c105140" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105140" class="active">i.e a new line character</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 12:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i.e a new line character
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105320"></a> 
+ <div id="c105320" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105320" class="active">@hmnshgpt455 : Hi, thanks</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/martina">martina</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 10:34 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @hmnshgpt455 : Hi, thanks for the reply ... here i am using println function which will print the value and insert a newLine... Something else is wrong.. which i am not able to figure it out.... i am getting the proper output, though.... :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105331"></a> 
+ <div id="c105331" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105331" class="active">finally .... it was some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/martina">martina</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 11:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    finally .... it was some logical error ....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105332"></a> 
+ <div id="c105332" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-105332" class="active">@Martina...the thing is I am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hmnshgpt455">hmnshgpt455</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 11:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @Martina...the thing is I am not aquainted with Java...So I cant really figure out where you sol is going wrong...if your code was in C or C++ I could have helped you. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106664"></a> 
+ <div id="c106664" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-106664" class="active">Can anyone provide any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/write2diba">write2diba</a></strong>
+   <span style="color:#828282"> @ 13 Jun 2015 11:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone provide any typical cases.. I mean what the hell.. What's even wrong with my code? #include int main() { int t,n,a[100],i,j,v,c=0,tmp=0; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;n); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106702"></a> 
+ <div id="c106702" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-106702" class="active">I think they have missed out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/write2diba">write2diba</a></strong>
+   <span style="color:#828282"> @ 14 Jun 2015 02:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I think they have missed out some constraints. My code is working fine but it always shows wrong answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107216"></a> 
+ <div id="c107216" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-107216" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/himanshu56">himanshu56</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2015 09:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/7271277" title="http://www.codechef.com/viewsolution/7271277">http://www.codechef.com/viewsolution/7271277</a> I am getting correct answer in my pc but here it is showing wrong answer please help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107560"></a> 
+ <div id="c107560" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-107560" class="active">Can anyone please help me:Why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deepak_12345">deepak_12345</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2015 03:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone please help me:Why i am getting wrong answer in this code 
+    <a href="http://www.codechef.com/viewsolution/7312770" title="http://www.codechef.com/viewsolution/7312770">http://www.codechef.com/viewsolution/7312770</a> Thanks in advance.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107960"></a> 
+ <div id="c107960" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-107960" class="active">can anyone help me. i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarthakbhatt">sarthakbhatt</a></strong>
+   <span style="color:#828282"> @ 4 Jul 2015 03:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone help me. i am getting a wrong answer but i have tried corner cases and it works fine 
+    <a href="http://www.codechef.com/viewsolution/7348861" title="http://www.codechef.com/viewsolution/7348861">http://www.codechef.com/viewsolution/7348861</a> thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-110904"></a> 
+ <div id="c110904" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-110904" class="active">i dont know what is wrong in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aadarsh_96">aadarsh_96</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2015 12:17 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i dont know what is wrong in this .But in my compiler it is working properly and giving me proper results.Thanks in advance. 
+    <a href="https://www.codechef.com/viewsolution/7537329" title="https://www.codechef.com/viewsolution/7537329">https://www.codechef.com/viewsolution/7537329</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111153"></a> 
+ <div id="c111153" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-111153" class="active">The code works fine when I</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yadu_777">yadu_777</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2015 12:27 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The code works fine when I run it in my system. But, I get wrong answer here. I don't know what's wrong. Can anyone help me ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111759"></a> 
+ <div id="c111759" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-111759" class="active">why am i getting a wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul321">rahul321</a></strong>
+   <span style="color:#828282"> @ 6 Aug 2015 04:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why am i getting a wrong ans?? i checked it out many times in your ide,it is giving correct answer. plzz help.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111930"></a> 
+ <div id="c111930" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-111930" class="active">i have written this code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/skcse03">skcse03</a></strong>
+   <span style="color:#828282"> @ 8 Aug 2015 10:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i have written this code which shows runtime error can any one help me; #include int main(void){ int array[30],t,i,j,n,number,maxcount=0,count=0; scanf("%d",&amp;t); for(i=0;i&lt;=t;i++) { scanf("%d",&amp;n); for(i=0;i maxcount) { maxcount=count; number=array[i]; } else if(count== maxcount) { if(array[i]
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113311"></a> 
+ <div id="c113311" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-113311" class="active">what is wrong with my code??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/z_16193">z_16193</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2015 11:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is wrong with my code?? its giving the correct answer for every test case i can think of but giving wrong answer in cc. please help. 
+    <a href="https://www.codechef.com/viewsolution/7870865" title="https://www.codechef.com/viewsolution/7870865">https://www.codechef.com/viewsolution/7870865</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113464"></a> 
+ <div id="c113464" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-113464" class="active">whats wrong with my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ramprakashv">ramprakashv</a></strong>
+   <span style="color:#828282"> @ 22 Aug 2015 01:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    whats wrong with my code???? code @ 
+    <a href="https://www.codechef.com/viewsolution/7885154" title="https://www.codechef.com/viewsolution/7885154">https://www.codechef.com/viewsolution/7885154</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113727"></a> 
+ <div id="c113727" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-113727" class="active">why is it showing wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/san123moun">san123moun</a></strong>
+   <span style="color:#828282"> @ 25 Aug 2015 01:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is it showing wrong answer? 
+    <a href="https://www.codechef.com/viewsolution/7921808" title="https://www.codechef.com/viewsolution/7921808">https://www.codechef.com/viewsolution/7921808</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-114548"></a> 
+ <div id="c114548" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-114548" class="active">Found my mistake. Though all</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishna">rishna</a></strong>
+   <span style="color:#828282"> @ 28 Aug 2015 03:55 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Found my mistake. Though all tests were working fine, I was getting "wrong answer". On checking the code again, I found that I was not restoring the values of some counters and as such few boundary cases would have failed.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117020"></a> 
+ <div id="c117020" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-117020" class="active">why is my code wrong? Please</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ayush987goyal">ayush987goyal</a></strong>
+   <span style="color:#828282"> @ 8 Sep 2015 11:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is my code wrong? Please help me ! 
+    <a href="https://www.codechef.com/viewsolution/8085116" title="https://www.codechef.com/viewsolution/8085116">https://www.codechef.com/viewsolution/8085116</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117498"></a> 
+ <div id="c117498" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-117498" class="active">getting wrong answer..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anuveshkothari">anuveshkothari</a></strong>
+   <span style="color:#828282"> @ 10 Sep 2015 11:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    getting wrong answer.. working correctly on all the test cases given and provided in the comments..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117858"></a> 
+ <div id="c117858" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-117858" class="active">What is wrong in this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/patsneetesh">patsneetesh</a></strong>
+   <span style="color:#828282"> @ 14 Sep 2015 02:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What is wrong in this code???? #include int main(){ int t,n,i,temp1=0,temp2=0,j,count; scanf("%d",&amp;t); while(t--){ printf("n"); scanf("%d",&amp;n); int a[n];i=0; for(i=0;itemp1){ temp1=count; temp2=a[i]; } else if(count==temp1) if(a[i]
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117889"></a> 
+ <div id="c117889" class="comment clear-block"> 
+  <h3><a href="/problems/MAXCOUNT#comment-117889" class="active">is there any solution in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aditya_atri">aditya_atri</a></strong>
+   <span style="color:#828282"> @ 14 Sep 2015 04:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    is there any solution in python
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
