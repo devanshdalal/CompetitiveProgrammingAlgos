@@ -1,0 +1,177 @@
+<div id="node-1800209" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>This is probably the simplest problem ever. You just need to count the number of ordered triples of different numbers <b>(X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>)</b>, where <b>X<sub>i</sub></b> could be any positive integer from <b>1</b> to <b>N<sub>i</sub></b>, inclusive (<b>i = 1, 2, 3</b>).</p> 
+  <p>No, wait. I forgot to mention that numbers <b>N<sub>1</sub>, N<sub>2</sub>, N<sub>3</sub></b> could be up to <b>10<sup>18</sup></b>. Well, in any case it is still quite simple :)</p> 
+  <p>By the way, because of this the answer could be quite large. Hence you should output it modulo <b>10<sup>9</sup> + 7</b>. That is you need to find the remainder of the division of the number of required triples by <b>10<sup>9</sup> + 7</b>.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. The only line of each test case contains three space-separated integers <b>N<sub>1</sub>, N<sub>2</sub>, N<sub>3</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the number of required triples modulo <b>10<sup>9</sup> + 7</b>.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>1000</b></li> 
+   <li><b>1</b> ≤ <b>N<sub>i</sub></b> ≤ <b>10<sup>18</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+5
+3 3 3
+2 4 2
+1 2 3
+25 12 2012
+1 1 2013
+
+<b>Output:</b>
+6
+4
+1
+578880
+0
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> We have the following triples composed of different numbers up to 3:<br>(1, 2, 3)<br>(1, 3, 2)<br>(2, 1, 3)<br>(2, 3, 1)<br>(3, 1, 2)<br>(3, 2, 1)</p> 
+  <p><b>Example case 2.</b> Here the triples are:<br>(1, 3, 2)<br>(1, 4, 2)<br>(2, 3, 1)<br>(2, 4, 1)</p> 
+  <p><b>Example case 3.</b> Here the only triple is (1, 2, 3).</p> 
+  <p><b>Example case 4.</b> Merry Christmas! </p> 
+  <p><b>Example case 5.</b> ... and Happy New Year! By the way here the answer is zero since the only choice for <b>X<sub>1</sub></b> and for is <b>X<sub>2</sub></b> is 1, so any such triple will have equal numbers.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/anton_lunyov">anton_lunyov</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/THREEDIF">http://discuss.codechef.com/problems/THREEDIF</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anton_lunyov"> anton_lunyov </a><a class="problem-tag-small " href="/tags/problems/combinatorics"> combinatorics </a><a class="problem-tag-small " href="/tags/problems/jan13"> jan13 </a><a class="problem-tag-small " href="/tags/problems/modulo"> modulo </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>5-01-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2.013 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/THREEDIF">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-77981"></a> 
+ <div id="c77981" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-77981" class="active">anybody tell me the trick of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asvikr">asvikr</a></strong>
+   <span style="color:#828282"> @ 10 May 2014 12:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    anybody tell me the trick of this question ,i am new one
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81186"></a> 
+ <div id="c81186" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-81186" class="active">2 WA before AC due to wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/garima7">garima7</a></strong>
+   <span style="color:#828282"> @ 9 Jul 2014 05:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    2 WA before AC due to wrong timing of modular :| @asvikr: The problem requires you to count the number of triplets ordered (x1,x2,x3) such that 1&lt;=x1&lt;=n1, 1&lt;=x2&lt;=n2 and 1&lt;=x3&lt;=n3. Also one more restriction is that all three x1,x2 and x3 should be different. Think about it. Its very easy. I cant explain more here otherwise it'll ruin the fun for other coders. See the solutions if you have further doubt.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95155"></a> 
+ <div id="c95155" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-95155" class="active">plz tell</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cpsupriya1996">cpsupriya1996</a></strong>
+   <span style="color:#828282"> @ 31 Jan 2015 12:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz tell errors 
+    <a href="http://www.codechef.com/viewsolution/6051958" title="http://www.codechef.com/viewsolution/6051958">http://www.codechef.com/viewsolution/6051958</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-96925"></a> 
+ <div id="c96925" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-96925" class="active">plz can anyone tell me errors</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mahi_12">mahi_12</a></strong>
+   <span style="color:#828282"> @ 15 Feb 2015 11:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    plz can anyone tell me errors 
+    <a href="http://www.codechef.com/viewsolution/6283813" title="http://www.codechef.com/viewsolution/6283813">http://www.codechef.com/viewsolution/6283813</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113122"></a> 
+ <div id="c113122" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-113122" class="active">WA in first attempt because</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shibli786">shibli786</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 12:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WA in first attempt because of modulo operation..Ac in 2nd
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117075"></a> 
+ <div id="c117075" class="comment clear-block"> 
+  <h3><a href="/problems/THREEDIF#comment-117075" class="active">Not able to figure out where</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/babaduredi">babaduredi</a></strong>
+   <span style="color:#828282"> @ 9 Sep 2015 11:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Not able to figure out where I am wrong. Is there a way to get sample in &amp; out file? 
+    <a href="https://www.codechef.com/viewsolution/8090103" title="https://www.codechef.com/viewsolution/8090103">https://www.codechef.com/viewsolution/8090103</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
