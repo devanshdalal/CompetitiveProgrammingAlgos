@@ -1,0 +1,150 @@
+<div id="node-2612040" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3> 
+  <p>Alice likes to shop online. The main reason is that she gets a lot of discounts! There are <b>M</b> online shops from where she purchases her items. The prices of the same item vary in both the shops. She needs to buy <b>N</b> items in all. And each she can buy each item in any one of the shops. All the shops offer certain discounts. If she buys the <i>i</i><sup>th</sup> item in one shop, she gets a discount coupon for the <i>i+1</i><sup>th</sup> item in the same shop. But if she purchases the <i>i+1</i><sup>th</sup> item from a different shop, she cannot use the discount coupon.<br> For example, if she buys the <i>i</i><sup>th</sup> item in Shop <i>j</i> and gets a discount of <i><b>X</b></i> rupees. Let the price of <i>i+1</i><sup>th</sup> item be <i><b>Y</b></i> rupees in shop <i>j</i> and <i><b>Z</b></i> rupees in shop <i>k</i>. If she purchases the <i>i+1</i><sup>th</sup> item from shop <i>j</i> she can use the discount coupon and hence, will have to pay <i><b>Y-X</b></i> rupees. If she purchases the <i>i+1</i><sup>th</sup> item from shop <i>k</i> she cannot use the discount coupon and hence, will have to pay <i><b>Z</b></i> rupees.<br><br> <b>Note:</b> If the discount given is more than price of the item in the shop, i.e. if <i><b>Y-X</b></i> &lt; 0, the item is given free but she does NOT get any money back.<br><br></p> 
+  <p>Alice wants to spend as less as possible and wants your help. She starts buying from item 1 and goes on till item N in that order. Your task is simple. Tell her the least amount to spend to get all the <b>N</b> items.</p> 
+  <h3>Input:</h3> 
+  <p>First line of input contains a single integer <b>T</b>, the number of test cases.<br><br> Each test case starts with a line consisting of two space separated integers <b>N</b> &amp; <b>M</b>.<br> The next <b>N</b> lines consist of <b>M</b> space separated integers each. The <i>j</i><sup>th</sup> number on the <i>i</i><sup>th</sup> line denotes the price of <i>i</i><sup>th</sup> item in the <i>j</i><sup>th</sup> shop.<br><br> The next <b>N</b> lines consist of <b>M</b> space separated integers each. The <i>j</i><sup>th</sup> number on the <i>i</i><sup>th</sup> line denotes the value of discount coupon given after purchasing <i>i</i><sup>th</sup> item in the <i>j</i><sup>th</sup> shop.<br><br><br><br><br><br></p> 
+  <h3>Output:</h3> 
+  <p>For each test case, output on a separate line the least amount that has to be spent to get all the <b>N</b> items.<br><br><br><br></p> 
+  <h3>Constraints:</h3> 
+  <pre>
+1 ≤ <b>T</b> ≤ 10
+2 ≤ <b>N, M</b> ≤ 100000
+0 ≤ Prices, Discounts ≤ 1000000
+1 ≤ <b>T * N * M</b> ≤ 1000000
+
+</pre>
+  <h3>Example:</h3> 
+  <p><b>Input:</b></p> 
+  <pre>
+2
+2 2
+3 4
+1 2
+1 0
+0 1
+2 4
+1 2 3 4
+4 3 2 1
+2 3 2 1
+1 2 1 1
+
+
+</pre>
+  <p><b>Output:</b></p> 
+  <pre>
+3
+2
+
+</pre>
+  <h3>Scoring:</h3> 
+  <p>You will be awarded <b>40</b> points for solving the problem correctly for <b>M = 2</b>.<br><br> Another <b>20</b> points for solving the problem correctly for <b>M &lt;= 100</b>.<br><br> Remaining <b>40</b> points will be awarded for solving the problem correctly for <b>M &gt; 100</b>.<br><br></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/vamsi_kavala">vamsi_kavala</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/Rubanenko">Rubanenko</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COUPON">http://discuss.codechef.com/problems/COUPON</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dynamic-prog"> dynamic-prog </a><a class="problem-tag-small " href="/tags/problems/ltime01"> ltime01 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/simple-math"> simple-math </a><a class="problem-tag-small " href="/tags/problems/vamsi_kavala"> vamsi_kavala </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>7-06-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COUPON">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-51715"></a> 
+ <div id="c51715" class="comment clear-block"> 
+  <h3><a href="/problems/COUPON#comment-51715" class="active">Do the items have to be</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sirplentifus">sirplentifus</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2013 03:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Do the items have to be purchased in order?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68477"></a> 
+ <div id="c68477" class="comment clear-block"> 
+  <h3><a href="/problems/COUPON#comment-68477" class="active">yes!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r1v9_3">r1v9_3</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yes!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68478"></a> 
+ <div id="c68478" class="comment clear-block"> 
+  <h3><a href="/problems/COUPON#comment-68478" class="active">yes!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r1v9_3">r1v9_3</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yes!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68480"></a> 
+ <div id="c68480" class="comment clear-block"> 
+  <h3><a href="/problems/COUPON#comment-68480" class="active">yes!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/r1v9_3">r1v9_3</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 07:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    yes!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
