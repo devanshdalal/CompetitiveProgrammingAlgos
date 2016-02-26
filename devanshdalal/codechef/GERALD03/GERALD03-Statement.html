@@ -1,0 +1,140 @@
+<div id="node-4245226" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in Mandarin Chinese <a target="_blank" href="http://www.codechef.com/download/translated/COOK41/mandarin/GERALD03.pdf">here</a></h3> 
+  <h3> Read problems statements in Russian <a target="_blank" href="http://www.codechef.com/download/translated/COOK41/russian/GERALD03.docx">here</a></h3> 
+  <h3>Problem Statement</h3> 
+  <p>Chef has a sequence of <b>N</b> segments: [<b>L<sub>1</sub></b>, <b>R<sub>1</sub></b>], [<b>L<sub>2</sub></b>, <b>R<sub>2</sub></b>], ..., [<b>L<sub>N</sub></b>, <b>R<sub>N</sub></b>]. He wants to transform the first segment to the last one (with index <b>N</b>). His plan is to do this big deal with a number of transformations: firstly he will transform<br> the first segment to the second one, then to the third one, then to the fourth one, and so on till <b>N</b>-th one.<br><br> Chef can use operation of a single type: shift one segment border by one unit. So, if he has segment [<b>L</b>, <b>R</b>], he can transform it into one of the following segments: [<b>L + 1</b>, <b>R</b>] (we will denote such operation with string L+), [<b>L</b>, <b>R + 1</b>] (will be denoted as R+), [<b>L - 1</b>, <b>R</b>] (L-), [<b>L</b>, <b>R - 1</b>] (R-). Chef doesn't like empty segments, therefore he cannot use any operation that makes a segment empty (<b>L = R</b>).<br><br> Chef really wants to transform his segment as fast as possible. Please, help him. Find the sequence with minimal number of operations that transforms his segment. If there are multiple such sequences pick the lexicographically minimal one.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. <br><br> The first line of each test case contains a single integer <b>N</b> denoting the number of segments Chef has.&nbsp;<br> The following <b>N</b> lines contain pairs of integers. The <b>i</b>-th line contains integers <b>L<sub>i</sub></b>, <b>R<sub>i</sub></b>, denoting <b>i</b>-th Chef's segment.</p> 
+  <h3>Output</h3> 
+  <p>For each test case print an answer - two lines. The first line should contain the minimal number of operations. The second line should contain the sequence of operations<br> without any whitespaces.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b>, <b>N</b> ≤ <b>1000</b>.</li> 
+   <li><b>-1000</b> ≤ <b>L<sub>i</sub></b> &lt; <b>R<sub>i</sub></b> ≤ <b>1000</b>.</li> 
+  </ul> 
+  <p>The total sum of <b>N</b> values for all test cases doesn't exceed 1000.</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+3
+-1 0
+0 1
+3 5
+1
+0 1
+3
+-2 -1
+-2 -1
+-2 0
+4
+4 6
+3 5
+-1 1
+1 2
+
+<b>Output:</b>
+9
+R+L+R+L+R+L+R+L+R+
+0
+
+1
+R+
+13
+L-R-L-L-L-L-R-R-R-R-L+R+L+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/gerald">gerald</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rustinpiece">rustinpiece</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/GERALD03">http://discuss.codechef.com/problems/GERALD03</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cook41"> cook41 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/gerald"> gerald </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>13-11-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/GERALD03">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-68447"></a> 
+ <div id="c68447" class="comment clear-block"> 
+  <h3><a href="/problems/GERALD03#comment-68447" class="active">Do not use strcat() or</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ashish1294">ashish1294</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 01:18 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Do not use strcat() or strcpy() ! It will give tle!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68638"></a> 
+ <div id="c68638" class="comment clear-block"> 
+  <h3><a href="/problems/GERALD03#comment-68638" class="active">can somebody please explain</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gifted">gifted</a></strong>
+   <span style="color:#828282"> @ 28 Dec 2013 12:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can somebody please explain the steps of transformation if i have [-1 0] as first segment and [2,1] as second segment.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71134"></a> 
+ <div id="c71134" class="comment clear-block"> 
+  <h3><a href="/problems/GERALD03#comment-71134" class="active">exact maximum length of </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rudra_sarraf">rudra_sarraf</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2014 12:37 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    exact maximum length of transformation=7986816!!!(if u knw what i mean :D)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
