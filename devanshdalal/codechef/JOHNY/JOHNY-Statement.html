@@ -1,0 +1,366 @@
+<div id="node-3947241" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/NOV13/mandarin/JOHNY.pdf"> Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/NOV13/russian/JOHNY.PDF"> Russian</a>.</h3> 
+  <p>Vlad enjoys listening to music. He lives in Sam's Town. A few days ago he had a birthday, so his parents gave him a gift: MP3-player! Vlad was the happiest man in the world! Now he can listen his favorite songs whenever he wants!</p> 
+  <p>Vlad built up his own playlist. The playlist consists of <b>N</b> songs, each has a <b>unique</b> positive integer length. Vlad likes all the songs from his playlist, but there is a song, which he likes more than the others. It's named "Uncle Johny".</p> 
+  <p>After creation of the playlist, Vlad decided to sort the songs in increasing order of their lengths. For example, if the lengths of the songs in playlist was {1, 3, 5, 2, 4} after sorting it becomes {1, 2, 3, 4, 5}. Before the sorting, "Uncle Johny" was on <b>K</b>-th position (1-indexing is assumed for the playlist) in the playlist.</p> 
+  <p>Vlad needs your help! He gives you all the information of his playlist. Your task is to find the position of "Uncle Johny" in the sorted playlist.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows. </p> 
+  <p>The first line of each test case contains one integer <b>N</b> denoting the number of songs in Vlad's playlist. The second line contains <b>N</b> space-separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>N</sub></b> denoting the lenghts of Vlad's songs.<br> The third line contains the only integer <b>K</b> - the position of "Uncle Johny" in the initial playlist.</p> 
+  <p>&nbsp;</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the position of "Uncle Johny" in the sorted playlist.</p> 
+  <p>&nbsp;</p> 
+  <h3>Constraints</h3> 
+  <p>1 ≤ <b>T</b> ≤ 1000</p> 
+  <p>1 ≤ <b>K</b> ≤ <b>N</b> ≤ 100</p> 
+  <p>1 ≤ <b>A<sub>i</sub></b> ≤ 10<sup>9</sup></p> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+4
+1 3 4 2
+2
+5
+1 2 3 9 4
+5
+5
+1 2 3 9 4 
+1
+
+<b>Output:</b>
+3
+4
+1
+</pre>
+  <p>&nbsp;</p> 
+  <h3>Explanation</h3> 
+  <p>In the example test there are <b>T</b>=3 test cases.</p> 
+  <p><b>Test case 1</b></p> 
+  <p>In the first test case <b>N</b> equals to 4, <b>K</b> equals to 2, <b>A</b> equals to {1, 3, 4, 2}. The answer is <b>3</b>, because {1, 3, 4, 2} -&gt; {1, 2, 3, 4}. <b>A<sub>2</sub></b> now is on the <b>3</b>-rd position.</p> 
+  <p><b>Test case 2</b></p> 
+  <p>In the second test case <b>N</b> equals to 5, <b>K</b> equals to 5, <b>A</b> equals to {1, 2, 3, 9, 4}. The answer is <b>4</b>, because {1, 2, 3, 9, 4} -&gt; {1, 2, 3, 4, 9}. <b>A<sub>5</sub></b> now is on the <b>4</b>-th position.</p> 
+  <p><b>Test case 3</b></p> 
+  <p>In the third test case <b>N</b> equals to 5, <b>K</b> equals to 1, <b>A</b> equals to {1, 2, 3, 9, 4}. The answer is <b>1</b>, because {1, 2, 3, 9, 4} -&gt; {1, 2, 3, 4, 9}. <b>A<sub>1</sub></b> stays on the <b>1</b>-th position.</p> 
+  <h3>Note</h3> 
+  <p><a target="_blank" href="http://www.last.fm/music/The+Killers/_/Uncle+Johny">"Uncle Johny"</a> is a real song performed by The Killers.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kostya_by">kostya_by</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/JOHNY">http://discuss.codechef.com/problems/JOHNY</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/kostya_by"> kostya_by </a><a class="problem-tag-small " href="/tags/problems/nov13"> nov13 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>3-10-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/JOHNY">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-64127"></a> 
+ <div id="c64127" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-64127" class="active">Why this code not working</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sanki">sanki</a></strong>
+   <span style="color:#828282"> @ 13 Nov 2013 11:54 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why this code not working #include #include int cmp(const void* a, const void* b) { return ( *(int*)a - *(int*)b ); } int search(int a[], int low, int high, int x) { while(lowx) return search(a,low,mid-1,x); else return search(a,mid+1,high,x); } //return 0; } int main(void) { // your code goes here int t,n,i,k,x,j; scanf("%d",&amp;t); while(t--) { scanf("%d",&amp;n); int a[n]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71010"></a> 
+ <div id="c71010" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71010" class="active">@admin My code is showing run</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakhar2082">prakhar2082</a></strong>
+   <span style="color:#828282"> @ 13 Jan 2014 08:33 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin My code is showing run time error but it is working correctly on gcc. please help me out 
+    <a href="http://www.codechef.com/viewsolution/3251907" title="http://www.codechef.com/viewsolution/3251907">http://www.codechef.com/viewsolution/3251907</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71067"></a> 
+ <div id="c71067" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71067" class="active">Hey, what if the length of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saifuddin">saifuddin</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2014 06:54 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey, what if the length of uncle johny song is the same as the length of any other song in the playlist?Then, do we show the lower index or the higher index??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71071"></a> 
+ <div id="c71071" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71071" class="active">Oops!!! sorry!!!! Didn't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saifuddin">saifuddin</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2014 06:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Oops!!! sorry!!!! Didn't notice the UNIQUE written in bold!!!SORRY
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71083"></a> 
+ <div id="c71083" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71083" class="active">for what input my code is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nityaneetu">nityaneetu</a></strong>
+   <span style="color:#828282"> @ 15 Jan 2014 08:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    for what input my code is giving wrong output?? I am not getting it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71147"></a> 
+ <div id="c71147" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71147" class="active">@prakhar2082 u r using int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jaggery">jaggery</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2014 08:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @prakhar2082 u r using int array, which cannot store Ai of the order 10^9, that might be the problem!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71164"></a> 
+ <div id="c71164" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71164" class="active">#include //#include //#includ</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/start123go">start123go</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2014 10:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include //#include //#include int main() { int test; scanf("%d",&amp;test); while(test--) { int no,pos,i,pos1; // printf("enter no"); scanf("%dn",&amp;no); int ar[no]; for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71511"></a> 
+ <div id="c71511" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71511" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sam1136">sam1136</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2014 10:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int compare (const void * a, const void * b) { return ( *(int*)a - *(int*)b ); } int main(void) { long int cases,l[101],i,j,pos,uj,n; scanf("%ld",&amp;cases); while(cases--) { scanf("%ld",&amp;n); for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71512"></a> 
+ <div id="c71512" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-71512" class="active">@sam1136 u r sorting out</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abinash_dexter">abinash_dexter</a></strong>
+   <span style="color:#828282"> @ 22 Jan 2014 10:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sam1136 u r sorting out whole array .... just sort it for given number of elements .. in ur case its n.. then it'll work
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78543"></a> 
+ <div id="c78543" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-78543" class="active">nice song :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/namra123">namra123</a></strong>
+   <span style="color:#828282"> @ 27 May 2014 01:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    nice song :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78637"></a> 
+ <div id="c78637" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-78637" class="active">are there any special test</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vodacoder123">vodacoder123</a></strong>
+   <span style="color:#828282"> @ 2 Jun 2014 02:14 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    are there any special test cases? I dont know why I am getting the wrong answer :/
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81924"></a> 
+ <div id="c81924" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-81924" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/priyanshub">priyanshub</a></strong>
+   <span style="color:#828282"> @ 23 Jul 2014 10:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4370993" title="http://www.codechef.com/viewsolution/4370993">http://www.codechef.com/viewsolution/4370993</a> can anyone tell me why is it giving a NZEC error?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92226"></a> 
+ <div id="c92226" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-92226" class="active">really nice</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prakhargurawa">prakhargurawa</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2014 10:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    really nice question....learnt a lot....basic concept wonderfully used by problem setter
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101634"></a> 
+ <div id="c101634" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-101634" class="active">Uhhh the topmost solutions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/cchadwickk">cchadwickk</a></strong>
+   <span style="color:#828282"> @ 11 Apr 2015 09:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Uhhh the topmost solutions (rashmiarya,hope004)(0.00 secs, 2.0Mb) when submitted now take 0.01 Secs. So.. whats up with that
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-101869"></a> 
+ <div id="c101869" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-101869" class="active">Hi, i am getting NZEC error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sumeet_pol">sumeet_pol</a></strong>
+   <span style="color:#828282"> @ 17 Apr 2015 11:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hi, i am getting NZEC error again and again . Please someone have a look at my code 
+    <a href="http://www.codechef.com/viewsolution/6782712" title="http://www.codechef.com/viewsolution/6782712">http://www.codechef.com/viewsolution/6782712</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102106"></a> 
+ <div id="c102106" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-102106" class="active">hi, i am getting wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tushargarg">tushargarg</a></strong>
+   <span style="color:#828282"> @ 19 Apr 2015 08:35 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hi, i am getting wrong answer again and again.my output is matched with it.plz look my solutions. 
+    <a href="http://www.codechef.com/viewsolution/6795251" title="http://www.codechef.com/viewsolution/6795251">http://www.codechef.com/viewsolution/6795251</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102736"></a> 
+ <div id="c102736" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-102736" class="active">ac in one go</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hsagarthegr8">hsagarthegr8</a></strong>
+   <span style="color:#828282"> @ 29 Apr 2015 08:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ac in one go
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107023"></a> 
+ <div id="c107023" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-107023" class="active">A song so easy :D</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/darsh_fbp">darsh_fbp</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2015 11:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    A song so easy :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107214"></a> 
+ <div id="c107214" class="comment clear-block"> 
+  <h3><a href="/problems/JOHNY#comment-107214" class="active">What if we have two non</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham99">shubham99</a></strong>
+   <span style="color:#828282"> @ 23 Jun 2015 04:30 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What if we have two non unique elements ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
