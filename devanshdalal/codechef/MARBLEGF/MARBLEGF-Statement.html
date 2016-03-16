@@ -1,0 +1,302 @@
+<div id="node-4206482" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/mandarin/MARBLEGF.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/russian/MARBLEGF.pdf">Russian</a>.</h3> 
+  <h3>Story-line</h3> 
+  <p>Lira loves marbles very much and she especially loves to play with them with her school friends.</p> 
+  <p>Today, Lira is very excited, as her mom said she would give her and her friends some new marbles for her to play with. She immediately requested her mom to give her the new marbles, but, her mom had some tricks kept up her sleeve:</p> 
+  <p>Mom: "Not so fast, young girl!! These won't come for free! If you want to keep playing with them, you must prove you deserve them!!"</p> 
+  <p>Lira: *<b>moans</b>* "Alright, mom, what do I have to do now?"</p> 
+  <p>(Yes, Lira's mom can be quite annoying)</p> 
+  <p>Mom: "Well, you can assume that I have an array A of size <b>N</b> , where <b>N</b> is the total number of students I will give marbles to, and A[i] is the number of marbles each student initially has."</p> 
+  <p>Lira: *<b>smiles slightly</b>* "So you're feeling generous hum?"</p> 
+  <p>Mom: "Well, not too generous... imagine I wanted to give more marbles to some of your school friends who do well on their exams, or, on the other hand take away some marbles from the greedier friends."</p> 
+  <p>Lira: "Mom, c'mon that's too easy!!"</p> 
+  <p>Mom: "Alright, so given a group of students, starting on student <b>i</b> and ending on student <b>j</b>, I want to know how many marbles they have together!"</p> 
+  <p>Well, it turns out that Lira actually did solve this problem and she did it very efficiently!!</p> 
+  <p>It's now your turn to solve the problem that Lira already did in a brilliant way!</p> 
+  <h3>Formal description:</h3> 
+  <p>Lira is given array <b>A</b>, which contains elements between 1000 and 2000.</p> 
+  <p>Three types of queries can be performed on this array: add a given value to a single element on it, subtract a given value from a single element on it and find the sum of the values between indexes i and j, i.e. A[i]+...+A[j]. Check input and example section for details.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains two integers: <b>N</b> and <b>Q</b>, denoting respectively, the number of students that there are present to receive the marbles as a gift and the number of actions Lira's mom will perform.</p> 
+  <p>These actions can be of three different types:</p> 
+  <li><b>S i j</b> - if the mom wants to find the sum of the number of marbles from students i to j.</li> 
+  <li><b>G i num_marbles</b> - if the mom decides to give num_marbles to student i</li> 
+  <li><b>T i num_marbles</b> - if the mom decides to take away num_marbles from student i</li> 
+  <h3>Output</h3> 
+  <p>The output should contain as many lines as the number of queries S and it should contain the answer for each query on a separate line</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>2</b> ≤ <b>N</b> ≤ <b>1000000</b></li> 
+   <li><b>3</b> ≤ <b>Q</b> ≤ <b>50000</b></li> 
+   <li><b>The array is 0-indexed.</b></li> 
+   <li><b>1000</b> ≤ <b>A[i]</b> ≤ <b>2000</b></li> 
+   <li><b>A student can never have a negative value of marbles. (i.e. there's no data which can cause a student to have a negative value of marbles)</b></li> 
+   <li><b>0</b> ≤ <b>i, j</b> ≤ <b>N-1</b>, and <b>i</b> ≤ <b>j</b> for the sum query</li> 
+   <li><b>At any given time, it is assured that the maximum number of marbles each student can have (<b>num_marbles</b>) never exceeds the size of the int data type.</b></li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+<p>5 3
+1000 1002 1003 1004 1005
+S 0 2
+G 0 3
+S 0 2
+
+<b>Output:</b>
+3005
+3008
+</p></pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kuruma">kuruma</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/gerald">gerald</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MARBLEGF">http://discuss.codechef.com/problems/MARBLEGF</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dec13"> dec13 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/kuruma"> kuruma </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-11-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MARBLEGF">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-68015"></a> 
+ <div id="c68015" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-68015" class="active">Can anyone tell the mistake</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/damn_me">damn_me</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2013 04:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell the mistake in this code 
+    <a href="http://www.codechef.com/viewsolution/3103555" title="http://www.codechef.com/viewsolution/3103555">http://www.codechef.com/viewsolution/3103555</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68017"></a> 
+ <div id="c68017" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-68017" class="active">http://ideone.com/TwVxES</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/swapedoc">swapedoc</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2013 06:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://ideone.com/TwVxES" title="http://ideone.com/TwVxES">http://ideone.com/TwVxES</a> Please tell why I got runtime error.This question really get on my nerves @kuruma @gerald
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68107"></a> 
+ <div id="c68107" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-68107" class="active">haha ... replaced scanf with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shanu333">shanu333</a></strong>
+   <span style="color:#828282"> @ 19 Dec 2013 12:58 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    haha ... replaced scanf with cin and magic happend :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68225"></a> 
+ <div id="c68225" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-68225" class="active">I am getting WA..somebody plz</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vinod1054">vinod1054</a></strong>
+   <span style="color:#828282"> @ 22 Dec 2013 09:47 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting WA..somebody plz help if possible check this ...my code ..http://www.codechef.com/viewsolution/3118495
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68467"></a> 
+ <div id="c68467" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-68467" class="active">Is input formatted correctly?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahutd">sahutd</a></strong>
+   <span style="color:#828282"> @ 23 Dec 2013 02:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is input formatted correctly? not a single AC in python and only NZEC
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70769"></a> 
+ <div id="c70769" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-70769" class="active">can anyone have a look at</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sskashish">sskashish</a></strong>
+   <span style="color:#828282"> @ 10 Jan 2014 06:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone have a look at this solution and point out what the problem is ? 
+    <a href="http://www.codechef.com/viewsolution/3229775" title="http://www.codechef.com/viewsolution/3229775">http://www.codechef.com/viewsolution/3229775</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-70903"></a> 
+ <div id="c70903" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-70903" class="active">can anyone tell me the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mastercode">mastercode</a></strong>
+   <span style="color:#828282"> @ 12 Jan 2014 11:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone tell me the problem in this code..http://www.codechef.com/viewsolution/3240948
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-71210"></a> 
+ <div id="c71210" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-71210" class="active">take care while taking inputs</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jamesq9">jamesq9</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2014 11:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    take care while taking inputs cause some statement's might have spaces where u least expect them.. :)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-72214"></a> 
+ <div id="c72214" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-72214" class="active">declare variables as long</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coda">coda</a></strong>
+   <span style="color:#828282"> @ 2 Feb 2014 11:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    declare variables as long long and not int caused a wa
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-77938"></a> 
+ <div id="c77938" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-77938" class="active">The input seems to use less</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/stolis">stolis</a></strong>
+   <span style="color:#828282"> @ 9 May 2014 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The input seems to use less lines (i.e. some line separators seem to be missing). My code was not accepted until I have modified it to consider this defect of the input.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92995"></a> 
+ <div id="c92995" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-92995" class="active">sigsegv for what??</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rahul1995">rahul1995</a></strong>
+   <span style="color:#828282"> @ 4 Jan 2015 09:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sigsegv for what?? 
+    <a href="http://www.codechef.com/viewsolution/5746883" title="http://www.codechef.com/viewsolution/5746883">http://www.codechef.com/viewsolution/5746883</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94901"></a> 
+ <div id="c94901" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-94901" class="active">putting up a space</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anh1l1ator">anh1l1ator</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2015 01:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    putting up a space anywhere....!! why will you do that :/
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107540"></a> 
+ <div id="c107540" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-107540" class="active">Yeah please use long long for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bholagabbar">bholagabbar</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2015 11:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Yeah please use long long for your segment trees. Don't get confused by the statement that all the marbles are within int range. They may be but the sum will definitely exceed int and so will the values in your DS ;)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-118229"></a> 
+ <div id="c118229" class="comment clear-block"> 
+  <h3><a href="/problems/MARBLEGF#comment-118229" class="active">There are probably stray</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhiresh">dhiresh</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2015 06:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    There are probably stray character(s) in the input test cases. Changing the Java I/O from BufferedReader to Scanner class changed my runtime error to an accepted answer.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
