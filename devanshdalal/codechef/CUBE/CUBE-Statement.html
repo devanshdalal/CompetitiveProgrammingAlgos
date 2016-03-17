@@ -1,0 +1,205 @@
+<div id="node-4206473" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/mandarin/CUBE.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/russian/CUBE.pdf">Russian</a>.</h3> 
+  <p>This winter our chef plans to unveil his latest creation - Cube Cakes. As the name suggests, this new delicacy is a cake in the form of a perfect cube with secret ingredients from the chef's inventory. Since it is a relatively new creation of the chef, he wants to master the ability to make perfectly identical Cube Cakes. For this, he wants you to write a program that will calculate the similarity between two given Cube Cakes. </p> 
+  <p> <br></p> 
+  <p> Each Cube Cake can be represented as a cube of size <b>N</b> where each cell of the cube contains a lowercase alphabet ('a'-'z'). The similarity between two Cube Cakes ( of size <b> N </b> each ) is defined as the maximum sized <i>common</i> sub-cube that exists at exactly the same position in both the Cube Cakes. Two sub-cubes are said to be <i>common</i> if at-least <b>P%</b> of their corresponding characters are equal. You need to find the size <b>S</b> of the largest such sub-cube and also the number of <i>common</i> sub-cubes of size <b>S</b> in the Cube Cake.</p> 
+  <h3>Input</h3> 
+  <p> The first line contains an integer <b>T</b> denoting the number of test cases. Then the descriptions of testcases follows. </p> 
+  <p> The first line of each testcase contains integers <b>N</b> (the size of the Cube Cakes <b>A</b> and <b>B</b> that are to be compared) and <b> P</b>.<br> The next line contains a string <b>S<sub>A</sub></b> containing <b> N<sup>3</sup> </b> lowercase characters ('a'-'z'), where the <b> A[i][j][k]<sup>th</sup></b> element of the Cube Cake <b>A</b> is given by <b>S<sub>A</sub>[ i*N*N + j*N + k ]</b> where <b>0</b> ≤ <b> i, j, k </b> ≤ <b> N-1 </b>.<br> The next line contains a string <b>S<sub>B</sub></b> containing <b> N<sup>3</sup> </b> lowercase characters ('a'-'z'), <b>S<sub>B</sub></b> is the description of the Cube Cake <b>B</b> in the way analogical to <b>A</b>. </p> 
+  <h3>Output</h3> 
+  <p> For every test case, print in a single line the similarity between the two Cube Cakes <b> S </b> and the number of <i>common</i> sub-cubes of size <b>S</b>.<br> If there is no <i>common</i> sub cube present, just print <b>-1</b> in a single line.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b> 1 </b> ≤ <b>T</b> ≤ <b> 40</b></li> 
+   <li><b> 1 </b> ≤ <b>N</b> ≤ <b> 40</b></li> 
+   <li><b> 0 </b> ≤ <b>P</b> ≤ <b> 100</b></li> 
+   <li><b> | S<sub>A</sub> |, |S<sub>B</sub> | </b> = <b> N<sup>3</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+2 40
+abcdefgh
+abcdefgh
+2 100
+abcdefgh
+ccccccch
+1 100
+a
+b
+
+<b>Output:</b>
+2 1
+1 2
+-1
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b><br><br> Since both the Cube Cakes are identical, the whole cube matches and hence the similarity is <b>2</b>. Also, there is only one sub-cube of size <b>2</b>. </p> 
+  <p><b>Example case 2.</b><br><br> Since <b>P</b> is <b>100</b>, all characters in the sub-cube must match. The sub cube <b>'c'</b> and <b>'h'</b> each of size <b>1</b> are the largest cube satisfying this criteria. Hence the similarity is <b> 1 </b> and corresponding count is <b>2</b> .</p> 
+  <p><b>Example case 3.</b><br><br> Since no characters match in the cube, we cannot find a <i>common</i> subcube here. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/viv001">viv001</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/gerald">gerald</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CUBE">http://discuss.codechef.com/problems/CUBE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dec13"> dec13 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/viv001"> viv001 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-10-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>0.5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CUBE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-68027"></a> 
+ <div id="c68027" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-68027" class="active">I am using brute force</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1h33p">s1h33p</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2013 07:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am using brute force (checking every possible cube from biggest to smallest, break if a match is found at certain level) and getting TLE. Can anyone enlighten me with better algorithm?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68157"></a> 
+ <div id="c68157" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-68157" class="active">maybe you can try dynamic</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/roideuniverse">roideuniverse</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2013 04:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    maybe you can try dynamic programming approach
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-68162"></a> 
+ <div id="c68162" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-68162" class="active">Is there a chance that a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karatedog">karatedog</a></strong>
+   <span style="color:#828282"> @ 20 Dec 2013 06:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Is there a chance that a solution written in Ruby would finish in 0.5 sec? The submitted C++ solutions almost reach this limit.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78698"></a> 
+ <div id="c78698" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-78698" class="active">Didn't understand the first</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chanakya27">chanakya27</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2014 06:19 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Didn't understand the first test-case ? As the largest sub-cube which satisfy conditions (atleast match 40% , but test-case one matches 100% so its great) and according to test-case one , cube of size 3 should be the answer and its count will One i.e. Output should be "3 1" So, How the solution is "2 1" rather than being "3 1" ? or If its "2 1" then there are two sub-cubes that can be made like that. Other Test-Cases works fine according to it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104581"></a> 
+ <div id="c104581" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-104581" class="active">couldn't understand the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jagriti1">jagriti1</a></strong>
+   <span style="color:#828282"> @ 25 May 2015 07:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    couldn't understand the ques..how are you calculating similarity? Please explain Thank u
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106755"></a> 
+ <div id="c106755" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-106755" class="active">didnt understnd the qstn..</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/m1d83">m1d83</a></strong>
+   <span style="color:#828282"> @ 15 Jun 2015 01:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    didnt understnd the qstn..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106912"></a> 
+ <div id="c106912" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-106912" class="active">Will the value of p affect my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/santy96">santy96</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2015 12:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Will the value of p affect my and if I change to some other value if I change it to 100 in 1 St case and some other value in 2nd case
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106913"></a> 
+ <div id="c106913" class="comment clear-block"> 
+  <h3><a href="/problems/CUBE#comment-106913" class="active">Affect my ans</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/santy96">santy96</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2015 12:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Affect my ans
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
