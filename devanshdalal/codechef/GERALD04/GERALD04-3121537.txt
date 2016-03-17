@@ -1,0 +1,10 @@
+a=int(raw_input())
+while(a>0):
+	a-=1;
+	b=raw_input().split(":");
+	x,y=int(b[0]),int(b[1]);
+	b=raw_input().split(":");
+	xx,yy=int(b[0]),int(b[1]);
+	diff=60.0*(x-xx)+(y-yy)
+	dis=float(raw_input());
+	print "%.1f" %  (diff+dis),"%.1f" %  max(diff,dis+diff/2.0)
