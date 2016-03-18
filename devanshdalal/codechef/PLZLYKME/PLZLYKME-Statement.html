@@ -1,0 +1,205 @@
+<div id="node-4499369" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/mandarin/PLZLYKME.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JAN14/russian/PLZLYKME.pdf">Russian</a>.</h3> 
+  <p> In a far away dystopian world, the measure of the quality of a person’s life is the numbers of likes he gets for an article about their life. For a person to stay alive, he has to acquire at least <strong>L</strong> number of likes before <strong>D</strong> days pass. </p> 
+  <p> People in this world employ various techniques to increase the number of likes. One of the famous ones is to dis-like and re-like their own article once per day. On doing so you can assume that the number of likes for the post increase by a constant factor <strong>C</strong>. </p> 
+  <p> So if one starts with <strong>S</strong> likes on Day-1, he would have <strong>D2</strong> = <strong>S + C * S </strong>likes on Day-2, <strong>D3 = D2 + D2 * C</strong> on Day-3 etc. You are to answer if the person would survive at the end of Day-D or not. </p> 
+  <p> <strong>Input</strong> </p> 
+  <p> <strong> </strong> </p> 
+  <p> First line contains a single positive integer <strong>T</strong> denoting the number of test cases. The following <strong>T</strong> lines represent a test case each. Each test case contains 4 space-separated integers <strong>L, D, S and C</strong>.<strong></strong> </p> 
+  <p> <strong>Output</strong> </p> 
+  <p> <strong> </strong> </p> 
+  <p> For each test case, print a single line containing “<strong>ALIVE AND KICKING</strong>” if the person would live, otherwise print, “<strong>DEAD AND ROTTING</strong>”. </p> 
+  <p> <strong>Constraints</strong> </p> 
+  <p> <strong>1 &lt;= T &lt;= 1000</strong><br><br> <strong>1 &lt;= L &lt;= 1000000000</strong><br><br> <strong>1 &lt;= D &lt;= 1000000000</strong><br><br> <strong>1 &lt;= S &lt;= 1000000000</strong><br><br> <strong>1 &lt;= C &lt;= 1000000000</strong><br> </p> 
+  <p> <b>Sample cases:</b><br></p> 
+  <pre>
+<b>Input</b>
+2
+5 1 5 1
+10 2 2 2
+
+<b>Output</b>
+ALIVE AND KICKING
+DEAD AND ROTTING
+</pre> 
+  <p> <b>Explanation</b><br><br> In the first case by the end of Day-1 we would be having <b>S</b> that is <b>5</b> number of likes, as it is ≥ <b>L</b>, the answer is <b>ALIVE AND KICKING</b>.<br><br> In the second case, <b>D2 =S + C*S</b>, therefore <b>D2 = 2 + 2 * 2 = 6</b>, as 6 is less than 10, the answer is <b>DEAD AND ROTTING</b>. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kaushik_iska">kaushik_iska</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/gerald">gerald</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PLZLYKME">http://discuss.codechef.com/problems/PLZLYKME</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/jan14"> jan14 </a><a class="problem-tag-small " href="/tags/problems/kaushik_iska"> kaushik_iska </a><a class="problem-tag-small " href="/tags/problems/programming"> programming </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>8-12-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PLZLYKME">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-71253"></a> 
+ <div id="c71253" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-71253" class="active">i think to be alive condition</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vipulagarwal">vipulagarwal</a></strong>
+   <span style="color:#828282"> @ 19 Jan 2014 07:23 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i think to be alive condition should be s*(c+1)^d-1&gt;=l
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81632"></a> 
+ <div id="c81632" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-81632" class="active">test cases are weak</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalr34">pranjalr34</a></strong>
+   <span style="color:#828282"> @ 17 Jul 2014 03:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    test cases are weak
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91903"></a> 
+ <div id="c91903" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-91903" class="active">how time limit exceeded error</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sachdeep">sachdeep</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 03:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how time limit exceeded error can be corrected ??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91932"></a> 
+ <div id="c91932" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-91932" class="active">@sachdeep , break the loop</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/linonymous">linonymous</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 09:33 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sachdeep , break the loop when total likes calculated becomes greater than the required likes "L".......!!! and ur code will be accepted....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91982"></a> 
+ <div id="c91982" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-91982" class="active">@shashank88 I don't think if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2014 11:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shashank88 I don't think if this reaches you bro, but I just wanna tell you something. Your approach at large number input is amazing bro. True fan here! *Salutes*
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91983"></a> 
+ <div id="c91983" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-91983" class="active">@shashank88 I don't think if</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1x13">s1x13</a></strong>
+   <span style="color:#828282"> @ 18 Dec 2014 11:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shashank88 I don't think if this reaches you bro, but I just wanna tell you something. Your approach at large number input is amazing bro. True fan here! *Salutes*
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93947"></a> 
+ <div id="c93947" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-93947" class="active">why is long long datatype</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/asmehra">asmehra</a></strong>
+   <span style="color:#828282"> @ 18 Jan 2015 12:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is long long datatype faster? anyone knows then plz ans my program got accepted after converting datatype to long long int previously it was showing time limit error
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97312"></a> 
+ <div id="c97312" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-97312" class="active">#include void main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/varunrox">varunrox</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2015 08:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void main() { int i,j,T,L,D,S,C,s; printf("Enter test cases"); scanf("%d",T); for(i=1;i&lt;=T;i++) { printf("Enter case"); scanf("%d%d%d%d",L,D,S,C); s=D; for(j=1;j!=s;j++) { D=D+D*S; } if(L==D) printf("ALIVE AND KNOCKING"); else printf("DEAD AND ROTTING"); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97313"></a> 
+ <div id="c97313" class="comment clear-block"> 
+  <h3><a href="/problems/PLZLYKME#comment-97313" class="active">#include void main() { double</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/varunrox">varunrox</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2015 08:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void main() { double i,j,T,L,D,S,C,s; printf("Enter test cases"); scanf("%d",T); for(i=1;i&lt;=T;i++) { printf("Enter case"); scanf("%d%d%d%d",L,D,S,C); s=D; for(j=1;j!=s;j++) { D=D+D*S; } if(L==D) printf("ALIVE AND KNOCKING"); else printf("DEAD AND ROTTING"); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
