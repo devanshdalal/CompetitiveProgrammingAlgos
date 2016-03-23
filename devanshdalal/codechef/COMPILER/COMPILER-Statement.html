@@ -1,0 +1,209 @@
+<div id="node-5172462" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MAY14/mandarin/COMPILER.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MAY14/russian/COMPILER.pdf">Russian</a>.</h3> 
+  <p>Lira is now very keen on compiler development. :) </p> 
+  <p>She knows that one of the most important components of a compiler, is its parser.</p> 
+  <p>A parser is, in simple terms, a software component that processes text, and checks it's semantic correctness, or, if you prefer, if the text is properly built.</p> 
+  <p>As an example, in declaring and initializing an integer, in C/C++, you can't do something like:</p> 
+  <p> int = x ;4</p> 
+  <p>as the semantics of such statement is incorrect, as we all know that the datatype must precede an identifier and only afterwards should come the equal sign and the initialization value, so, the corrected statement should be:</p> 
+  <p> int x = 4;</p> 
+  <p>Today, Lira is concerned with an abstract instruction which is composed of the characters "&lt;" and "&gt;" , which she will use on the design of her language, L++ :D.</p> 
+  <p>She is using it as an abstraction for generating XML code Tags in an easier fashion and she understood that, for an expression to be valid, a "&lt;" symbol must always have a corresponding "&gt;" character somewhere (not necessary immediately) after it. Moreover, each "&gt;" symbol should correspond to exactly one "&lt;" symbol.</p> 
+  <p>So, for instance, the instructions:</p> 
+  <p> <b> &lt;&lt;&gt;&gt; </b></p> 
+  <p><b> &lt;&gt; </b></p> 
+  <p><b> &lt;&gt;&lt;&gt; </b></p> 
+  <p>are all valid. While:</p> 
+  <p><b> &gt;&gt; </b></p> 
+  <p><b> &gt;&lt;&gt;&lt; </b></p> 
+  <p>are not.</p> 
+  <p>Given some expressions which represent some instructions to be analyzed by Lira's compiler, you should tell the length of the longest prefix of each of these expressions that is valid, or <b>0</b> if there's no such a prefix.</p> 
+  <h3>Input</h3> 
+  <p>Input will consist of an integer <b>T</b> denoting the number of test cases to follow.</p> 
+  <p>Then, <b>T</b> strings follow, each on a single line, representing a possible expression in L++.</p> 
+  <h3>Output</h3> 
+  <p>For each expression you should output the length of the longest prefix that is valid or <b>0</b> if there's no such a prefix. </p> 
+  <h3>Constraints</h3> 
+  <li><b>1</b> ≤ <b>T</b> ≤ <b>500</b></li> 
+  <li><b>1</b> ≤ <b>The length of a single expression</b> ≤ <b>10<sup>6</sup></b></li> 
+  <li>The total size all the input expressions is no more than <b>5*10<sup>6</sup></b></li> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+&lt;&lt;&gt;&gt;
+&gt;&lt;
+&lt;&gt;&gt;&gt;
+<b>Output:</b>
+4
+0
+2
+
+</pre>
+  <p>&nbsp;</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/kuruma">kuruma</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COMPILER">http://discuss.codechef.com/problems/COMPILER</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/kuruma"> kuruma </a><a class="problem-tag-small " href="/tags/problems/may14"> may14 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>21-01-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COMPILER">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-78093"></a> 
+ <div id="c78093" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-78093" class="active">can anyone give some tough</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grvana">grvana</a></strong>
+   <span style="color:#828282"> @ 12 May 2014 08:11 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone give some tough test cases
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78096"></a> 
+ <div id="c78096" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-78096" class="active">grvana @ try 1- &lt;&lt;&lt;&gt; 2-</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/letsctheworld">letsctheworld</a></strong>
+   <span style="color:#828282"> @ 12 May 2014 08:46 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    grvana @ try 1- &lt;&lt;&lt;&gt; 2- &lt;&gt;&gt;&lt;&gt; 3- &lt;&gt;&lt;&gt;&gt;&lt;
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78097"></a> 
+ <div id="c78097" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-78097" class="active">@letctheworld i tried all of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grvana">grvana</a></strong>
+   <span style="color:#828282"> @ 12 May 2014 09:19 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @letctheworld i tried all of them n its giving the right output @admin could you plz tell me which test case i'm not satisfying :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78125"></a> 
+ <div id="c78125" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-78125" class="active">@admin can u please tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/devils_code">devils_code</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 10:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin can u please tell me which test cases r going wrong.....
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79789"></a> 
+ <div id="c79789" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-79789" class="active">does it mean by prefix that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sarkaramrit2">sarkaramrit2</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2014 02:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    does it mean by prefix that : the answer for &gt;&lt;&gt; is 0.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85767"></a> 
+ <div id="c85767" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-85767" class="active">@all what question means to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/empty_life">empty_life</a></strong>
+   <span style="color:#828282"> @ 27 Sep 2014 12:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @all what question means to say is that you have to find from the starting of the string , the longest possible expression that will be valid.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-109733"></a> 
+ <div id="c109733" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-109733" class="active">prefix means : letters</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saket9450">saket9450</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2015 02:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    prefix means : letters starting from the index 0. means we have to output max length of the segment which is valid as per question rules which is starting from index 0. for example : &gt;&lt;&gt;&lt;&gt;&lt;&gt; output will be 0,&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; output will be only 2
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111198"></a> 
+ <div id="c111198" class="comment clear-block"> 
+  <h3><a href="/problems/COMPILER#comment-111198" class="active">What would be the answer to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vivekinter">vivekinter</a></strong>
+   <span style="color:#828282"> @ 27 Jul 2015 11:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What would be the answer to &lt;&lt;&gt;?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
