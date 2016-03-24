@@ -1,0 +1,228 @@
+<div id="node-5172467" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/MAY14/mandarin/CHEFBM.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/MAY14/russian/CHEFBM.pdf">Russian</a>.</h3> 
+  <p>Spring is interesting season of year. Chef is thinking about different things, but last time he thinks about interesting game - "Strange Matrix". </p> 
+  <p>Chef has a matrix that consists of <b>n</b> rows, each contains <b>m</b> elements. Initially, the element <b>a<sub>i</sub><sub>j</sub></b> of matrix equals <b>j</b>. <b>(1 ≤ i ≤ n, 1 ≤ j ≤ m)</b>. </p> 
+  <p>Then <b>p</b> times some element <b>a<sub>i</sub><sub>j</sub></b> is increased by <b>1</b>. </p> 
+  <p>Then Chef needs to calculate the following: </p> 
+  <ul> 
+   <li>For each row he tries to move from the last element (with number <b>m</b>) to the first one (with the number <b>1</b>). </li> 
+   <li>While staying in <b>a<sub>i</sub><sub>j</sub></b> Chef can only move to <b>a<sub>i</sub><sub>j - 1</sub></b> only if <b>a<sub>i</sub><sub>j - 1</sub> ≤ <b>a<sub>i</sub><sub>j</sub></b></b>. </li> 
+   <li>The cost of such a movement is <b>a<sub>i</sub><sub>j</sub></b> - <b>a<sub>i</sub><sub>j - 1</sub></b>.</li> 
+   <li>Otherwise Chef can't move and lose (in this row).</li> 
+   <li>If Chef can move from the last element of the row to the first one, then the answer is the total cost of all the movements. </li> 
+   <li>If Chef can't move from the last element of the row to the first one, then the answer is <b>-1</b>. </li> 
+  </ul> 
+  <p> Help Chef to find answers for all the rows after <b>P</b> commands of increasing. </p> 
+  <h3>Input</h3> 
+  <p> </p>
+  <ul> 
+   <li>The first line contains three integers <b>n</b>, <b>m</b> and <b>p</b> denoting the number of rows, the number of elements a single row and the number of increasing commands. </li> 
+   <li>Each of next <b>p</b> lines contains two integers <b>i</b> and <b>j</b> denoting that the element <b>a<sub>i</sub><sub>j </sub></b> is increased by one. </li> 
+  </ul> 
+  <p></p> 
+  <h3>Output</h3> 
+  <ul> 
+   <li>For each row in a single line print the answer after the <b>P</b> increasing commands.</li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>n, m, p</b> ≤ <b>10 ^ 5</b></li> 
+   <li><b>1</b> ≤ <b>i</b> ≤ <b>n</b></li> 
+   <li><b>1</b> ≤ <b>j</b> ≤ <b>m</b></li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4 4 6
+2 2
+3 2 
+3 2 
+4 3
+4 4
+4 3
+
+<b>Output:</b>
+3
+3
+-1
+4
+
+</pre>
+  <p>&nbsp;</p> 
+  <h3>Explanation</h3> 
+  <pre>
+<p>Here is the whole matrix after <b>P</b> commands:</p>
+1 2 3 4
+1 3 3 4
+1 4 3 4
+1 2 5 5
+<p> Explanations to the answer: </p>
+
+   <ul>
+
+    <li>The first line is without changes: 4-3=1, 3-2=1, 2-1=1. answer = 3. </li>
+
+    <li>The second line: 4-3=1, 3-3=0, 3-1=2. The answer is 3. </li>
+
+    <li>The third line: 4-3=1, 3-4=-1, Chef can't move to the first number here. Therefore, the answer is -1. </li>
+
+    <li>The fourth line: 5-5=0, 5-2=3, 2-1=1. The answer is 4. </li>
+
+   </ul>
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/berezin">berezin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFBM">http://discuss.codechef.com/problems/CHEFBM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/berezin"> berezin </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/implementation"> implementation </a><a class="problem-tag-small " href="/tags/problems/may14"> may14 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>18-03-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 - 2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFBM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-78112"></a> 
+ <div id="c78112" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78112" class="active">can any 1 tell me what work</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mahi9984">mahi9984</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 01:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can any 1 tell me what work of p we have to do here m not getting that
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78116"></a> 
+ <div id="c78116" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78116" class="active">can anyone please tell me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vijay91">vijay91</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 04:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone please tell me why i'm getting WA for 
+    <a href="http://www.codechef.com/viewsolution/3885273" title="http://www.codechef.com/viewsolution/3885273">http://www.codechef.com/viewsolution/3885273</a> ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78122"></a> 
+ <div id="c78122" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78122" class="active">What would be the cost of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ananth360">ananth360</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 08:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What would be the cost of traversal when m==1?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78123"></a> 
+ <div id="c78123" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78123" class="active">this is the solution of this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ridhi">ridhi</a></strong>
+   <span style="color:#828282"> @ 13 May 2014 09:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    this is the solution of this the problem but i am unable to understand why i am getting wrong answer...plzz can anyone help #include int calcost(int a[20][20],int m,int i); int main() { int n,m,p,a[20][20],i,j,cost; printf("input:"); printf("n"); scanf("%d",&amp;n); scanf("%d",&amp;m); scanf("%d",&amp;p); for(i=1;i&lt;=n;i++) { for(j=1;j&lt;=m;j++) { a[i][j]=j; } } while(p&gt;0) { scanf("%d %d",&amp;i,&amp;j); a[i][j]=a[i][j]+1; p--; } printf("output:"); printf("n"); for(i=1;i&lt;=n;i++) { cost=calcost(a,m,i); printf("%d n",cost); } return 0; } int calcost(int a[20][20],int m,int i) { int c=0,j; for(j=m;j&gt;1;j--) { if(a[i][j-1]&lt;=a[i][j]) { c=c+a[i][j]-a[i][j-1]; } else { c=-1; break; } } return c; }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78219"></a> 
+ <div id="c78219" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78219" class="active">I am getting runtime error.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/saldev">saldev</a></strong>
+   <span style="color:#828282"> @ 18 May 2014 01:59 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting runtime error. can anyone point out the error plz #include int main() { int n,m,p,x,i,j,sum=0; scanf ("%d %d %d", &amp;n,&amp;m,&amp;p); if(n==0 || m==0 || p&gt;100000) { return; } int a[n][m]; for(i=0;i&lt;=n-1;i++) { for(j=0;j&lt;=m-1;j++) { a[i][j]=j+1; } } for(x=1;x&lt;=p;x++) { scanf("%d %d", &amp;i,&amp;j); a[i-1][j-1]=a[i-1][j-1]+1; } for(i=0;i&lt;=n-1;i++) { for(j=m-1;j&gt;=1;j--) { if(a[i][j]&gt;a[i][j-1] || a[i][j]==a[i][j-1]) { sum=sum+a[i][j]-a[i][j-1]; } else { sum=-1; break; } } printf("%d n",sum); sum=0; } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-78337"></a> 
+ <div id="c78337" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-78337" class="active">what is the input-output file</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ambuj3_21dec">ambuj3_21dec</a></strong>
+   <span style="color:#828282"> @ 21 May 2014 01:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is the input-output file format ? how we are getting the input file?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79717"></a> 
+ <div id="c79717" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBM#comment-79717" class="active">can anyone please tell me why</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/satya7795">satya7795</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2014 09:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anyone please tell me why i'm getting WA for 
+    <a href="http://www.codechef.com/viewsolution/4114690" title="http://www.codechef.com/viewsolution/4114690">http://www.codechef.com/viewsolution/4114690</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
