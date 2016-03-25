@@ -1,0 +1,272 @@
+<div id="node-5377632" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JUNE14/mandarin/FORGETPW.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JUNE14/russian/FORGETPW.pdf">Russian</a>.</h3> 
+  <p>Chef changed the password of his laptop a few days ago, but he can't remember it today. Luckily, he wrote the encrypted password on a piece of paper, along with the rules for decryption.</p> 
+  <p>The encrypted password is a string <b>S</b> consists of ASCII printable characters except space (ASCII 33 - 126, in decimal notation, the same below). Read here for more details: <a title="ASCII printable characters" href="http://en.wikipedia.org/wiki/Printable_characters#ASCII_printable_characters">ASCII printable characters</a>.</p> 
+  <p>Each rule contains a pair of characters <b>c<sub>i</sub></b>, <b>p<sub>i</sub></b>, denoting that every character <b>c<sub>i</sub></b> appears in the encrypted password should be replaced with <b>p<sub>i</sub></b>. Notice that it is not allowed to do multiple replacements on a single position, see <b>example case 1</b> for clarification.</p> 
+  <p>After all the character replacements, the string is guaranteed to be a positive decimal number. The <b>shortest notation</b> of this number is the real password. To get the shortest notation, we should delete all the unnecessary leading and trailing zeros. If the number contains only non-zero fractional part, the integral part should be omitted (the shortest notation of "0.5" is ".5"). If the number contains zero fractional part, the decimal point should be omitted as well (the shortest notation of "5.00" is "5").</p> 
+  <p>Please help Chef to find the real password.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an interger <b>T</b> denoting the number of test cases.<br> The description of <b>T</b> test cases follows.</p> 
+  <p>The first line of each test case contains a single interger <b>N</b>, denoting the number of rules.</p> 
+  <p>Each of the next <b>N</b> lines contains two space-separated characters <b>c<sub>i</sub></b> and <b>p<sub>i</sub></b>,<br> denoting a rule.</p> 
+  <p>The next line contains a string <b>S</b>, denoting the encrypted password.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the real password.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ≤ <b>T</b> ≤ 1000</li> 
+   <li>0 ≤ <b>N</b> ≤ 94</li> 
+   <li>All characters in <b>S</b> and <b>c<sub>i</sub></b> may be any ASCII printable character except space. (ASCII 33 - 126)</li> 
+   <li>All <b>c<sub>i</sub></b> in a single test case are distinct.</li> 
+   <li><b>p<sub>i</sub></b> is a digit ("0" - "9") or a decimal point "." (ASCII 46).</li> 
+   <li>The total length of <b>S</b> in a single input file will not exceed 10<sup>6</sup>.</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+4
+2
+5 3
+3 1
+5
+0
+01800.00
+0
+0.00100
+3
+x 0
+d 3
+# .
+0xd21#dd098x
+
+<b>Output:</b>
+3
+1800
+.001
+321.33098
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/stzgd">stzgd</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/shiplu">shiplu</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/FORGETPW">http://discuss.codechef.com/problems/FORGETPW</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/june14"> june14 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a><a class="problem-tag-small " href="/tags/problems/stzgd"> stzgd </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-05-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FORGETPW">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-79641"></a> 
+ <div id="c79641" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79641" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shrayan">shrayan</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 03:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/4105685" title="http://www.codechef.com/viewsolution/4105685">http://www.codechef.com/viewsolution/4105685</a> i checked every kind of test case and it worked...can someone tell me why it's giving wrong ans?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79644"></a> 
+ <div id="c79644" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79644" class="active">What the hell...!!! How one</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/itachiuchia">itachiuchia</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 04:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What the hell...!!! How one would know answer for 000.000 is 0 I had nearly 20 WA's during the contest....!!!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79653"></a> 
+ <div id="c79653" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79653" class="active">@itachiuchia, codechef</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kuldeep992">kuldeep992</a></strong>
+   <span style="color:#828282"> @ 16 Jun 2014 08:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @itachiuchia, codechef problem setters try to make problem hard by giving only half information, compare these questions to those of google code jam, where question are described fully including every possible test case, you just have to use ur brain to think how to solve that, but here we need to think of various possibilities also, which are suppossed to be given by codechef problem setters.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79671"></a> 
+ <div id="c79671" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79671" class="active">@shrayan same here.Checked</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/phoenix94">phoenix94</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2014 03:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shrayan same here.Checked every test case provided and all worked..still getting wrong ans..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79675"></a> 
+ <div id="c79675" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79675" class="active">Will it be possible to get</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jacobpjose">jacobpjose</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2014 08:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Will it be possible to get the test input that is used for the test? The contest is anyways over and it would help us root cause the error in the code.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79690"></a> 
+ <div id="c79690" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79690" class="active">same problem here...checked</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaan7">shaan7</a></strong>
+   <span style="color:#828282"> @ 17 Jun 2014 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    same problem here...checked all test cases and it worked...but still giving wrong ans...can admin tell whats the problem.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79714"></a> 
+ <div id="c79714" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79714" class="active">All the sample test cases are</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jacobpjose">jacobpjose</a></strong>
+   <span style="color:#828282"> @ 19 Jun 2014 08:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    All the sample test cases are passing. Also the corner case of ".". However it is still giving wrong answer. Could somebody help? 
+    <a href="http://www.codechef.com/viewsolution/4108137" title="http://www.codechef.com/viewsolution/4108137">http://www.codechef.com/viewsolution/4108137</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79751"></a> 
+ <div id="c79751" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79751" class="active">i am getting WA dont know</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sid_iiita">sid_iiita</a></strong>
+   <span style="color:#828282"> @ 20 Jun 2014 06:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am getting WA dont know why.. its working for all the testcases. Please admin tell what testcase i am failing. Submission id - 
+    <a href="http://www.codechef.com/viewsolution/4119425" title="http://www.codechef.com/viewsolution/4119425">http://www.codechef.com/viewsolution/4119425</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-79785"></a> 
+ <div id="c79785" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-79785" class="active">hey, admin i am getting WA</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/upendra23510">upendra23510</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2014 10:01 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    hey, admin i am getting WA dont know why.. its working for all the testcases. Please admin tell what testcase i am failing. Submission id :-4123743
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-80013"></a> 
+ <div id="c80013" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-80013" class="active">Hey Admin, Can you tell me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/etymittal">etymittal</a></strong>
+   <span style="color:#828282"> @ 25 Jun 2014 09:38 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey Admin, Can you tell me which test case my code is failing. Please tell me, submission ID: 4142392.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81052"></a> 
+ <div id="c81052" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-81052" class="active">https://ideone.com/8NPgJ5 </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chiragbansal">chiragbansal</a></strong>
+   <span style="color:#828282"> @ 8 Jul 2014 11:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://ideone.com/8NPgJ5" title="https://ideone.com/8NPgJ5">https://ideone.com/8NPgJ5</a> koi to dekhdo yaar!!20 bar wa aa chuka
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105151"></a> 
+ <div id="c105151" class="comment clear-block"> 
+  <h3><a href="/problems/FORGETPW#comment-105151" class="active">@admin my code works well for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhavalmehta">dhavalmehta</a></strong>
+   <span style="color:#828282"> @ 5 Jun 2015 02:04 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @admin my code works well for all cases i have checked. 
+    <a href="http://www.codechef.com/viewsolution/7079283" title="http://www.codechef.com/viewsolution/7079283">http://www.codechef.com/viewsolution/7079283</a> tell me for which test case it fails.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
