@@ -1,0 +1,199 @@
+<div id="node-5600394" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/mandarin/FROGV.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/russian/FROGV.pdf">Russian</a>.</h3> 
+  <p>Nobody knows, but <b>N</b> frogs live in Chef's garden.</p> 
+  <p>Now they are siting on the X-axis and want to speak to each other. One frog can send a message to another one if the distance between them is less or equal to <b>K</b>. </p> 
+  <p>Chef knows all <b>P</b> pairs of frogs, which want to send messages. Help him to define can they or not! </p> 
+  <p><b>Note</b> : More than 1 frog can be on the same point on the X-axis.</p> 
+  <p>&nbsp;</p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line contains three integers <b>N</b>, <b>K</b> and <b>P</b>. </li> 
+   <li> The second line contains <b>N</b> space-separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>N</sub></b> denoting the x-coordinates of frogs". </li> 
+   <li> Each of the next <b>P</b> lines contains two integers <b>A</b> and <b>B</b> denoting the numbers of frogs according to the input. </li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Output</h3> 
+  <ul> 
+   <li>For each pair print "Yes" without a brackets if frogs can speak and "No" if they cannot. </li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N, P</b> ≤ <b>10^5</b></li> 
+   <li><b>0</b> ≤ <b>A<sub>i</sub>, K</b> ≤ <b>10^9</b></li> 
+   <li><b>1</b> ≤ <b>A, B</b> ≤ <b>N</b></li> 
+  </ul> 
+  <p>&nbsp;</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+5 3 3
+0 3 8 5 12
+1 2
+1 3
+2 5
+
+<b>Output:</b>
+Yes
+Yes
+No
+
+</pre>
+  <p>&nbsp;</p> 
+  <pre>
+<h3>Explanation</h3>
+<p>For pair <b>(1, 2)</b> frog <b>1</b> can directly speak to the frog <b>2</b> as the distance between them is <b>3 - 0 = 3 &lt;= K </b>. </p>
+<p>For pair <b>(1, 3)</b> frog <b>1</b> can send a message to frog <b>2</b>, frog <b>2</b> can send it to frog <b>4</b> and it can send it to frog <b>3</b>.
+</p><p>For pair <b>(2, 5)</b> frogs can't send a message under current constraints. </p>
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/berezin">berezin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/FROGV">http://discuss.codechef.com/problems/FROGV</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/berezin"> berezin </a><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/july14"> july14 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-03-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/FROGV">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-81601"></a> 
+ <div id="c81601" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-81601" class="active">I tried running it on my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nemesis10549">nemesis10549</a></strong>
+   <span style="color:#828282"> @ 15 Jul 2014 07:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I tried running it on my machine and it runs just fine for any input. gives errors when input is wrong and gives right answers as far as i've seen. can some1 point out the mistake in this please and tell me test cases for which my code fails. it took me about 6 hours to do this , since am new to java . Can some1 help me please... Thanks Solution ---&gt; 
+    <a href="http://www.codechef.com/viewsolution/4331737" title="http://www.codechef.com/viewsolution/4331737">http://www.codechef.com/viewsolution/4331737</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81626"></a> 
+ <div id="c81626" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-81626" class="active">Please tell me why my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/scorpio_pravi">scorpio_pravi</a></strong>
+   <span style="color:#828282"> @ 16 Jul 2014 07:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please tell me why my solution is going wrong ? @ 
+    <a href="http://www.codechef.com/viewsolution/4336238" title="http://www.codechef.com/viewsolution/4336238">http://www.codechef.com/viewsolution/4336238</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81663"></a> 
+ <div id="c81663" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-81663" class="active">n, k, p = [int(x) for x in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/testcaser">testcaser</a></strong>
+   <span style="color:#828282"> @ 19 Jul 2014 12:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    n, k, p = [int(x) for x in input().split()] dict = {} slist = [int(i) for i in input().split()] print(slist) for i in range(n): dict[i+1] = slist[i] slist.sort() for j in range(p): a , b = [int(x) for x in input().split()] start = slist.index(dict[a]) end = slist.index(dict[b]) res = 'Yes' for m in range(start,end): if (slist[m+1]-slist[m])&gt; k: res = 'No' break print(res) dis giving all solutions correct on my system but givin wrong answer here .. pls help
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83663"></a> 
+ <div id="c83663" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-83663" class="active">My code is giving sigbrt,can</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dragonstone">dragonstone</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 08:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is giving sigbrt,can anyone please help. 
+    <a href="http://www.codechef.com/viewsolution/4555037" title="http://www.codechef.com/viewsolution/4555037">http://www.codechef.com/viewsolution/4555037</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-86134"></a> 
+ <div id="c86134" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-86134" class="active">Please help, What is the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav13">gaurav13</a></strong>
+   <span style="color:#828282"> @ 1 Oct 2014 03:29 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help, What is the problem with my solution. 
+    <a href="http://www.codechef.com/viewsolution/4939995" title="http://www.codechef.com/viewsolution/4939995">http://www.codechef.com/viewsolution/4939995</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91313"></a> 
+ <div id="c91313" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-91313" class="active">Does it really need DP ?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sidmohla">sidmohla</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 09:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Does it really need DP ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-118230"></a> 
+ <div id="c118230" class="comment clear-block"> 
+  <h3><a href="/problems/FROGV#comment-118230" class="active">union find problem ^_^</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kichu_pari_na">kichu_pari_na</a></strong>
+   <span style="color:#828282"> @ 16 Sep 2015 06:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    union find problem ^_^
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
