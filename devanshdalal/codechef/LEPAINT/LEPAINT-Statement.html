@@ -1,0 +1,135 @@
+<div id="node-5600392" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/mandarin/LEPAINT1.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/russian/LEPAINT.pdf">Russian</a>.</h3> 
+  <p>Little Elephant from Zoo of Lviv likes to paint. </p>
+  <p>He has <b>n</b> objects to paint, ordered in a row and numbered form left to right starting from <b>1</b>. There are totally <b>c</b> colors, numbered from <b>0</b> to <b>c-1</b>. At the beggining all objects are colored in color with number <b>1</b>. When object with color <b>a</b> is painted in color <b>b</b>, the resulting color will have number <b>(a*b) mod c</b>. </p>
+  <p>Little Elephant is going to make <b>k</b> turns. At <b>i-th</b> (0-based numeration) turn he will randomly choose any subset (even empty) of objects with indices in range <b>[L<sub>i</sub>; R<sub>i</sub>]</b> (inclusive) and paint all objects in chosen subset with random color (the same for all objects in the subset). </p>
+  <p>Little Elephant wants to know the expected sum of all colors over all <b>n</b> objects after making all <b>k</b> turns. Help him. </p>
+  <h3>Input</h3> 
+  <p></p>
+  <p>First line contain single integer <b>T</b> - the number of test cases. <b>T</b> test cases follow. First line of each test case contains three integers <b>n</b>, <b>c</b> and <b>k</b>. Next <b>k</b> lines of each test case contain <b>k</b> pairs of integers <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b>, one pair per line. </p>
+  <h3>Output</h3> 
+  <p></p>
+  <p>In <b>T</b> lines print <b>T</b> real numbers - the answers for the corresponding test cases. </p>
+  <p>Any results within 10^-6 absolute error will be accepted. </p>
+  <h3>Constraints</h3> 
+  <p></p>
+  <p> 1 &lt;= <b>T</b> &lt;= 10 </p>
+  <p> 1 &lt;= <b>n, k</b> &lt;= 50 </p>
+  <p> 2 &lt;= <b>c</b> &lt;= 100 </p>
+  <p> 1 &lt;= <b>L<sub>i</sub></b> &lt;= <b>R<sub>i</sub></b> &lt;= <b>n</b> </p>
+  <h3>Example</h3> 
+  <pre>
+<b>Input:</b>
+2
+4 3 4
+1 2
+2 4
+3 3
+1 4
+7 10 7
+7 7
+3 4
+1 2
+5 5
+4 5
+2 7
+3 3
+
+<b>Output:</b>
+3.444444444
+22.943125000
+
+</pre>
+  <p></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/LEPAINT">http://discuss.codechef.com/problems/LEPAINT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/july14"> july14 </a><a class="problem-tag-small " href="/tags/problems/medium"> medium </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>20-03-2012</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/LEPAINT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-81570"></a> 
+ <div id="c81570" class="comment clear-block"> 
+  <h3><a href="/problems/LEPAINT#comment-81570" class="active">Can give some test cases?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pratikej">pratikej</a></strong>
+   <span style="color:#828282"> @ 14 Jul 2014 06:18 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can give some test cases?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81613"></a> 
+ <div id="c81613" class="comment clear-block"> 
+  <h3><a href="/problems/LEPAINT#comment-81613" class="active">how can he choose empty</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/goelvibhor">goelvibhor</a></strong>
+   <span style="color:#828282"> @ 15 Jul 2014 08:17 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    how can he choose empty subset
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-81960"></a> 
+ <div id="c81960" class="comment clear-block"> 
+  <h3><a href="/problems/LEPAINT#comment-81960" class="active">The precision is too high.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ace_src">ace_src</a></strong>
+   <span style="color:#828282"> @ 25 Jul 2014 01:09 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The precision is too high. The answer given by a wrong programme and a successful programme are just different in the last digit.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
