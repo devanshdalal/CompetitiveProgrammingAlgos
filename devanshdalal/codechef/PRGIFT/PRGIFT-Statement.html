@@ -1,0 +1,328 @@
+<div id="node-5819724" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/AUG14/mandarin/PRGIFT.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/AUG14/russian/PRGIFT.pdf">Russian</a>.</h3> 
+  <p> Today is chef's friend's birthday. He wants to give a gift to his friend. So he was desperately searching for some gift here and there. </p> 
+  <p> Fortunately, he found an array a of size <b>n</b> lying around. The array contains positive integers. Chef's friend likes even numbers very much. So for the gift, chef will choose a <b> consecutive non-empty</b> segment of the array. The segment should contain exactly <b>k</b> even integers. Though it can have any number of odd integers.<br> He will then pick that segment and gift it to his friend. </p> 
+  <p> But there is a problem. It might not be always possible for the chef to choose such a segment. Please tell whether it is possible for chef to select some gift or not?</p> 
+  <h3>Input</h3> 
+  <p> First line of the input contains a single integer <b> T </b> denoting number of test cases. <br> For each test case, first line contains two space separated integers <b>n, k</b>. <br> Next line contains <b>n</b> space separated integers denoting content of array <b>a</b>. <br> It is also guaranteed that all the numbers in the array <b>a</b> are distinct. </p> 
+  <h3>Output</h3> 
+  <p> For each test case, print a single line containing "YES" or "NO" (without quotes) corresponding to the situation. </p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>1</b> ≤ <b>n</b> ≤ <b>50</b></li> 
+   <li><b>0</b> ≤ <b>k</b> ≤ <b>n</b></li> 
+   <li><b>1</b> ≤ <b>a <sub>i </sub> </b> ≤ <b>100</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+2 1
+1 2
+3 2
+2 6 5
+3 3
+2 4 5
+4 2
+1 2 4 5
+
+<b>Output:</b>
+YES
+YES
+NO
+YES
+</pre>
+  <p> <code><br> for (int i = 0; i &lt; n; i++)<br> if (i &gt; 0) {<br> ans++;<br> } else {<br> ans--;<br> }<br> </code></p> 
+  <h3>Explanation</h3> 
+  <p> For <b> first </b> test case, we can select a[2, 2] = {2}. <br> For <b>second </b> test case, we can select a[1, 2] = {2, 6}. <br> For <b>third </b> test case, we can not select any consecutive segment having exactly 3 even numbers. <br> For <b>fourth </b> test case, we can select a[2, 3] = {2, 4}. </p> 
+  <h3> Note </h3> 
+  <p> A consecutive non empty segment of array a is a segment a[l], a[l + 1] , , a[r] such that 1 ≤ l ≤ r ≤ n. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/dpraveen">dpraveen</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PRGIFT">http://discuss.codechef.com/problems/PRGIFT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/aug14"> aug14 </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/dpraveen"> dpraveen </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>15-07-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>C, CPP 4.9.2, JAVA</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PRGIFT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-83645"></a> 
+ <div id="c83645" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83645" class="active">why k==0 is a special case</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nyshu">nyshu</a></strong>
+   <span style="color:#828282"> @ 11 Aug 2014 11:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why k==0 is a special case here ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83648"></a> 
+ <div id="c83648" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83648" class="active">cant we take all i/p 1st and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sneha150593">sneha150593</a></strong>
+   <span style="color:#828282"> @ 12 Aug 2014 01:26 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    cant we take all i/p 1st and then print all o/p. my code is running fine but on submission m getting NZEC.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83677"></a> 
+ <div id="c83677" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83677" class="active">@sneha it dosent matters</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishabhprsd7">rishabhprsd7</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 06:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @sneha it dosent matters because all your output is saved in a file which is compared with expected output file...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83680"></a> 
+ <div id="c83680" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83680" class="active">For which test case my code</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rishabhprsd7">rishabhprsd7</a></strong>
+   <span style="color:#828282"> @ 13 Aug 2014 06:41 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    For which test case my code fails?? please help.. 
+    <a href="http://www.codechef.com/viewsolution/4557915" title="http://www.codechef.com/viewsolution/4557915">http://www.codechef.com/viewsolution/4557915</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83726"></a> 
+ <div id="c83726" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83726" class="active">Hey what is the problem with</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sauravrokr">sauravrokr</a></strong>
+   <span style="color:#828282"> @ 16 Aug 2014 02:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Hey what is the problem with my code .. Can u xplain
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-83816"></a> 
+ <div id="c83816" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-83816" class="active">do the k even numbers should</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit_baghel">rohit_baghel</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2014 10:15 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    do the k even numbers should be consecutive order.. ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88813"></a> 
+ <div id="c88813" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-88813" class="active">Can anyone please explain me</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nickzuck_007">nickzuck_007</a></strong>
+   <span style="color:#828282"> @ 24 Oct 2014 01:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone please explain me why k==0 when count == n is a special case .....We can fulfill the requirement when actually there isn't any requirement
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91333"></a> 
+ <div id="c91333" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-91333" class="active">LOL !! He found an array of</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nickzuck_007">nickzuck_007</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 02:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    LOL !! He found an array of size n lying there
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92079"></a> 
+ <div id="c92079" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-92079" class="active">#include void main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iota_6">iota_6</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2014 10:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include void main() { int count=0,i,n,k,a[100],t; scanf("%d",&amp;t); for(k=0;k=k &amp;&amp; k&gt;0) printf("YES"); if(k==0) printf("NO"); } } What should I do reduce time limit? thanks alot
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92081"></a> 
+ <div id="c92081" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-92081" class="active">give the link to ur code i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhihegde">abhihegde</a></strong>
+   <span style="color:#828282"> @ 21 Dec 2014 11:46 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    give the link to ur code i dont think u need to specifically use any algos for lowering time limit
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-102727"></a> 
+ <div id="c102727" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-102727" class="active">please explain what is wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhishek_code">abhishek_code</a></strong>
+   <span style="color:#828282"> @ 28 Apr 2015 08:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please explain what is wrong with my code...http://www.codechef.com/viewsolution/6825615
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106009"></a> 
+ <div id="c106009" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-106009" class="active">tricky one nice one</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_hard123">code_hard123</a></strong>
+   <span style="color:#828282"> @ 10 Jun 2015 04:37 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    tricky one nice one :) finally AC
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106375"></a> 
+ <div id="c106375" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-106375" class="active">I wonder, why some questions</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madgod">madgod</a></strong>
+   <span style="color:#828282"> @ 12 Jun 2015 09:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I wonder, why some questions have so poor language support? When my preferred language is no in the list then some default C is chosen, which leads to compile errors. :(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107183"></a> 
+ <div id="c107183" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-107183" class="active">The corner case caught my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/markroxor">markroxor</a></strong>
+   <span style="color:#828282"> @ 22 Jun 2015 11:53 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    The corner case caught my nerve. :!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-108272"></a> 
+ <div id="c108272" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-108272" class="active">i hate that boundary</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bit_code">bit_code</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2015 10:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i hate that boundary case made me 6 WA
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-108749"></a> 
+ <div id="c108749" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-108749" class="active">k=0 means we can not pick any</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiroj786">abhiroj786</a></strong>
+   <span style="color:#828282"> @ 10 Jul 2015 11:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    k=0 means we can not pick any subarray wich means no, right?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-109426"></a> 
+ <div id="c109426" class="comment clear-block"> 
+  <h3><a href="/problems/PRGIFT#comment-109426" class="active">he found an array lying there</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/archit910">archit910</a></strong>
+   <span style="color:#828282"> @ 18 Jul 2015 12:52 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    he found an array lying there :P hahaha
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
