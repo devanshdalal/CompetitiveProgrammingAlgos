@@ -1,0 +1,80 @@
+<div id="node-5600401" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/mandarin/GNUM1.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/JULY14/russian/GNUM.pdf">Russian</a>.</h3> 
+  <p>Mr. Yagami is playing a game of numbers. He has two arrays, each of size <b>N</b> denoted by <b>A<sub>1</sub>,A<sub>2</sub>...A<sub>N</sub></b> and <b>B<sub>1</sub>,B<sub>2</sub>...B<sub>N</sub></b>.</p> 
+  <p>Now, he has to make a move each minute. Let us maintain two sets <b>S1</b> and <b>S2</b> which are empty intially.<br> In one move , first he'll pick a pair of indexes <b>(i, j)</b> such that it's already not present in <b>S1</b>. Also, <b>B<sub>j</sub> &gt; A<sub>i</sub></b> and <b>GCD(A<sub>i</sub>,B<sub>j</sub>)</b> is not <b>1</b>. Further, he'll pick another pair of indices <b>(p, q)</b> such that it's already not present in <b>S2</b>. Also, <b>B<sub>p</sub> &lt; A<sub>q</sub></b> and <b>GCD(A<sub>q</sub>,B<sub>p</sub>)</b> is not <b>1</b>. Also, <b>GCD(A<sub>q</sub>,B<sub>p</sub>)</b> should not be coprime to <b>GCD(A<sub>i</sub>,B<sub>j</sub>)</b>. And, he'll add both pair of indices to <b>S1</b> and <b>S2</b>, respectively.</p> 
+  <p>Help Mr. Yagami by printing the largest number of moves he can perform.</p> 
+  <h3>Input</h3> 
+  <p>First line contain <b>T</b>, the number of testcases. Each testcase consists of <b>N</b> in one line, followed by two lines of <b>N</b> space separated integers each, denoting arrays <b>A</b> and <b>B</b>, respectively.</p> 
+  <h3>Output</h3> 
+  <p>For each testcase, print the maximum number of moves Mr. Yagami can make, in one line.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>400</b></li> 
+   <li><b>1</b> ≤ <b>A<sub>i</sub>, B<sub>i</sub></b> ≤ <b>10<sup>9</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+4
+2 5 6 14
+3 4 7 10
+2
+2 3
+5 7
+
+<b>Output:</b>
+3
+0
+
+</pre>
+  <h3>Explanation</h3> 
+  <p> First testcase:<br><br> Following are the possible moves denoting by (i,j) and (p,q)<br><br> 1st move: (1,2) and (2,3)<br><br> 2nd move: (1,4) and (2,4)<br><br> 3rd move: (3,4) and (4,4)<br><br> In any possible combination not more than 3 moves are possible.<br><br> <br><br> Second testcase:<br><br> No move is possible.<br> </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/darkshadows">darkshadows</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/GNUM">http://discuss.codechef.com/problems/GNUM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/darkshadows"> darkshadows </a><a class="problem-tag-small " href="/tags/problems/hard"> hard </a><a class="problem-tag-small " href="/tags/problems/july14"> july14 </a><a class="problem-tag-small " href="/tags/problems/maths"> maths </a><a class="problem-tag-small " href="/tags/problems/maxflow"> maxflow </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>23-05-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/GNUM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
