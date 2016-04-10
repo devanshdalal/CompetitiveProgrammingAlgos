@@ -1,0 +1,92 @@
+<div class="ttypography">
+ <div class="problem-statement">
+  <div class="header">
+   <div class="title">
+    E. World of Knights
+   </div>
+   <div class="time-limit">
+    <div class="property-title">
+     time limit per test
+    </div>2 seconds
+   </div>
+   <div class="memory-limit">
+    <div class="property-title">
+     memory limit per test
+    </div>256 megabytes
+   </div>
+   <div class="input-file">
+    <div class="property-title">
+     input
+    </div>standard input
+   </div>
+   <div class="output-file">
+    <div class="property-title">
+     output
+    </div>standard output
+   </div>
+  </div>
+  <div>
+   <p>I woke up tied to an iron chair in a wet basement lighted by a single dying candle. The headache was just like after the graduation party in the knight school, and the bitter of the Princess' poison still remained on my lips. A black thug in a leather armor sat at a metal table in front of me. An ugly grimace on his face was to portray a mockery. He was professionally shuffling a deck of cards. That's what happens if you ask too many questions about Dragon.</p>
+   <p>I instantly recognized my only companion. It was Black Knight — an assassin, known by offering his victims to play cards against him, promising to release in case of a win. Nobody had managed to beat him so far, but I felt luck was on my side that day.</p>
+   <p>We played «World of Knights» — a card game popular among farmers and swineherds. Each card in the game had two integer characteristics — cost and resource. I had a card with cost <span class="tex-span">0</span> and resource <span class="tex-span">1</span> in my hand. Not the best one. On the table in front of me there were <span class="tex-span"><i>n</i></span> cards, the <span class="tex-span"><i>i</i></span>-th of which had cost <span class="tex-span"><i>c</i><sub class="lower-index"><i>i</i></sub></span> and resource <span class="tex-span"><i>r</i><sub class="lower-index"><i>i</i></sub></span>. Every turn I could exchange a card in my hand with a card from the table whose cost was not greater than the resource of the card in the hand. I needed the <span class="tex-span"><i>n</i></span>-th card. I felt that if I'd got it, I would have won for sure. I decided to get it in a minimal number of turns, ignoring actions of my opponent, especially since I didn't know any other rules of the game.</p>
+  </div>
+  <div class="input-specification">
+   <div class="section-title">
+    Input
+   </div>
+   <p>The first line contains a single integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">1 ≤ <i>n</i> ≤ 10<sup class="upper-index">5</sup></span>) — the number of cards on the table.</p>
+   <p>Each of the next <span class="tex-span"><i>n</i></span> lines contains two integers separated by a space: <span class="tex-span"><i>c</i><sub class="lower-index"><i>i</i></sub></span> and <span class="tex-span"><i>r</i><sub class="lower-index"><i>i</i></sub></span> (<span class="tex-span">0 ≤ <i>c</i><sub class="lower-index"><i>i</i></sub>, <i>r</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">9</sup></span>) — cost and resource of the <span class="tex-span"><i>i</i></span>-th card on the table.</p>
+  </div>
+  <div class="output-specification">
+   <div class="section-title">
+    Output
+   </div>
+   <p>In the first line output a single integer <span class="tex-span"><i>k</i></span> — the minimal number of turns to get the <span class="tex-span"><i>n</i></span>-th card into the hand.</p>
+   <p>In the second line output <span class="tex-span"><i>k</i></span> integers separated by spaces — the numbers of cards to exchange with at each turn. The cards are numbered from 1.</p>
+   <p>If there are several possible answers, output any of them. If it's impossible to get the <span class="tex-span"><i>n</i></span>-th card in any number of turns, output «<span class="tex-font-style-tt">No such luck</span>» without quotes.</p>
+  </div>
+  <div class="sample-tests">
+   <div class="section-title">
+    Sample test(s)
+   </div>
+   <div class="sample-test">
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>6<br>1 1<br>0 2<br>2 4<br>2 5<br>4 5<br>5 10<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>3<br>2 4 6<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>5<br>1 6<br>1 7<br>2 4<br>6 7<br>7 0<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>2<br>2 5<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>1<br>2 0<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>No such luck<br></pre>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
