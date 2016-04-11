@@ -1,0 +1,94 @@
+<div class="ttypography">
+ <div class="problem-statement">
+  <div class="header">
+   <div class="title">
+    B. Rebranding
+   </div>
+   <div class="time-limit">
+    <div class="property-title">
+     time limit per test
+    </div>2 seconds
+   </div>
+   <div class="memory-limit">
+    <div class="property-title">
+     memory limit per test
+    </div>256 megabytes
+   </div>
+   <div class="input-file">
+    <div class="property-title">
+     input
+    </div>standard input
+   </div>
+   <div class="output-file">
+    <div class="property-title">
+     output
+    </div>standard output
+   </div>
+  </div>
+  <div>
+   <p>The name of one small but proud corporation consists of <span class="tex-span"><i>n</i></span> lowercase English letters. The Corporation has decided to try rebranding — an active marketing strategy, that includes a set of measures to change either the brand (both for the company and the goods it produces) or its components: the name, the logo, the slogan. They decided to start with the name.</p>
+   <p>For this purpose the corporation has consecutively hired <span class="tex-span"><i>m</i></span> designers. Once a company hires the <span class="tex-span"><i>i</i></span>-th designer, he immediately contributes to the creation of a new corporation name as follows: he takes the newest version of the name and replaces all the letters <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i></sub></span> by <span class="tex-span"><i>y</i><sub class="lower-index"><i>i</i></sub></span>, and all the letters <span class="tex-span"><i>y</i><sub class="lower-index"><i>i</i></sub></span> by <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i></sub></span>. This results in the new version. It is possible that some of these letters do no occur in the string. It may also happen that <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i></sub></span> coincides with <span class="tex-span"><i>y</i><sub class="lower-index"><i>i</i></sub></span>. The version of the name received after the work of the last designer becomes the new name of the corporation.</p>
+   <p>Manager Arkady has recently got a job in this company, but is already soaked in the spirit of teamwork and is very worried about the success of the rebranding. Naturally, he can't wait to find out what is the new name the Corporation will receive.</p>
+   <p>Satisfy Arkady's curiosity and tell him the final version of the name.</p>
+  </div>
+  <div class="input-specification">
+   <div class="section-title">
+    Input
+   </div>
+   <p>The first line of the input contains two integers <span class="tex-span"><i>n</i></span> and <span class="tex-span"><i>m</i></span> (<span class="tex-span">1 ≤ <i>n</i>, <i>m</i> ≤ 200 000</span>) — the length of the initial name and the number of designers hired, respectively.</p>
+   <p>The second line consists of <span class="tex-span"><i>n</i></span> lowercase English letters and represents the original name of the corporation.</p>
+   <p>Next <span class="tex-span"><i>m</i></span> lines contain the descriptions of the designers' actions: the <span class="tex-span"><i>i</i></span>-th of them contains two space-separated lowercase English letters <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i></sub></span> and <span class="tex-span"><i>y</i><sub class="lower-index"><i>i</i></sub></span>.</p>
+  </div>
+  <div class="output-specification">
+   <div class="section-title">
+    Output
+   </div>
+   <p>Print the new name of the corporation.</p>
+  </div>
+  <div class="sample-tests">
+   <div class="section-title">
+    Sample test(s)
+   </div>
+   <div class="sample-test">
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>6 1<br>police<br>p m<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>molice<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>11 6<br>abacabadaba<br>a b<br>b c<br>a d<br>e g<br>f a<br>b b<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>cdcbcdcfcdc<br></pre>
+    </div>
+   </div>
+  </div>
+  <div class="note">
+   <div class="section-title">
+    Note
+   </div>
+   <p>In the second sample the name of the corporation consecutively changes as follows:</p>
+   <center> 
+    <img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/cd/2c/cd2c5e7974a483e4ff700d76372cc6d916bd8a84.png" style="max-width: 100.0%;max-height: 100.0%;">
+    <p><img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/38/09/380923e991908588377331839540cedad624989b.png" style="max-width: 100.0%;max-height: 100.0%;"></p>
+    <p><img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/10/b6/10b6343b350b9a40381962bae6e639473ef77955.png" style="max-width: 100.0%;max-height: 100.0%;"></p>
+    <p><img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/6b/e3/6be3c3cf4cf20a56b223bdf3219a0561604f0d9d.png" style="max-width: 100.0%;max-height: 100.0%;"></p>
+    <p><img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/28/b0/28b0c36db6d4e3f5585ce7f07647dc0cd29cf593.png" style="max-width: 100.0%;max-height: 100.0%;"></p>
+    <p><img align="middle" class="tex-formula" src="http://codeforces.com/predownloaded/d6/5d/d65d8b83cc79cb973d030ccf52cce5e3b9fa01dd.png" style="max-width: 100.0%;max-height: 100.0%;"></p>
+   </center>
+  </div>
+ </div>
+</div>
