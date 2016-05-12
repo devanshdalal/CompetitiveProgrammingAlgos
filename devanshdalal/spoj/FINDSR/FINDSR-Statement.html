@@ -1,0 +1,8 @@
+<p>In mathematics, the N-th root of a number M, is a number K such that K<sup>N</sup> = M , i.e. KKK . . . K = M where K is multiplied N times.<br>We can translate this into strings. In string notation, the yuxtaposition is concatenation instead of multiplication. So, the N-th root of a string S is another string T such that T<sup>N</sup> = S, where T N = T T T . . . T is the string T concatenated N times. For instance, if S = “abcabcabcabc”, for N = 2 the string T = “abcabc” is the N-th root of S, while for N = 4 its N-th root is T = “abc”. Note that for N = 1 any string S is the N-th root<br>of S itself.<br>Given a string S you have to find the maximum N such that the N-th root of S exists. In the above example the answer would be 4, because there is no N-th root of S = “abcabcabcabc” for N &gt; 4.</p> 
+<h3>Input</h3> 
+<p>The input contains several test cases, each one described in a single line. The line contains<br>a non-empty string S of at most 10<sup>5</sup> characters, entirely formed of digits and lowercase<br>letters. The last line of the input contains a single asterisk (“*”) and should not be<br>processed as a test case.</p> 
+<h3>Output</h3> 
+<p>For each test case output a single line with the greatest integer N such that there exists<br>a string T that concatenated N times is equal to S.</p> 
+<h3>Example</h3> 
+<pre><strong>Input:</strong><br>abcabcabcabc<br>abcdefgh012<br>aaaaaaaaaa<br>*<br><br><strong>Output:</strong>
+4<br>1<br>10</pre>
