@@ -1,0 +1,188 @@
+<div id="node-6074962" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT14/mandarin/CHEFLR.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT14/russian/CHEFLR.pdf">Russian</a>.</h3> 
+  <p>Chef has a nice <i>complete</i> binary tree in his garden. <i>Complete</i> means that each node has <b>exactly two</b> sons, so the tree is infinite. Yesterday he had enumerated the nodes of the tree in such a way: </p> 
+  <ul> 
+   <li>Let's call the nodes' level a number of nodes that occur on the way to this node from the root, including this node. This way, only the root has the level equal to <b>1</b>, while only its two sons has the level equal to <b>2</b>.</li> 
+   <li>Then, let's take all the nodes with the odd level and enumerate them with consecutive odd numbers, starting from the smallest levels and the leftmost nodes, going to the rightmost nodes and the highest levels.</li> 
+   <li>Then, let's take all the nodes with the even level and enumerate them with consecutive even numbers, starting from the smallest levels and the leftmost nodes, going to the rightmost nodes and the highest levels.</li> 
+   <li>For the better understanding there is an example: </li> 
+  </ul> 
+  <pre>
+                             1
+                        /           \
+                  2                   4
+                /   \                /       \
+             3       5           7        9
+            / \      /  \          /  \       /  \
+           6  8 10 12      14 16   18 20 
+</pre>
+  <p>Here you can see the visualization of the process. For example, in odd levels, the root was enumerated first, then, there were enumerated roots' left sons' sons and roots' right sons' sons.</p> 
+  <p>You are given the string of symbols, let's call it <b>S</b>. Each symbol is either <b>l</b> or <b>r</b>. Naturally, this sequence denotes some path from the root, where <b>l</b> means going to the left son and <b>r</b> means going to the right son.</p> 
+  <p>Please, help Chef to determine the number of the last node in this path.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains single integer <b>T</b> number of test cases.</p> 
+  <p>Each of next <b>T</b> lines contain a string <b>S</b> consisting only of the symbols <b>l</b> and <b>r</b>. </p> 
+  <h3>Output</h3> 
+  <p>Per each line output the number of the last node in the path, described by S, modulo <b>10<sup>9</sup>+7</b>.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>|T|</b> ≤ <b>5</b></li> 
+   <li><b>1</b> ≤ <b>|S|</b> ≤ <b>10^5</b></li> 
+   <li>Remember that the tree is infinite, so each path described by appropriate <b>S</b> is a correct one.</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+lrl
+rll
+r
+lllr
+<b>Output:</b>
+10
+14
+4
+13
+
+</pre> 
+  <h3>Explanation</h3> 
+  <p>See the example in the statement for better understanding the samples.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/berezin">berezin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFLR">http://discuss.codechef.com/problems/CHEFLR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/adhoc"> adhoc </a><a class="problem-tag-small " href="/tags/problems/basic-math"> basic-math </a><a class="problem-tag-small " href="/tags/problems/berezin"> berezin </a><a class="problem-tag-small " href="/tags/problems/sept14"> sept14 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-03-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFLR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-85529"></a> 
+ <div id="c85529" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-85529" class="active">Following code works</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sauravkantjha">sauravkantjha</a></strong>
+   <span style="color:#828282"> @ 21 Sep 2014 03:41 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Following code works perfectly fine on my system but I'm getting WA on submission. I have checked for many i/ps. 
+    <a href="http://www.codechef.com/viewsolution/4860526" title="http://www.codechef.com/viewsolution/4860526">http://www.codechef.com/viewsolution/4860526</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85604"></a> 
+ <div id="c85604" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-85604" class="active">can someone please check </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sauravkantjha">sauravkantjha</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2014 05:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone please check 
+    <a href="http://www.codechef.com/viewsolution/4860526" title="http://www.codechef.com/viewsolution/4860526">http://www.codechef.com/viewsolution/4860526</a> and let me know why it is giving WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91372"></a> 
+ <div id="c91372" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-91372" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shakal">shakal</a></strong>
+   <span style="color:#828282"> @ 6 Dec 2014 11:01 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/5509499" title="http://www.codechef.com/viewsolution/5509499">http://www.codechef.com/viewsolution/5509499</a> what is problem with my code...@admin can you check it..
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92445"></a> 
+ <div id="c92445" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-92445" class="active">i dont get it why we need to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/s1.shubham">s1.shubham</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 10:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i dont get it why we need to store it in an long long.. we are modding it each time and the result should be &lt;=10^9+7 ... 10^9 works fine in C i guess
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-115373"></a> 
+ <div id="c115373" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-115373" class="active">sauravkantjha please try</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/karthik_1996">karthik_1996</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2015 10:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sauravkantjha please try doing modulo of the number inside loop using some if condition and verify .its executed
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117895"></a> 
+ <div id="c117895" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFLR#comment-117895" class="active">check for l and r each time.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yash_0281">yash_0281</a></strong>
+   <span style="color:#828282"> @ 14 Sep 2015 06:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    check for l and r each time. there may be other characters in the test cases. that is why i was getting WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
