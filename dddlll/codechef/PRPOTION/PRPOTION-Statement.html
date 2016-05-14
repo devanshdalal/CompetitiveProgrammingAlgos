@@ -1,0 +1,184 @@
+<div id="node-6376540" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/OCT14/mandarin/PRPOTION.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/OCT14/russian/PRPOTION.pdf">Russian</a>.</h3> 
+  <p> Naturally, the magical girl is very good at performing magic. She recently met her master wizard Devu, who gifted her <b>R</b> potions of red liquid,<br> <b>B</b> potions of blue liquid, and <b>G</b> potions of green liquid. </p> 
+  <p></p>
+  <ul> 
+   <li> The red liquid potions have liquid amounts given by <b>r[1], ..., r[R]</b> liters. </li> 
+   <li> The green liquid potions have liquid amounts given by <b>g[1], ..., g[G]</b> liters. </li> 
+   <li> The blue liquid potions have liquid amounts given by <b>b[1], ..., b[B]</b> liters. </li> 
+  </ul> 
+  <p></p> 
+  <p> She want to play with the potions by applying magic tricks on them. In a single magic trick, she will choose a particular color. Then she will pick all the potions of the chosen color and decrease the amount of liquid in them to half (i.e. if initial amount<br> of liquid is <b>x</b>, then the amount after decrement will be <b>x / 2 </b> where division is integer division, e.g. 3 / 2 = 1 and 4 / 2 = 2). </p> 
+  <p> Because she has to go out of station to meet her uncle Churu, a wannabe wizard, only <b>M</b> minutes are left for her. In a single minute, she can perform at most one magic trick. Hence, she can perform at most <b>M</b> magic tricks. </p> 
+  <p> She would like to minimize the maximum amount of liquid among all of Red, Green and Blue colored potions. Formally Let v be the maximum value of amount of liquid in any potion. We want to minimize the value of v.<br> Please help her. </p> 
+  <h3>Input</h3> 
+  <p> First line of the input contains an integer <b>T</b> denoting the number of test cases.<br> Then for each test case, we have four lines. </p> 
+  <p>The first line contains four space separated integers <b>R</b>, <b>G</b>, <b>B</b>, <b>M</b>. The next 3 lines will describe the amount of different color liquids (<b>r, g, b</b>), which are separated by space. </p> 
+  <h3>Output</h3> 
+  <p>For each test case, print a single integer denoting the answer of the problem.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li> 1 ≤ T ≤ 1000 </li> 
+   <li> 1 ≤ R, G, B, M ≤ 100 </li> 
+   <li> 1 ≤ r[i], g[i], b[i] ≤ 10^9 </li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+1 1 1 1
+1
+2
+3
+1 1 1 1
+2
+4
+6
+3 2 2 2
+1 2 3
+2 4
+6 8
+<b>Output:</b>
+2
+4
+4
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> Magical girl can pick the blue potion and make its liquid amount half. So the potions will now have amounts 1 2 1. Maximum of these values is 2. Hence answer is 2.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/dpraveen">dpraveen</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/shangjingbo">shangjingbo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/PRPOTION">http://discuss.codechef.com/problems/PRPOTION</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/dpraveen"> dpraveen </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a><a class="problem-tag-small " href="/tags/problems/oct14"> oct14 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-09-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/PRPOTION">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-88243"></a> 
+ <div id="c88243" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-88243" class="active">/* package whatever; // don't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahil295">sahil295</a></strong>
+   <span style="color:#828282"> @ 15 Oct 2014 10:05 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    /* package whatever; // don't place package name! */ import java.util.*; import java.lang.*; import java.io.*; /* Name of the class has to be "Main" only if the class is public. */ class Ideone { static long [] r,g,b,o; static int R,G,B,M; static int rm,gm,bm; static void max(int ri,int gi,int bi){//System.out.print(r[ri]+" "+g[gi]+" "+b[bi]+" "); if(r[ri]&gt;=g[gi]&amp;&amp;r[ri]&gt;=b[bi]){o=r;} else if(g[gi]&gt;=r[ri]&amp;&amp;g[gi]&gt;=b[bi]){o=g;} else {o=b;} } public static void sort(long[]l){ if(l.length==1); else{ for(int i=0;il[j]){ long t=l[i]; l[i]=l[j]; l[j]=t; } } } } } public static void main (String[] args) throws java.lang.Exception { Scanner sc= new Scanner(System.in); int tc=sc.nextInt(); int test_case; for(test_case=0;test_case
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88244"></a> 
+ <div id="c88244" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-88244" class="active">My code is giving right</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sahil295">sahil295</a></strong>
+   <span style="color:#828282"> @ 15 Oct 2014 10:06 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code is giving right answer for given testcases. Why still saying wrong answer?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88514"></a> 
+ <div id="c88514" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-88514" class="active">Question has been stated</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/coder18694">coder18694</a></strong>
+   <span style="color:#828282"> @ 18 Oct 2014 04:06 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Question has been stated really badly. Took many tries to figure out an easy question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88775"></a> 
+ <div id="c88775" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-88775" class="active">my code is giving right answe</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/capt2101akash">capt2101akash</a></strong>
+   <span style="color:#828282"> @ 21 Oct 2014 09:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my code is giving right answe in all cases then why it is not accepting
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-89500"></a> 
+ <div id="c89500" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-89500" class="active">finally did it....happy...:)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grvana">grvana</a></strong>
+   <span style="color:#828282"> @ 4 Nov 2014 06:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    finally did it....happy...:)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91119"></a> 
+ <div id="c91119" class="comment clear-block"> 
+  <h3><a href="/problems/PRPOTION#comment-91119" class="active">When I feed sample inputs, it</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sunil_rockon">sunil_rockon</a></strong>
+   <span style="color:#828282"> @ 3 Dec 2014 06:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    When I feed sample inputs, it gives proper output. But submission says "Wrong Answer". A detailed input test file would be great to pinpoint issue in code.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
