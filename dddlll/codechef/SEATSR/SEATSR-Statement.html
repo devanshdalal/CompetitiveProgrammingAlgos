@@ -1,0 +1,139 @@
+<div id="node-6376533" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/OCT14/mandarin/SEATSR.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/OCT14/russian/SEATSR.pdf">Russian</a>.</h3> 
+  <p>Sereja has two strings <b>s</b> and <b>w</b>. Sereja can do <b>3</b> types of operations: </p> 
+  <ul> 
+   <li>Remove any character from the first string, this operation takes <b>a</b> minutes of time</li> 
+   <li>Add any character in any position of the first string, this operation takes <b>a</b> minutes of time</li> 
+   <li>Replace some character form first string by some other character, this operation takes <b>b</b> minutes of time</li> 
+  </ul> 
+  <p>Sereja has <b>k</b> minutes to do some operations. Find the minimum time that Sereja needs to transform the first string to the second.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</p> 
+  <p>The first line contains string <b>s</b>. The second line contains string <b>w</b>. Both strings contain only lowercase Latin letters. The third line contains integers <b>a</b>,<b>b</b> and <b>k</b>, separated by spaces.</p> 
+  <h3>Output</h3> 
+  <p>For each test case on different lines print the answer to the problem - minimum time required to transform the first string to the second by the operations of the first, second and third types. If you can not transform the first string to the second for the specified time, print <b>-1</b>.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>1</b> ≤ <b>|s|, |w|</b> ≤ <b>100000</b></li> 
+   <li><b>0</b> ≤ <b>a, b, k</b> ≤ <b>100</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+aaa
+bbbb
+0 0 100
+abab
+acac
+1 1 100
+baaaaa
+aaaaab
+1 100 100
+aaaaaa
+bbbbbb
+100 100 0
+
+<b>Output:</b>
+0
+2
+2
+-1
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/sereja">sereja</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/shangjingbo">shangjingbo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/SEATSR">http://discuss.codechef.com/problems/SEATSR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/edit-distance"> edit-distance </a><a class="problem-tag-small " href="/tags/problems/medium"> medium </a><a class="problem-tag-small " href="/tags/problems/oct14"> oct14 </a><a class="problem-tag-small " href="/tags/problems/sereja"> sereja </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>5-06-2013</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/SEATSR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-88190"></a> 
+ <div id="c88190" class="comment clear-block"> 
+  <h3><a href="/problems/SEATSR#comment-88190" class="active">Instead of replacing a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nikhil99">nikhil99</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2014 04:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Instead of replacing a character, can we remove a character and then add another char in its position?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88193"></a> 
+ <div id="c88193" class="comment clear-block"> 
+  <h3><a href="/problems/SEATSR#comment-88193" class="active">Finally did it in contest</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pranjalranjan">pranjalranjan</a></strong>
+   <span style="color:#828282"> @ 13 Oct 2014 06:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Finally did it in contest with 116 submissions. Most memorable problem of my life. And yes @nikhil30, you can.. its legal!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88569"></a> 
+ <div id="c88569" class="comment clear-block"> 
+  <h3><a href="/problems/SEATSR#comment-88569" class="active">Most WAs in practice. Nice</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mjnovice">mjnovice</a></strong>
+   <span style="color:#828282"> @ 19 Oct 2014 04:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Most WAs in practice. Nice Question. Coincidentally, the time taken was equal to my SGPA at the start of B.Tech. Thanks a lot Sereja for this question!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
