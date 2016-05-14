@@ -1,0 +1,206 @@
+<div id="node-6112648" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/COOK50/english/SUBGCD.pdf">English</a>, <a target="_blank" href="http://www.codechef.com/download/translated/COOK50/mandarin/SUBGCD.pdf">Mandarin Chinese</a> and <a target="_blank" href="http://www.codechef.com/download/translated/COOK50/russian/SUBGCD.pdf">Russian</a> as well.</h3> 
+  <p>Given an array <b>A<sub>1</sub>,A<sub>2</sub>...A<sub>N</sub></b>, you have to print the size of the largest contiguous subarray such that<br> <a href="http://en.wikipedia.org/wiki/Greatest_common_divisor">GCD</a> of all integers in that subarray is <b>1</b>.<br><br> Formally,<br> For a subarray <b>A<sub>i</sub>,A<sub>i+1</sub>...A<sub>j</sub></b> where <b>1 ≤ i &lt; j ≤ N</b> to be valid: <b>GCD(A<sub>i</sub>,A<sub>i+1</sub>...A<sub>j</sub>)</b> should be <b>1</b>. You have to print the size of the largest valid subarray.</p> 
+  <p>If no valid subarray exists, output <b>-1</b>.</p> 
+  <p><b>Note:</b>A single element is not considered as a subarray according to the definition of this problem.</p> 
+  <h3>Input</h3> 
+  <p>First line contains <b>T</b>, the number of testcases. Each testcase consists of <b>N</b> in one line followed by <b>N</b> integers in the next line.</p> 
+  <h3>Output</h3> 
+  <p>For each testcase, print the required answer in one line.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>2</b> ≤ <b>N</b> ≤ <b>10<sup>5</sup></b></li> 
+   <li><b>1</b> ≤ <b>A<sub>i</sub></b> ≤ <b>10<sup>5</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+2
+7 2
+3
+2 2 4
+
+<b>Output:</b>
+2
+-1
+</pre>
+  <h3>Explanation</h3> 
+  <p> <b>Example case 1.</b>GCD(2,7)=1. So the subarray <b>[A<sub>1</sub>,A<sub>2</sub>]</b> is valid.<br><br> <b>Example case 2.</b>No subarray satisfies.<br> </p> 
+  <p><b>Note: Use scanf/print instead of cin/cout. Large input files.</b></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/darkshadows">darkshadows</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/SUBGCD">http://discuss.codechef.com/problems/SUBGCD</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook50"> cook50 </a><a class="problem-tag-small " href="/tags/problems/darkshadows"> darkshadows </a><a class="problem-tag-small " href="/tags/problems/maths"> maths </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>13-06-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/SUBGCD">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-85583"></a> 
+ <div id="c85583" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-85583" class="active">What should be the answer for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/mtbar131">mtbar131</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2014 12:31 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    What should be the answer for this test case? 1 5 2 4 5 7 9 It should be 4 {4,5,7,9} but all accepted solutions are giving ans as 5! can anyone explain?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85586"></a> 
+ <div id="c85586" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-85586" class="active">because max sub array is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tapariaankit">tapariaankit</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2014 01:09 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    because max sub array is {2,4,5,7,9} whose gcd is 1. hence ans is 5.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-85589"></a> 
+ <div id="c85589" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-85589" class="active">ans should be 7 , read</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/codejam123">codejam123</a></strong>
+   <span style="color:#828282"> @ 22 Sep 2014 02:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ans should be 7 , read statement
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93139"></a> 
+ <div id="c93139" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-93139" class="active">the sub array can be the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/aniruddha_paul">aniruddha_paul</a></strong>
+   <span style="color:#828282"> @ 6 Jan 2015 11:21 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the sub array can be the array itself.so the ans is 7
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99052"></a> 
+ <div id="c99052" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-99052" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/grb47">grb47</a></strong>
+   <span style="color:#828282"> @ 12 Mar 2015 10:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6474242" title="http://www.codechef.com/viewsolution/6474242">http://www.codechef.com/viewsolution/6474242</a> my solution is wrong but codechef accept this solution why ???? if we input 3 number 4 6 8 then answr should be -1 but my solution give 3 :-(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106224"></a> 
+ <div id="c106224" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-106224" class="active">Such a little miserable</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madgod">madgod</a></strong>
+   <span style="color:#828282"> @ 11 Jun 2015 11:15 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Such a little miserable screwed up problem made me feel miserable. Somehow the problem logic seems 'inside-out' and it is easy to pursue a different goal or misunderstand it completely, this should not be called 'question', it should be called 'brain-f***'. Don't forget to read all input (I quit the reading loop as soon as hitting 1 and paid with two wrong answers, since more test cases are coming). And as a side note - please people, do not post any more questions about prime numbers or GCD, this is just plain sad and boring... I hate those two words now: prime and GCD.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107552"></a> 
+ <div id="c107552" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-107552" class="active">if gcd of any subarray is 1,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bit_code">bit_code</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2015 01:32 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if gcd of any subarray is 1, then gcd of all elements of array should be 1 am i wrong???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107553"></a> 
+ <div id="c107553" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-107553" class="active">misleading ex. i was</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bit_code">bit_code</a></strong>
+   <span style="color:#828282"> @ 1 Jul 2015 01:40 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    misleading ex. i was right simple question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-108662"></a> 
+ <div id="c108662" class="comment clear-block"> 
+  <h3><a href="/problems/SUBGCD#comment-108662" class="active">quite easy.</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiroj786">abhiroj786</a></strong>
+   <span style="color:#828282"> @ 9 Jul 2015 09:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    quite easy.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
