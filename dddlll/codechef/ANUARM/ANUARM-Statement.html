@@ -1,0 +1,155 @@
+<div id="node-6425316" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/COOK51/mandarin/ANUARM.pdf">Mandarin Chinese</a> and <a target="_blank" href="http://www.codechef.com/download/translated/COOK51/russian/ANUARM.pdf">Russian</a> as well.</h3> 
+  <p> <b>N</b> Soldiers are lined up for a memory test. They are numbered from 0 to <b>N-1</b> from left to right. </p> 
+  <p> In the test, there are <b>M</b> rounds. In each round, Captain selects one position. Soldier at that position will be numbered 0. All the soldiers to the right of selected position will be numbered one greater than the soldier to his left. All the soldiers to the left of selected position will be numbered one greater than the soldier to his right. <br> eg. if <b>N</b> = 6 and selected position is 3, then the numbering will be [3, 2, 1, 0, 1, 2]. </p> 
+  <p> After <b>M</b> rounds, Captain asked each soldier to shout out the greatest number he was assigned during the <b>M</b> rounds. In order to check the correctness, Captain asked you to produce the correct values for each soldier (That is the correct value each soldier should shout out). </p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases.<br> First line of each test case contains two integers, <b>N</b> and <b>M</b>.<br> Second line of each test case contains <b>M</b> integers, the positions selected by Captain, in that order.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output one line with <b>N</b> space separated integers.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10^4</b> </li>
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>10^5</b> </li>
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>10^5</b> </li>
+   <li><b>1</b> ≤ <b>Sum of N over all testcases</b> ≤ <b>10^5</b> </li>
+   <li><b>1</b> ≤ <b>Sum of M over all testcases</b> ≤ <b>10^5</b> </li>
+   <li><b>0</b> ≤ <b>Positions selected by captain</b> ≤ <b>N-1</b> </li>
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input</b>
+2
+4 1
+1
+6 2
+2 3
+
+<b>Output</b>
+1 0 1 2
+3 2 1 1 2 3
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anudeep2011">anudeep2011</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kostya_by">kostya_by</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/ANUARM">http://discuss.codechef.com/problems/ANUARM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/anudeep2011"> anudeep2011 </a><a class="problem-tag-small " href="/tags/problems/cook51"> cook51 </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>30-09-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/ANUARM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-89491"></a> 
+ <div id="c89491" class="comment clear-block"> 
+  <h3><a href="/problems/ANUARM#comment-89491" class="active">My code seems to be correct ,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/jeffa">jeffa</a></strong>
+   <span style="color:#828282"> @ 3 Nov 2014 10:20 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    My code seems to be correct , but is giving runtime error on running. what could be the wrong ?? import java.io.BufferedInputStream; import java.io.BufferedReader; import java.io.FileInputStream; import java.io.IOException; import java.util.Scanner; public class Test { private static int t; private static int m; private static int n; private static Scanner sc = null; public static void main(String[] args) throws IOException { sc = new Scanner(System.in); t = Integer.parseInt(sc.next()); while (t-- &gt; 0) { int min_ele; int max_ele; sc = new Scanner(System.in); n = Integer.parseInt(sc.next()); m = Integer.parseInt(sc.next()); min_ele = Integer.MAX_VALUE; max_ele = Integer.MIN_VALUE; sc = new Scanner(System.in); while (m-- &gt; 0) { int x; x = Integer.parseInt(sc.next()); min_ele = Math.min(x, min_ele); max_ele = Math.max(max_ele, x); } for (int i = 0; i &lt; n; i++) { System.out.print(Math.max(Math.abs(min_ele - i), Math.abs(max_ele - i)) +" "); } } } } ....thank u
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91907"></a> 
+ <div id="c91907" class="comment clear-block"> 
+  <h3><a href="/problems/ANUARM#comment-91907" class="active">^ it is not formatted</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_overlord">code_overlord</a></strong>
+   <span style="color:#828282"> @ 16 Dec 2014 04:42 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ^ it is not formatted properly :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-93765"></a> 
+ <div id="c93765" class="comment clear-block"> 
+  <h3><a href="/problems/ANUARM#comment-93765" class="active">there should be 0 at some</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham101">shubham101</a></strong>
+   <span style="color:#828282"> @ 17 Jan 2015 12:32 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    there should be 0 at some position in example no. 2
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103836"></a> 
+ <div id="c103836" class="comment clear-block"> 
+  <h3><a href="/problems/ANUARM#comment-103836" class="active">http://www.codechef.com/views</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vsanjay">vsanjay</a></strong>
+   <span style="color:#828282"> @ 15 May 2015 11:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="http://www.codechef.com/viewsolution/6932478" title="http://www.codechef.com/viewsolution/6932478">http://www.codechef.com/viewsolution/6932478</a> every test case is correct....admin pls say fast why is this wrong...
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111745"></a> 
+ <div id="c111745" class="comment clear-block"> 
+  <h3><a href="/problems/ANUARM#comment-111745" class="active">must say, good question</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiroj786">abhiroj786</a></strong>
+   <span style="color:#828282"> @ 5 Aug 2015 11:47 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    must say, good question
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
