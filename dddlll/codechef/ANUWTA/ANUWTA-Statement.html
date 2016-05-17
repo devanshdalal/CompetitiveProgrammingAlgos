@@ -1,0 +1,191 @@
+<div id="node-6425317" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/COOK51/mandarin/ANUWTA.pdf">Mandarin Chinese</a> and <a target="_blank" href="http://www.codechef.com/download/translated/COOK51/russian/ANUWTA.pdf">Russian</a> as well.</h3> 
+  <p> There are <b>N+1</b> lights. Lights are placed at <b> (0, 0), (1, 0), (2, 0) ... (<b>N</b>, 0).</b> Initially all the lights are on. You want to turn off all of them one after one. You want to follow a special pattern in turning off the lights. </p> 
+  <p> You will start at <b>(0, 0)</b>. First, you walk to the right most light that is on, turn it off. Then you walk to the left most light that is on, turn it off. Then again to the right most light that is on and so on. You will stop after turning off all lights. You want to know how much distance you walked in the process. Note that distance between <b>(a,0)</b> and <b>(b,0)</b> is <b>|a-b|</b>. </p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. Each test case has a single integer <b>N</b> on separate line. </p> 
+  <h3>Output</h3> 
+  <p>For each test case, output the distance you walked.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10^5</b> </li>
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>10^5</b> </li>
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input</b>
+2
+1
+2
+
+<b>Output</b>
+2
+5
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Testcase #2</b><br> You are initially at (0, 0)<br> Right most on-light is (2, 0). Distance = 2.<br> Now you are at (2, 0).<br> Left most on-light is (0, 0). Distance = 2.<br> Now you are at (0, 0)<br> Right most on-light is (1, 0). Distance = 1.<br> Now you are at (1, 0) and all lights are turned off.<br> Total distance walked = 5. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/anudeep2011">anudeep2011</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kostya_by">kostya_by</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/ANUWTA">http://discuss.codechef.com/problems/ANUWTA</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/anudeep2011"> anudeep2011 </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cook51"> cook51 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>30-09-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/ANUWTA">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-88749"></a> 
+ <div id="c88749" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-88749" class="active">can anybody please tell me i</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kayush">kayush</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2014 01:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can anybody please tell me i am applying that total distence is "N*(N+3)/2". Is this wrong ?if yes why?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88764"></a> 
+ <div id="c88764" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-88764" class="active">I tried to find summation on</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shaswatrungta">shaswatrungta</a></strong>
+   <span style="color:#828282"> @ 20 Oct 2014 10:58 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I tried to find summation on the lengths travelled and it ended up to be N*(N+3)/2 which is same as that mentioned in the editorial (when simplified). Still it shows wrong answer.Is there some other thing to look for?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-88798"></a> 
+ <div id="c88798" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-88798" class="active">@shaswatrungta: n is of the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gaurav0216">gaurav0216</a></strong>
+   <span style="color:#828282"> @ 23 Oct 2014 03:31 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @shaswatrungta: n is of the order 10^5. n*(n+3) is of the order 10^10. You need to store the output in a 64 bit container like long long int in c++
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-94692"></a> 
+ <div id="c94692" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-94692" class="active">This one takes only 4 lines</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/iamkode_chef">iamkode_chef</a></strong>
+   <span style="color:#828282"> @ 25 Jan 2015 08:36 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    This one takes only 4 lines of python.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-100117"></a> 
+ <div id="c100117" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-100117" class="active">#include int main() { </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/a1b73">a1b73</a></strong>
+   <span style="color:#828282"> @ 30 Mar 2015 07:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int main() { long int t,i,n,s; scanf("%ld",&amp;t); while(t) { s=0; scanf("%ld",&amp;n); s=((n*(n+1))/2); printf("%ldn",n+s); t--; } return 0; } someone please tell me the fault in this . The same logic runs fine in python but in C it gives Wrong answer ,
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104640"></a> 
+ <div id="c104640" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-104640" class="active">take number of lights in long</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sandyy">sandyy</a></strong>
+   <span style="color:#828282"> @ 27 May 2015 01:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    take number of lights in long long int otherwise u will get a WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-105093"></a> 
+ <div id="c105093" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-105093" class="active">Algorithm consisted of just</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/markroxor">markroxor</a></strong>
+   <span style="color:#828282"> @ 3 Jun 2015 12:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Algorithm consisted of just one line. XD
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-106213"></a> 
+ <div id="c106213" class="comment clear-block"> 
+  <h3><a href="/problems/ANUWTA#comment-106213" class="active">I did take into account that</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/madgod">madgod</a></strong>
+   <span style="color:#828282"> @ 11 Jun 2015 09:45 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I did take into account that long long is required, but then forgot to change the printf statement to "lld"... Does it have to break 32-bit limit???
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
