@@ -1,0 +1,158 @@
+<div id="node-6835110" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/DEC14/mandarin/CAPPLE.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/DEC14/russian/CAPPLE.pdf">Russian</a>.</h3> 
+  <p>Chef loves to prepare delicious dishes. This time, Chef has decided to prepare a special dish for you, and needs to gather several apples to do so.</p> 
+  <p>Chef has <b>N</b> apple trees in his home garden. Each tree has a certain (non-zero) number of apples on it. In order to create his dish, Chef wants to pluck every apple from every tree.</p> 
+  <p>Chef has an unusual method of collecting apples. In a single minute, he can perform the following task:</p> 
+  <ul> 
+   <li>Pick any subset of trees such that every tree in the subset has the same number of apples.</li> 
+   <li>From each tree in the subset, pluck any number of apples, as long as the number of apples left on the tree equals the number of apples on a tree not in the subset.</li> 
+  </ul> 
+  <p>If all trees have the same number of apples left, Chef can pluck all of the apples remaining in a single minute.</p> 
+  <p>Chef does not want to keep you waiting, so wants to achieve this task in the minimum possible time. Can you tell him what the minimum time required is?</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains a single integer <b>T</b> denoting the number of test cases. This will be followed by <b>T</b> test cases. The first line of each test case contains a single integer <b>N</b> denoting the number of apple trees in Chef's garden. The next line of each test case contains <b>N</b> space separated integers denoting the number of apples on each tree.</p> 
+  <h3>Output</h3> 
+  <p>For each of the <b>T</b> test cases, output a single line - the minimum time to pluck all apples from all trees.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 &lt;= <b>T</b> &lt;= 10</li> 
+   <li>1 &lt;= <b>N</b> &lt;= 10<sup>5</sup></li> 
+   <li>1 &lt;= Number of apples on a tree &lt;= 10<sup>5</sup></li> 
+  </ul> 
+  <h3>Scoring</h3> 
+  <ul> 
+   <li>Subtask 1 : 1 &lt;= <b>T</b> &lt;= 10 , 1 &lt;= <b>N</b> &lt;= 10<sup>3</sup>: <b> (27 pts) </b> </li> 
+   <li>Subtask 2 : 1 &lt;= <b>T</b> &lt;= 10 , 1 &lt;= <b>N</b> &lt;= 10<sup>4</sup>: <b> (25 pts) </b> </li> 
+   <li>Subtask 3 : 1 &lt;= <b>T</b> &lt;= 10 , 1 &lt;= <b>N</b> &lt;= 10<sup>5</sup>: <b> (48 pts) </b> </li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input</b>
+2
+3
+3 3 3
+4
+1 2 3 3
+
+<b>Output</b>
+1
+3
+</pre>
+  <h3>Explanation</h3> 
+  <p>For test 1, Chef can select all the trees and can pluck all the apples in 1 minute.</p> 
+  <p>For test 2, there are many ways Chef can pluck all of the apples in 3 minutes. Here is one example: </p> 
+  <ul> 
+   <li>First minute: Select the third and fourth trees. Pluck 1 apple from the third tree, and 2 apples from the fourth tree.</li> 
+   <li>Second minute: Select the second and third tree. Pluck 1 apple from each tree.</li> 
+   <li>Third minute: Select all of the trees and pluck the last apple from each tree.</li> 
+  </ul> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/ma5termind">ma5termind</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/shiplu">shiplu</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CAPPLE">http://discuss.codechef.com/problems/CAPPLE</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/dec14"> dec14 </a><a class="problem-tag-small " href="/tags/problems/ma5termind"> ma5termind </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>14-10-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CAPPLE">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-92427"></a> 
+ <div id="c92427" class="comment clear-block"> 
+  <h3><a href="/problems/CAPPLE#comment-92427" class="active">i am new for this i have</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sreelekha506">sreelekha506</a></strong>
+   <span style="color:#828282"> @ 30 Dec 2014 10:00 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i am new for this i have tried lot of times for CAPPLE still it has been coming run time error i didn't understand what the mistake is in my compliler it's showing correct output
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98461"></a> 
+ <div id="c98461" class="comment clear-block"> 
+  <h3><a href="/problems/CAPPLE#comment-98461" class="active">#include main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivangsoni">shivangsoni</a></strong>
+   <span style="color:#828282"> @ 5 Mar 2015 04:28 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include main() { int t,g,i,j,num,n,p; int a[100000]; printf("enter the value of t"); scanf("%d",&amp;t); g=t; while(t--) { for(i=0;i&lt;100000;i++) { a[i]=0; } scanf("%d",&amp;n); { for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98462"></a> 
+ <div id="c98462" class="comment clear-block"> 
+  <h3><a href="/problems/CAPPLE#comment-98462" class="active">#include main() { int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivangsoni">shivangsoni</a></strong>
+   <span style="color:#828282"> @ 5 Mar 2015 04:29 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include main() { int t,g,i,j,num,n,p; int a[100000]; printf("enter the value of t"); scanf("%d",&amp;t); g=t; while(t--) { for(i=0;i&lt;100000;i++) { a[i]=0; } scanf("%d",&amp;n); { for(i=0;i
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107531"></a> 
+ <div id="c107531" class="comment clear-block"> 
+  <h3><a href="/problems/CAPPLE#comment-107531" class="active">Tricky one ;)</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/code_hard123">code_hard123</a></strong>
+   <span style="color:#828282"> @ 30 Jun 2015 07:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Tricky one ;)
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
