@@ -1,0 +1,165 @@
+<div id="node-6835104" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3>Read problems statements in <a href="/download/translated/DEC14/mandarin/CHEFBR.pdf" target="_blank">Mandarin Chinese </a> and <a href="/download/translated/DEC14/russian/CHEFBR.pdf" target="_blank">Russian</a>.</h3> 
+  <p>Chef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation that allows him to use many more types of brackets.</p> 
+  <p>Each type of bracket is designated by an integer. A negative integer <b>-x</b> represents an opening bracket of type <b>x</b>; while a positive integer <b>x</b> represents a closing bracket of type <b>x</b>. Any sequence of such integers is then called a <em>bracket-pair sequence</em>.</p> 
+  <p>A <em>balanced</em> bracket-pair sequence can be defined recursively as follows:</p> 
+  <ul> 
+   <li>The empty sequence is a balanced bracket-pair sequence.</li> 
+   <li>If <b>S</b> is a balanced bracket-pair sequence, then <b>-x S x</b> is a balanced bracket-pair sequence for any positive integer <b>x</b>. </li> 
+   <li>If <b>S</b> and <b>T</b> are balanced bracket-pair sequences, then <b>S T</b> is a balanced bracket-pair sequence.</li> 
+  </ul> 
+  <p>For example, "-1 -2 2 -3 -4 4 3 1" is a balanced bracket-pair sequence, but "-1 -2 1 2" is not.</p> 
+  <p>Chef has a bracket-pair sequence (which may or may not be balanced) consisting of <b>N</b> integers. There are 2<sup><b>N</b></sup> ways to form a <a href="http://en.wikipedia.org/wiki/Subsequence">subsequence</a> of his sequence. He wants to know how many of these subsequences are balanced.</p> 
+  <p>Help him to calculate this number, modulo <b>10<sup>9</sup>+7</b>.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains a single integer <b>N</b> denoting the number of brackets in his sequence.</p> 
+  <p>The second line contains <b>N</b> space-separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>N</sub></b> denoting the types of brackets. A negative number means an opening bracket; a positive number means a closing bracket.</p> 
+  <h3>Output</h3> 
+  <p>In a single line print the required answer.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>100</b></li> 
+   <li><b>-10<sup>9</sup></b> ≤ <b>A<sub>i</sub></b> ≤ <b>10<sup>9</sup></b> </li> 
+   <li><b>A<sub>i</sub></b> ≠ 0</li> 
+   <li>It is <b>not</b> guaranteed that each opening bracket has a closing bracket of same type and vice-versa. </li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li>Subtask <b>N</b> ≤ <b>10</b> Points: 10 </li> 
+   <li>Subtask <b>N</b> ≤ <b>20</b> Points: 15 </li> 
+   <li>Subtask <b>N</b> ≤ <b>100</b> Points: 75 </li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+11
+-1 -2 9 2 -3 -4 3 4 8 8 1 
+
+<b>Output:</b>
+12
+
+</pre> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/berezin">berezin</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xiaodao">xiaodao</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFBR">http://discuss.codechef.com/problems/CHEFBR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/berezin"> berezin </a><a class="problem-tag-small " href="/tags/problems/dec14"> dec14 </a><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>20-03-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFBR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-91955"></a> 
+ <div id="c91955" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBR#comment-91955" class="active">How is the output 12 for the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pshekdar9_">pshekdar9_</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 07:56 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    How is the output 12 for the given test case?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91960"></a> 
+ <div id="c91960" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBR#comment-91960" class="active">// 1: -1 1 // 2: -2 </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/chehsunliu">chehsunliu</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 08:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    // 1: -1 1 // 2: -2 2 // 3: -3 3 // 4: -4 4 // 5: -1 -2 2 1 // 6: -1 -3 3 1 // 7: -1 -4 4 1 // 8: -1 -2 2 -3 3 1 // 9: -1 -2 2 -4 4 1 // 10: -2 2 -3 3 // 11: -2 2 -4 4 // 12: empty
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-91965"></a> 
+ <div id="c91965" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBR#comment-91965" class="active">Can anyone tell what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/varungarg">varungarg</a></strong>
+   <span style="color:#828282"> @ 17 Dec 2014 11:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can anyone tell what is task#1? I am always getting it wrong. 
+    <a href="http://www.codechef.com/viewsolution/5611483" title="http://www.codechef.com/viewsolution/5611483">http://www.codechef.com/viewsolution/5611483</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92293"></a> 
+ <div id="c92293" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBR#comment-92293" class="active">Why these below are not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ratangupta">ratangupta</a></strong>
+   <span style="color:#828282"> @ 25 Dec 2014 07:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why these below are not output ? //1. -2-33-2 //2. -2-442//3. -4-224 //4. -4-1-3-22314.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-92391"></a> 
+ <div id="c92391" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFBR#comment-92391" class="active">if i was wrong in task#20,</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nberserk">nberserk</a></strong>
+   <span style="color:#828282"> @ 28 Dec 2014 03:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    if i was wrong in task#20, what should i try ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
