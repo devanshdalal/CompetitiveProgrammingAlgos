@@ -1,0 +1,221 @@
+<div id="node-8205278" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <p>The Chef once decided to prepare some nice dishes on his birthday. There are <b>N</b> items kept on his shelf linearly from position <b>1</b> to <b>N</b>. Taste of the i-th item is denoted by a integer <b>A<sub>i</sub></b>.</p> 
+  <p>He wants to make <b>Q</b> dishes. A dish will be made using some ingredients in the continuous range <b>A<sub>L</sub>, A<sub>L + 1</sub>, , , A<sub>R</sub></b> (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.</p> 
+  <h3>Read problems statements in <a target="_blank" href="/download/translated/MAY15/mandarin/CHEFCK.pdf">Mandarin Chinese </a> and <a target="_blank" href="/download/translated/MAY15/russian/CHEFCK.pdf">Russian</a>.</h3> 
+  <p>The Chef once decided to prepare some nice dishes on his birthday. There are <b>N</b> items kept on his shelf linearly from position <b>1</b> to <b>N</b>. Taste of the i-th item is denoted by a integer <b>A<sub>i</sub></b>.</p> 
+  <p>He wants to make <b>Q</b> dishes. A dish will be made using some ingredients in the continuous range <b>A<sub>L</sub>, A<sub>L + 1</sub>, , , A<sub>R</sub></b> (1-base indexing). Quality of the dish will be determined by the ingredient with minimum taste.</p> 
+  <p>Chef wants help of his assistant Rupsa to find out sum and product of qualities of the dishes. As product of the qualities of the dishes could be very large, print it modulo <b>10<sup>9</sup> + 7</b>. Also, you are given an integer <b>K</b> and you are assured that for each dish, the size of continuous range of the ingredients (i.e. <b>R - L + 1</b>) will always lie between <b>K</b> and <b>2 * K</b>, both inclusive.</p> 
+  <p><b><i>Method of generation of Array A</i></b> <br> You are given non-negative integer parameters <b>a, b, c, d, e, f, r, s, t, m, A[1]</b></p> 
+  <pre><code>
+for x = 2 to N:
+	if(t^x mod s  &lt;= r)        // Here t^x signifies "t to the power of x"
+		A[x] = (a*A[x-1]^2 + b*A[x-1] + c) mod m
+	else
+		A[x] = (d*A[x-1]^2 + e*A[x-1] + f) mod m
+</code></pre> 
+  <p><b>Method of generation of range of ingredients for Q dishes</b> <br> You are given non-negative integer parameters <b>L1, La, Lc, Lm, D1, Da, Dc, Dm</b></p> 
+  <pre><code>
+for i = 1 to Q:
+	L1 = (La * L1 + Lc) mod Lm;
+	D1 = (Da * D1 + Dc) mod Dm; 
+	L = L1 + 1;
+	R = min(L + K - 1 + D1, N);
+</code></pre> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line contains three integers <b>N</b>, <b>K</b> and <b>Q</b>.</li> 
+   <li>The second line contains the integers <b>a, b, c, d, e, f, r, s, t, m,</b> and <b>A[1]</b>.</li> 
+   <li>Then third line contains the integers <b>L1, La, Lc, Lm, D1, Da, Dc,</b> and <b>Dm</b></li> 
+  </ul> 
+  <h3>Output</h3> 
+  <p>Output two space separated integers:</p> 
+  <ul> 
+   <li>The sum of qualities of the dishes.</li> 
+   <li>The product of qualities of the dishes modulo <b>10<sup>9</sup>+7</b>.</li> 
+  </ul> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1 ≤ N, Q ≤ 10<sup>7</sup></b></li> 
+   <li><b>1 ≤ K ≤ N</b></li> 
+   <li><b>0 ≤ a, b, c, d, e, f, r, s, t, m, A[1] ≤ 10<sup>9</sup>+7</b></li> 
+   <li><b>1 ≤ Lm ≤ N - K + 1</b></li> 
+   <li><b>1 ≤ Dm ≤ K + 1</b></li> 
+   <li><b>1 ≤ La, Lc ≤ Lm</b></li> 
+   <li><b>1 ≤ Da, Dc ≤ Dm</b></li> 
+   <li><b>1 ≤ L1 ≤ N</b></li> 
+   <li><b>1 ≤ D1 ≤ K</b></li> 
+  </ul> 
+  <h3>Sub tasks</h3> 
+  <ul> 
+   <li>Subtask #1: <b>1 ≤ N, Q ≤ 1000</b> (10 points)</li> 
+   <li>Subtask #2: <b>1 ≤ Q ≤ 10<sup>4</sup></b> (20 points)</li> 
+   <li>Subtask #3: original constraints (70 points)</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4 2 1
+1 1 1 1 1 1 1 1 1 100 1 
+1 1 1 3 1 1 1 2
+
+<b>Output:</b>
+13 13
+</pre> 
+  <h3>Explanation</h3> 
+  <ul> 
+   <li>The array <b>A</b> comes out to be <b>{1, 3, 13, 83}</b> and the first dish has <b>L = 3</b> and <b>R = 4</b>. The minimum in this range is <b>13</b>, thus the sum and product both are <b>13</b> and hence the answer.</li> 
+  </ul> 
+  <h3>Note</h3> 
+  <p>Multiplier for C# and Java have been reduced to 1.5 instead of 2.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/abhra73">abhra73</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHEFCK">http://discuss.codechef.com/problems/CHEFCK</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/abhra73"> abhra73 </a><a class="problem-tag-small " href="/tags/problems/easy-medium"> easy-medium </a><a class="problem-tag-small " href="/tags/problems/may15"> may15 </a><a class="problem-tag-small " href="/tags/problems/range-queries"> range-queries </a><a class="problem-tag-small " href="/tags/problems/sliding-range"> sliding-range </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>11-03-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2.5 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHEFCK">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-104069"></a> 
+ <div id="c104069" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104069" class="active">the last paragraph wasn't</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kriti1210">kriti1210</a></strong>
+   <span style="color:#828282"> @ 18 May 2015 11:22 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    the last paragraph wasn't very clear modul on please clear it
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104091"></a> 
+ <div id="c104091" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104091" class="active">Editorial got 404ed</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newjeetu93">newjeetu93</a></strong>
+   <span style="color:#828282"> @ 20 May 2015 01:16 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Editorial got 404ed
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104094"></a> 
+ <div id="c104094" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104094" class="active">in the Method of generation</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/harismuzaffer">harismuzaffer</a></strong>
+   <span style="color:#828282"> @ 20 May 2015 03:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    in the Method of generation of range of ingredients for Q dishes, the value for L and R always remains the same... there is nothing to control the value, no 'i' is involved... thank u
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104127"></a> 
+ <div id="c104127" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104127" class="active">@harismuzaffer you should try</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhra73">abhra73</a></strong>
+   <span style="color:#828282"> @ 21 May 2015 06:05 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @harismuzaffer you should try coding the generator and see if the values of L and R varies per query. The generator for query generation is a Linear Congruential Generator and it will generate different L and R per query.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104144"></a> 
+ <div id="c104144" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104144" class="active">I really don't understand the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/akshath123">akshath123</a></strong>
+   <span style="color:#828282"> @ 22 May 2015 04:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I really don't understand the problem can some one explain it to me please?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104149"></a> 
+ <div id="c104149" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104149" class="active">please provide editorial</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/curious1ab3">curious1ab3</a></strong>
+   <span style="color:#828282"> @ 22 May 2015 10:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please provide editorial
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-104154"></a> 
+ <div id="c104154" class="comment clear-block"> 
+  <h3><a href="/problems/CHEFCK#comment-104154" class="active">editorial can be found</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhra73">abhra73</a></strong>
+   <span style="color:#828282"> @ 23 May 2015 07:52 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    editorial can be found here 
+    <a href="http://discuss.codechef.com/questions/69956/chefck-editorial" title="http://discuss.codechef.com/questions/69956/chefck-editorial">http://discuss.codechef.com/questions/69956/chefck-editorial</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
