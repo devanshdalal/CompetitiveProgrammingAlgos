@@ -1,0 +1,110 @@
+<div id="node-9379678" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/mandarin/MGCH3D.pdf">Mandarin</a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/russian/MGCH3D.pdf">Russian</a>. Translations in Vietnamese to be uploaded soon.</h3> 
+  <p>Today, you finally have a chance to compete with a famous coder like Vasia and prove your mettle.</p> 
+  <p>While he likes the real world as well, his adventures in <b>3D</b> computer puzzles make him the undisputed King of the subject. Until now, that is!</p> 
+  <p>Vasia has <b>N</b> distinct points in 3 dimensional space and he is going to ask you to find the following sum <b>Q</b> times.</p> 
+  <p><img src="http://latex.codecogs.com/gif.latex?\sum \limits_{i \neq j}\frac{|A(X_{i} - X_{j}) + B(Y_{i} - Y_{j}) + C(Z_{i}- Z_{j}) + D |}{N(N-1)\sqrt{ (X_{i} - X_{j})^4 + (Y_{i} - Y_{j})^4 + (Z_{i} - Z_{j})^4}}"></p> 
+  <p>Where <b>A</b>,<b>B</b>,<b>C</b> and <b>D</b> are some evil integers chosen by Vasia, and their values vary for each summation query.</p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>First line contains two integers <b>N</b> and <b>Q</b>. <b>N</b> is number of points, and <b>Q</b> is number of queries.</li> 
+   <li>The next <b>N</b> lines contain integer point coordinates <b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>, <b>Z<sub>i</sub></b>.</li> 
+   <li>The last <b>Q</b> lines contain a query each in the form of 4 integers <b>A</b>, <b>B</b>, <b>C</b>, <b>D</b>.</li> 
+   <li>Note that all the integers in a single line are separated by single spaces.</li> 
+  </ul> 
+  <h3>Output</h3> 
+  <p>For each query, output a single line containing the sum accurate up to <b>10<sup>-6</sup></b>.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>2 ≤ <b>N</b> ≤ 777777</li> 
+   <li>1 ≤ <b>Q</b> ≤ 77</li> 
+   <li>1 ≤ <b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>, <b>Z<sub>i</sub></b> ≤ 77</li> 
+   <li>1 ≤ <b>A<sub>i</sub></b>, <b>B<sub>i</sub></b>, <b>C<sub>i</sub></b> ≤ 77</li> 
+   <li>1 ≤ <b>D<sub>i</sub></b> ≤ 7777</li> 
+   <li><b>P.S.</b> I hope the digit "<b>7</b>" brings you luck :) </li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+ <b>Input:</b>
+ 10 5
+ 45 70 41
+ 9 1 43
+ 1 68 8
+ 70 76 7
+ 1 19 33
+ 71 70 53
+ 42 54 71
+ 11 13 30
+ 16 63 25
+ 30 24 34
+ 56 61 29 7328
+ 63 32 18 365
+ 37 41 11 2332
+ 36 19 43 7432
+ 68 55 46 6338
+
+ <b>Output:</b>
+ 6.692386875130186
+ 1.323651551014940
+ 2.269817185835997
+ 6.783038317971530
+ 5.816449269601737
+ 
+</pre>
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li><b>Subtask 1:</b> <b>Q</b>*<b>N<sup>2</sup> </b>≤ 77777777. <b>Points - 15</b></li> 
+   <li><b>Subtask 2:</b> Original constraints. <b>Points - 85</b></li> 
+  </ul> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/mgch">mgch</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MGCH3D">http://discuss.codechef.com/problems/MGCH3D</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/fft"> fft </a><a class="problem-tag-small " href="/tags/problems/fourier"> fourier </a><a class="problem-tag-small " href="/tags/problems/hard"> hard </a><a class="problem-tag-small " href="/tags/problems/mgch"> mgch </a><a class="problem-tag-small " href="/tags/problems/sept15"> sept15 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>24-03-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>7 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MGCH3D">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
