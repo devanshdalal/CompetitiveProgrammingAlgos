@@ -1,0 +1,100 @@
+<div id="node-9379682" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/mandarin/TERVEC.pdf">Mandarin</a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/russian/TERVEC.pdf">Russian</a>. Translations in Vietnamese to be uploaded soon.</h3> 
+  <p>You are given an integer <b>N</b>. Consider a vector <b>a</b> of length <b>N<sup>2</sup></b> accessible via 0-based indexing.</p> 
+  <p>Let's call the following transformation a <b>TVT-transformation</b> (Terrible Vector transformation).<br><br> <img src="https://s3.amazonaws.com/codechef_shared/download/SEPT15/TERVEC1.jpg"> </p> 
+  <p>We will call a vector <b>g</b> a <em>good</em> vector if <br> <img src="https://s3.amazonaws.com/codechef_shared/download/SEPT15/TERVEC2.jpg"> </p> 
+  <p>For some reason, you want to find a vector <b>a</b> of length <b>N<sup>2</sup></b> such that it's elements are either <b>1</b> or <b>-1</b> and after applying <b>TVT-transformation</b> (i.e. <b>b</b>), it results in a good vector.</p> 
+  <h3>Input</h3> 
+  <p>The first line of input contains an integer <b>T</b> denoting the number of test cases. Each test case is described by one line containing one integer <b>N</b>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case output one line with the word <b>NO</b> if it's not possible to find such vector. Otherwise output <b>YES</b> on the first line and <b>N<sup>2</sup></b> space-separated integers (each either <b>-1</b> or <b>1</b>) on the second - the answer for this test case.</p> 
+  <p>If there are multiple possible answers, output any one of them.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>100</b></li> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>100</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+1
+2
+
+<b>Output:</b>
+YES
+1
+YES
+1 1 1 -1
+
+</pre>
+  <h3>Subtasks</h3> 
+  <p><b>Subtask 1:(10 points) </b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>8</b></li> 
+  </ul> 
+  <p><b>Subtask 2: (20 points)</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b> 30</b></li> 
+  </ul> 
+  <p><b>Subtask 3: (30 points)</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>60</b></li> 
+  </ul> 
+  <p><b>Subtask 4: (40 points)</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>100</b></li> 
+  </ul> 
+  <h3>Explanation</h3> 
+  <p>Sample example 2: After <b>TVT-transformation</b>, the vector will transform to <b>(4, 0, 0, 4)</b> which is a good vector for <b>N = 2</b></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pavel1996">pavel1996</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/TERVEC">http://discuss.codechef.com/problems/TERVEC</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/hadamard"> hadamard </a><a class="problem-tag-small " href="/tags/problems/hard"> hard </a><a class="problem-tag-small " href="/tags/problems/matrices"> matrices </a><a class="problem-tag-small " href="/tags/problems/paley-const"> paley-const </a><a class="problem-tag-small " href="/tags/problems/pavel1996"> pavel1996 </a><a class="problem-tag-small " href="/tags/problems/sept15"> sept15 </a><a class="problem-tag-small " href="/tags/problems/sylvesters"> sylvesters </a><a class="problem-tag-small " href="/tags/problems/williamson"> williamson </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-07-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/TERVEC">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
