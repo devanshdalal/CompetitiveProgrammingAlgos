@@ -1,0 +1,106 @@
+<div id="node-9379679" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/mandarin/DONUTS.pdf">Mandarin</a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/russian/DONUTS.pdf">Russian</a>. Translations in Vietnamese to be uploaded soon.</h3> 
+  <p>There is new delicious item in Chef's menu - a doughnut chain. Doughnuts connected successively in line forming a chain.</p> 
+  <p><br> <img src="https://s3.amazonaws.com/codechef_shared/download/SEPT15/DONUT1.jpg"></p> 
+  <p><i>Chain of 3 doughnuts</i></p> 
+  <p></p> 
+  <p>Chef has received an urgent order for making a chain of <b>N</b> doughnuts. He noticed that there are exactly <b>N</b> cooked doughnuts in the kitchen, some of which are already connected in chains. The only thing he needs to do is connect them in one chain.</p> 
+  <p>He can cut one doughnut (from any position in a chain) into two halves and then use this cut doughnut to link two different chains.<br> Help Chef determine the minimum number of cuts needed to complete the order. </p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line of the input contains an integer <b>T</b> denoting the number of test cases.</li> 
+   <li>The first line of each test case contains two integer <b>N</b> and <b>M</b> denoting the size of order and number of cooked chains respectively.</li> 
+   <li>The second line contains <b>M</b> space-separated integers <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ..., <b>A<sub>M</sub></b> denoting the size of the chains.</li> 
+  </ul> 
+  <p><em>It is guaranteed that <b>N</b> is equal to the sum of all <b>A<sub>i</sub></b>'s over <b>1&lt;=<em>i</em>&lt;=M</b>.</em></p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing an integer corresponding to the number of cuts needed Chef to make the order.</p> 
+  <h3>Constraints and Subtasks</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>200</b></li> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>2*10<sup>9</sup></b></li> 
+   <li><b>1</b> ≤ <b>A<sub>i</sub></b> ≤ <b>10<sup>5</sup></b></li> 
+  </ul> 
+  <p><b>Subtask 1: 10 points</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>2*10<sup>4</sup></b></li> 
+   <li><b>A<sub>i</sub> = 1</b></li> 
+  </ul> 
+  <p><b>Subtask 2: 30 points</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>100</b></li> 
+  </ul> 
+  <p><b>Subtask 3: 60 points</b></p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>2*10<sup>4</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+11 3
+4 3 4
+6 3
+3 2 1
+
+<b>Output:</b>
+2
+1
+
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example 1:</b> We could cut 2 doughnut from any "chain" and use them to connect chains to the one. <br> For example, let's cut it from the first chain. After this we will have chains of sizes 2, 3, 4 and two doughnuts that have been cut. So we could connect the first chain with second and second with third using these two doughnuts.</p> 
+  <p><b>Example 2:</b> We cut doughnut from the last "chain" and connect the first two chains.</p> 
+  <p><img src="https://s3.amazonaws.com/codechef_shared/download/SEPT15/DONUT2.png"></p> 
+  <p><i>Image for second example. Yellow doughnut has been cut.</i></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/m0stik">m0stik</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DONUTS">http://discuss.codechef.com/problems/DONUTS</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a><a class="problem-tag-small " href="/tags/problems/m0stik"> m0stik </a><a class="problem-tag-small " href="/tags/problems/sept15"> sept15 </a><a class="problem-tag-small " href="/tags/problems/sorting"> sorting </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>30-04-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DONUTS">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
