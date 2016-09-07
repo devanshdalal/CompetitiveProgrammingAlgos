@@ -1,0 +1,101 @@
+<div id="node-9379681" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/mandarin/MSTEP.pdf">Mandarin</a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/russian/MSTEP.pdf">Russian</a>. Translations in Vietnamese to be uploaded soon.</h3> 
+  <p> You have a matrix of size <b>N</b> * <b>N</b> with rows numbered through 1 to <b>N</b> from top to bottom and columns through 1 to <b>N</b> from left to right. It contains all values from 1 to <b>N<sup>2</sup></b>, i.e. each value from 1 to <b>N<sup>2</sup></b> occurs exactly once in the matrix. </p> 
+  <p> Now, you start from the cell containing value 1, and from there visit the cell with value 2, and then from there visit the cell with value 3, and so on till you have visited cell containing the number <b>N<sup>2</sup></b>. In a single step, you can move from a cell to one of its adjacent cells. Two cells are said to be adjacent to each other if they share an edge between them. </p> 
+  <p> Find out minimum number of steps required. </p> 
+  <p> For example, if matrix is </p> 
+  <pre>
+1 3
+2 4
+</pre>
+  <p> </p> 
+  <p>You start from cell containing value 1 (i.e. (1,1)) and you want to visit cell with value 2 (i.e. (2,1)). Now, from cell (2,1) you have to visit cell (1,2), which can be done is 2 steps (First we go from (2, 1) to (1, 1) and then to (1, 2), total 2 steps). Finally you move to cell where value 4 is present in 1 step. So, total number of steps required is 4. </p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</li> 
+   <li>The first line of each test case contains a single integer <b>N</b> denoting the size of matrix. Each of the next <b>N</b> lines contain <b>N</b> integers denoting the values in the rows of the matrix.</li> 
+  </ul> 
+  <h3>Output</h3> 
+  <ul> 
+   <li>For each test case, output in a single line the required answer.</li> 
+  </ul> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>5</b></li> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>500</b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li> <b>Subtask 1</b> (30 points) : <b>1</b> ≤ <b>N</b> ≤ <b>20</b></li> 
+   <li> <b>Subtask 2</b> (70 points) : Original constraints</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+2
+1 3
+2 4
+3
+1 7 9
+2 4 8
+3 6 5
+<b>Output:</b>
+4
+12
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> Explained in the statement. </p> 
+  <p><b>Example case 2.</b><br> This is the sequence of cells visited: <br> (1,1) to (2,1) to (3,1) to (2,2) to (3,3) to (3,2) to (1,2) to (2,3) to (1,3). </p> 
+  <p> <b>Warning:</b> Large input files, use scanf instead of cin in C/C++. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/darkshadows">darkshadows</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/MSTEP">http://discuss.codechef.com/problems/MSTEP</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/darkshadows"> darkshadows </a><a class="problem-tag-small " href="/tags/problems/sept15"> sept15 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>10-06-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/MSTEP">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
