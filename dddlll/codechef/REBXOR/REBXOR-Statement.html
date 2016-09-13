@@ -1,0 +1,82 @@
+<div id="node-9379680" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/mandarin/REBXOR.pdf">Mandarin</a> and <a target="_blank" href="http://www.codechef.com/download/translated/SEPT15/russian/REBXOR.pdf">Russian</a>. Translations in Vietnamese to be uploaded soon.</h3> 
+  <p>Nikitosh the painter has a 1-indexed array <b>A</b> of <b>N</b> elements. He wants to find the <b>maximum</b> value of expression <br><br> (<b>A[l<sub>1</sub>]</b> ⊕ <b>A[l<sub>1</sub> + 1]</b> ⊕ <b>...</b> ⊕ <b>A[r<sub>1</sub>]</b>) + (<b>A[l<sub>2</sub>]</b> ⊕ <b>A[l<sub>2</sub> + 1]</b> ⊕ <b>...</b> ⊕ <b>A[r<sub>2</sub>]</b>) where <b>1</b> ≤ <b>l<sub>1</sub></b> ≤ <b>r<sub>1</sub></b> &lt; <b>l<sub>2</sub></b> ≤ <b>r<sub>2</sub></b> ≤ <b>N</b>.<br><br> Here, <b>x</b> ⊕ <b>y</b> means the <a href="https://en.wikipedia.org/wiki/Bitwise_operation#XOR" target="_blank">bitwise XOR</a> of <b>x</b> and <b>y</b>.</p> 
+  <p>Because Nikitosh is a painter and not a mathematician, you need to help him in this task.</p> 
+  <h3>Input</h3> 
+  <p>The first line contains one integer <b>N</b>, denoting the number of elements in the array.</p> 
+  <p>The second line contains <b>N</b> space-separated integers, denoting <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>, ... , <b>A<sub>N</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>Output a single integer denoting the <b>maximum possible</b> value of the given expression.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>2</b> ≤ <b>N</b> ≤ <b>4*10<sup>5</sup></b></li> 
+   <li><b>0</b> ≤ <b>A<sub>i</sub></b> ≤ <b>10<sup>9</sup></b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li> <b>Subtask 1</b> (40 points) : <b>2</b> ≤ <b>N</b> ≤ <b>10<sup>4</sup></b></li> 
+   <li> <b>Subtask 2</b> (60 points) : Original constraints</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+5
+1 2 3 1 2
+
+<b>Output:</b>
+6
+
+</pre>
+  <h3>Explanation</h3> 
+  <p>Choose (<b>l<sub>1</sub></b>, <b>r<sub>1</sub></b>, <b>l<sub>2</sub></b>, <b>r<sub>2</sub></b>) = (1, 2, 3, 3) or (1, 2, 4, 5) or (3, 3, 4, 5).</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/rebryk">rebryk</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/kevinsogo">kevinsogo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/REBXOR">http://discuss.codechef.com/problems/REBXOR</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/bitwise"> bitwise </a><a class="problem-tag-small " href="/tags/problems/rebryk"> rebryk </a><a class="problem-tag-small " href="/tags/problems/sept15"> sept15 </a><a class="problem-tag-small " href="/tags/problems/trie"> trie </a><a class="problem-tag-small " href="/tags/problems/xor"> xor </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>4-05-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/REBXOR">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
