@@ -1,0 +1,21 @@
+import math
+
+def pmod(a,b,c):
+	x = 1
+	while(b>0):
+		if(b&1==1): x = (x*a)%c
+		a=(a*a)%c
+		b >>= 1
+	return x%c
+
+t=int(raw_input())
+for z in range(t):
+    n,k=raw_input().split()
+    n=int(n)
+    k = k.split('*')
+    l = len(k)
+    ans=1;
+    for x in range(l):
+        if(k[x]==''):
+        	ans=ans*pmod(int(k[x-1])%n,int(k[x+1]),n)%n;
+    print ans
