@@ -1,0 +1,232 @@
+<div id="node-7226995" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/LTIME20/mandarin/LCH15JAB.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/LTIME20/russian/LCH15JAB.pdf">Russian</a>.</h3> 
+  <p>This is a very easy warm-up problem.</p> 
+  <p>You are given a string. Your task is to determine whether number of occurrences of some character in the string is equal to the sum of the numbers of occurrences of other characters in the string.&nbsp;</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. Each of the next <b>T</b> lines contains one string <b>S</b> consisting of lowercase latin letters.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing <b>"YES"</b> if the string satisfies the condition given above or <b>"NO"</b> otherwise. </p> 
+  <h3>Constraints</h3> 
+  <li><b>1</b> ≤ <b>T</b> ≤ <b>1000</b></li> 
+  <li><b>1</b> ≤ <b>length of S</b> ≤ <b>50</b></li> 
+  <h3>Subtasks</h3> 
+  <p><b>Subtask #1</b>[28 points]: <b>S</b> contains no more than <b>2</b> different letters.<br> <b>Subtask #2</b>[72 points]: No additional conditions </p>
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+acab
+zzqzqq
+abc
+kklkwwww
+<b>Output:</b>
+YES
+YES
+NO
+YES
+</pre>
+  <p></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/pavel1996">pavel1996</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/rubanenko">rubanenko</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/ltime20"> ltime20 </a><a class="problem-tag-small " href="/tags/problems/pavel1996"> pavel1996 </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>25-12-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/LCH15JAB">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-94887"></a> 
+ <div id="c94887" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-94887" class="active">#include #include int</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubham698dj">shubham698dj</a></strong>
+   <span style="color:#828282"> @ 27 Jan 2015 01:23 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include int main(){ int t,i,max,val,ctr,len; scanf("%d",&amp;t); while(t--){ max=0; char a[50]="",b[123]={0}; ctr=0; scanf("%s",a); len = strlen(a); for(i=0;i=max) max=b[i]; } if(ctr==(2*max)&amp;&amp;max&gt;1) printf("YES"); else printf("NO"); } return 0; } can anyone tell me why it is showing wrong answer in codechef submission ?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-95521"></a> 
+ <div id="c95521" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-95521" class="active">Main.java:4: error: class</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/roopali_10">roopali_10</a></strong>
+   <span style="color:#828282"> @ 5 Feb 2015 01:20 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Main.java:4: error: class Hello1 is public, should be declared in a file named Hello1.java public class Hello1 ^ 1 error
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-103063"></a> 
+ <div id="c103063" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-103063" class="active">selection sort + characters</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/newts">newts</a></strong>
+   <span style="color:#828282"> @ 7 May 2015 03:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    selection sort + characters count ! : damn easy!
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-107690"></a> 
+ <div id="c107690" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-107690" class="active">think about the difficult</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sujon38">sujon38</a></strong>
+   <span style="color:#828282"> @ 3 Jul 2015 11:50 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    think about the difficult version of this problem, DP :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-108182"></a> 
+ <div id="c108182" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-108182" class="active">why is line 3 get NO?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hafizhme">hafizhme</a></strong>
+   <span style="color:#828282"> @ 6 Jul 2015 10:16 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is line 3 get NO?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111644"></a> 
+ <div id="c111644" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-111644" class="active">what is subtask? is it a</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/prldhruv777">prldhruv777</a></strong>
+   <span style="color:#828282"> @ 3 Aug 2015 09:03 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what is subtask? is it a condition?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-111728"></a> 
+ <div id="c111728" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-111728" class="active">https://www.codechef.com/view</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/vamsi1995">vamsi1995</a></strong>
+   <span style="color:#828282"> @ 5 Aug 2015 05:24 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://www.codechef.com/viewsolution/7626679" title="https://www.codechef.com/viewsolution/7626679">https://www.codechef.com/viewsolution/7626679</a> plz say where is the mistake it is working wright on my pc
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-112210"></a> 
+ <div id="c112210" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-112210" class="active">O(n), single pass over the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/it97">it97</a></strong>
+   <span style="color:#828282"> @ 9 Aug 2015 01:49 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    O(n), single pass over the string array and constant extra space :D
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113074"></a> 
+ <div id="c113074" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-113074" class="active">https://www.codechef.com/view</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sudeshna92">sudeshna92</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2015 12:53 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://www.codechef.com/viewsolution/7841223" title="https://www.codechef.com/viewsolution/7841223">https://www.codechef.com/viewsolution/7841223</a> Can someone tell me what is wrong with this approach?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113297"></a> 
+ <div id="c113297" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-113297" class="active">#include int t; main() { </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/pritam_sen">pritam_sen</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2015 10:57 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include int t; main() { int i,j,k,count,tmp; scanf("%d",&amp;t); while(t--) { char c[50]; i=0; scanf("%s",c); for(i=0;c[i];i++); if(i%2 != 0) printf("Non"); else { for(k=0;k
+    <i j="k+1;j<i;j++)">c[j]) { tmp=c[k]; c[k]=c[j]; c[j]=tmp; } } } k=0; count=0; for(j=0;j<i count="" else="">i/2) printf("Non"); else recount(c,k,i); } } } int recount(char c[],int k,int i) { int j,count=0; if(k&lt;=i) { for(j=k;j<i count="" else="">i/2) printf("Non"); else recount(c,k,i); } else printf("Non"); return 0; }</i></i></i>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-115375"></a> 
+ <div id="c115375" class="comment clear-block"> 
+  <h3><a href="/problems/LCH15JAB#comment-115375" class="active">why is it saying wrong answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sayak96">sayak96</a></strong>
+   <span style="color:#828282"> @ 1 Sep 2015 11:12 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why is it saying wrong answer when everything is working perfect fine....makes me so sad
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
