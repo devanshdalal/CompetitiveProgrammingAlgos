@@ -1,0 +1,206 @@
+<div id="node-7527076" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/FEB15/mandarin/STRQ.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/FEB15/russian/STRQ.pdf">Russian</a>.</h3> 
+  <p>Chef likes strings a lot but moreover he likes good strings. Chef calls a string <b>str</b> a good string if <b>str</b> starts and ends at different characters. For eg : strings such as <b>abab</b> , <b>baccba</b> , <b>abc</b> are all good strings whereas strings like <b>aba</b>, <b>baab</b> , <b>baacaab</b> are not good at all .</p> 
+  <p>Today, Chef has a special string <b>P</b> consisting of lower case letters <b>"c"</b> , <b>"h"</b> , <b>"e"</b> and <b>"f"</b> only. Chef wants to make some queries about his string <b>P</b>.</p> 
+  <p>Each of chef's query has the following form <b>a b L R</b>. For a given query, Chef wants to count the number of good strings which starts at letter <b>a</b> and ends at letter <b>b</b> such that starting index <b>S<sub>i</sub></b> and ending index <b>E<sub>i</sub></b> of a chosen substring satisfies <b>L &lt;= S<sub>i</sub> &lt; E<sub>i</sub> &lt;= R</b>.</p> 
+  <p><b>NOTE</b></p> 
+  <p>Two substrings <b>P<sub>1</sub></b> and <b>P<sub>2</sub></b> are considered to be different if either <b>S<sub>1</sub> != S<sub>2</sub></b> or <b>E<sub>1</sub> != E<sub>2</sub></b> where <b>S<sub>1</sub>,E<sub>1</sub></b> and <b>S<sub>2</sub>,E<sub>2</sub></b> are the starting and ending index of string <b>P<sub>1</sub></b> and string <b>P<sub>2</sub></b> respectively.</p> 
+  <p>Chef is not able to accomplish this task efficiently. Can you help him ?</p> 
+  <h3>Input</h3> 
+  <p>First line of the input contains a string <b>P</b> denoting the chef's special string. Next line of the input contains a single integer <b>Q</b> denoting the number of chef's queries. Next <b>Q</b> lines of the input contains <b>four</b> space separated parameters where the first <b>two</b> parameters are characters denoting <b>a</b> and <b>b</b> respectively and rest <b>two</b> are integers denoting <b>L</b> and <b>R</b> respectively. </p> 
+  <h3>Output</h3> 
+  <p>For each chef's query, print the required answer.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1 &lt;= |P| &lt;= 10<sup>6</sup></b></li> 
+   <li><b>1 &lt;= Q &lt;= 10<sup>6</sup></b></li> 
+   <li><b>1 &lt;= L &lt;= R &lt;= |P|</b></li> 
+   <li><b>P,a,b</b> belongs to the set of lower case letters <b>[c,h,e,f] and a != b</b>. </li>
+   <li><b>All test files are strictly according to constraints.</b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li> Subtask #1: <b>1&lt;=|P|,Q&lt;=10<sup>4</sup> : 27 pts</b></li> 
+   <li> Subtask #2: <b>1&lt;=|P|,Q&lt;=10<sup>5</sup> : 25 pts</b></li> 
+   <li> Subtask #3: <b>1&lt;=|P|,Q&lt;=10<sup>6</sup> : 48 pts</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre>
+<b>Input</b>
+checfcheff
+5
+c h 1 10
+c f 1 10
+e c 1 10
+c f 1 5
+c f 6 10
+
+<b>Output</b>
+4
+8
+2
+2
+2
+</pre>
+  <h3>Explanation</h3> 
+  <ul> 
+   <li>Q1 : good strings are <b>ch</b> , <b>checfch</b> , <b>cfch</b> , <b>ch</b> </li> 
+   <li>Q2 : good strings are <b>checf</b> , <b>checfchef</b> , <b>checfcheff</b> , <b>cf</b> , <b>cfchef</b> , <b>cfcheff</b> , <b>chef</b> , <b>cheff</b></li> 
+  </ul> 
+  <h3>Warning</h3> 
+  <p>Large test data set, Prefer to use faster input/output methods .</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/ma5termind">ma5termind</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/shangjingbo">shangjingbo</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/STRQ">http://discuss.codechef.com/problems/STRQ</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/feb15"> feb15 </a><a class="problem-tag-small " href="/tags/problems/ma5termind"> ma5termind </a><a class="problem-tag-small " href="/tags/problems/precalculation"> precalculation </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-10-2014</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/STRQ">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-97079"></a> 
+ <div id="c97079" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97079" class="active">Are all the inputs supposed</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nishqa123">nishqa123</a></strong>
+   <span style="color:#828282"> @ 19 Feb 2015 01:34 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Are all the inputs supposed to be taken at the beginning of the program, or are they supposed to be taken one by one as the program execution proceeds?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97104"></a> 
+ <div id="c97104" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97104" class="active">Getting AC in subtask 1 but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/siddharth10246">siddharth10246</a></strong>
+   <span style="color:#828282"> @ 19 Feb 2015 06:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Getting AC in subtask 1 but TLE in 2 and 3. Can anyone suggest how can I make this fast. ID 
+    <a href="http://www.codechef.com/viewsolution/6315974" title="http://www.codechef.com/viewsolution/6315974">http://www.codechef.com/viewsolution/6315974</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97150"></a> 
+ <div id="c97150" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97150" class="active">Of course you will take the</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/nitinagam17">nitinagam17</a></strong>
+   <span style="color:#828282"> @ 20 Feb 2015 12:07 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Of course you will take the inputs one by one at program execution .... @nishqa123
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97181"></a> 
+ <div id="c97181" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97181" class="active">Can I get some inputs for</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohit_jain">rohit_jain</a></strong>
+   <span style="color:#828282"> @ 21 Feb 2015 05:07 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can I get some inputs for which there are most failure. My code gives correct result for given sample input, but gives wrong result when I submit it.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97305"></a> 
+ <div id="c97305" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97305" class="active">can someone take a look at my</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/yogicode">yogicode</a></strong>
+   <span style="color:#828282"> @ 22 Feb 2015 05:10 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    can someone take a look at my code 
+    <a href="http://www.codechef.com/viewsolution/6335660" title="http://www.codechef.com/viewsolution/6335660">http://www.codechef.com/viewsolution/6335660</a> I am getting 52 marks for this . I have applied fast I/O and giving the answer to queries in O(1) . please someone tell me how to further refine this solution.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-97515"></a> 
+ <div id="c97515" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-97515" class="active">@yogicode - Your answer</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/p00r">p00r</a></strong>
+   <span style="color:#828282"> @ 24 Feb 2015 04:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @yogicode - Your answer exceeds integer range
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-98304"></a> 
+ <div id="c98304" class="comment clear-block"> 
+  <h3><a href="/problems/STRQ#comment-98304" class="active">i was getting 52 points and</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/smohanka">smohanka</a></strong>
+   <span style="color:#828282"> @ 4 Mar 2015 01:30 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    i was getting 52 points and then i changed the array from int to long long and guess what i got 27 points.whats wrong with my solution,can somebody plz help. 
+    <a href="http://www.codechef.com/viewsolution/6389090" title="http://www.codechef.com/viewsolution/6389090">http://www.codechef.com/viewsolution/6389090</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
