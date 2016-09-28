@@ -1,0 +1,90 @@
+<div id="node-7527078" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/FEB15/mandarin/RANKLIST.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/FEB15/russian/RANKLIST.pdf">Russian</a>.</h3> 
+  <p>A <b>rank list</b> is a list of ranks of persons in a programming contest. Note that some of the persons might be having same rank. {1, 2}, {1, 2, 2} and {1, 1, 2, 3, 4, 4} are few examples of rank lists whereas {1, 3}, {0, 2}, {1, 2, 4} are not rank lists.<br> Also note that a rank list need not to be sorted e.g. {2, 2, 1} and {3, 3, 2, 1} are valid rank lists. </p> 
+  <p>Mathematically, a <b>rank list</b> is an array of numbers when sorted will have the starting element as 1 and difference between any two consecutive elements less than or equal to 1. </p> 
+  <p>A rank list is said to be an <b>ideal rank list</b> if no two persons gets equal rank in it. </p> 
+  <p>You can convert any rank list into an ideal rank list by applying following operations. In a single operation, you can change value of any one element of the rank list to any value. </p> 
+  <p>Chandan now wonders about minimum number of operations needed to convert a rank list of size <b>n</b> with sum of its element equal to <b>s</b> in to an ideal rank list. Please help Chandan find this minimum number of operations needed to create an ideal rank list. </p> 
+  <p>Note that you are guaranteed that values of <b>n, s</b> will be given in such a way that there will exist a valid rank list.</p> 
+  <h3>Input</h3> 
+  <p>First line of input will give an integer <b>T</b> denoting number of test cases.<br> Then for next <b>T</b> lines, each line will contain two space separated integers <b>n, s</b>. </p> 
+  <h3>Output</h3> 
+  <p>For each test case, print a single line containing a single integer corresponding to the answer of the problem.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>1</b> ≤ <b>n</b> ≤ <b>10^5</b></li> 
+   <li><b>1</b> ≤ <b>s</b> ≤ <b>10^10</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4
+1 1
+3 6
+3 5
+3 3
+
+<b>Output:</b>
+0
+0
+1
+2
+
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b><br> Only possible rank list in this case is {1}, As it is already an ideal rank list, hence you need zero operations. </p> 
+  <p><b>Example case 2.</b><br> Only possible rank list in this case is {1 2 3}, As it is already an ideal rank list, hence you need zero operations. </p> 
+  <p><b>Example case 3.</b><br> One of the possible rank list is {1 2 2}, You can convert it into an ideal rank list by changing any 2 to 3 i.e. {1, 2, 3}, hence you need one operations. </p> 
+  <p><b>Example case 4.</b><br> Only possible rank list is {1 1 1}, You can convert it into an ideal rank list by changing a 1 to 2 and another 1 to 3 i.e. {1, 2, 3}, hence you need two operations. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/chandubaba">chandubaba</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/pushkarmishra">pushkarmishra</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/RANKLIST">http://discuss.codechef.com/problems/RANKLIST</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/chandubaba"> chandubaba </a><a class="problem-tag-small " href="/tags/problems/feb15"> feb15 </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>9-01-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/RANKLIST">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
