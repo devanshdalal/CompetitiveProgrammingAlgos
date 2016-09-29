@@ -1,0 +1,14 @@
+t= int(raw_input())
+
+while t>0:
+	n=int(raw_input())
+	a=raw_input()
+	s=a;
+	for i in xrange(0,n):
+		left=a[0:i]+a[i+1:n];
+		for x in xrange(0,n):
+			news = left[0:x]+a[i]+left[x:];
+			if news<s:
+				s=news;
+	print s
+	t-=1;
