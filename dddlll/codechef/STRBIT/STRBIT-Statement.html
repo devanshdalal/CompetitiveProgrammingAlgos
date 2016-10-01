@@ -1,0 +1,193 @@
+<div id="node-7798383" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/COOK56/mandarin/STRBIT.pdf">Mandarin Chinese</a> and <a target="_blank" href="http://www.codechef.com/download/translated/COOK56/russian/STRBIT.pdf">Russian</a> as well.</h3> 
+  <p> John's barn has a fence consisting of <b>N</b> consecutive parts numbered from left to right starting from <b>1</b> to <b>N</b>. Each part is initially painted in one of two colors: red or green, whose information is provided you by a string <b>C</b>. The color of <b>i</b>-th part <b>C<sub>i</sub></b> will be equal to 'R' if the color of the part is red and 'G' if it is green. </p> 
+  <p> John decided to paint the whole fence in green color. To make the mundane process of painting more entertaining he decided to do it using the following process.<br> Every minute (until the whole fence is painted green) he will do the following steps:</p> 
+  <ul> 
+   <li> Choose any part of the fence that is painted red. Let's denote the index of this part as <b>X</b>. </li> 
+   <li> For each part with indices <b>X</b>, <b>X+1</b>, ..., <b>min(N, X + K - 1)</b>, flip the color of the corresponding part from red to green and from green to red by repainting. </li> 
+  </ul> 
+  <p> John is wondering how fast he can repaint the fence. Please help him in finding the minimum number of minutes required in repainting. </p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</p> 
+  <p>The first line of each test case contains the two integers <b>N</b> and <b>K</b>.</p> 
+  <p>The next line contains the string <b>C</b>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing the answer to the corresponding test case.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10</b></li> 
+   <li><b>1</b> ≤ <b>N</b>, <b>K</b> ≤ <b>10<sup>5</sup></b></li> 
+   <li><b>C</b> will consist only of uppercase English characters 'R' and 'G'.</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+1
+7 3
+RGGRGRG
+
+<b>Output:</b>
+4
+</pre>
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> One optimal solution (with 4 steps) looks like this:</p> 
+  <ul> 
+   <li> Choose the 1-st character (1-based index) and get "GRRRGRG". </li> 
+   <li> Choose the 2-st character (1-based index) and get "GGGGGRG". </li> 
+   <li> Choose the 6-th character (1-based index) and get "GGGGGGR". </li> 
+   <li> Choose the 7-th charatcer (1-based index) and get "GGGGGGG". </li> 
+   <li> Now repainting is done :) It took total 4 steps. Hence answer is 4. </li> 
+  </ul> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witua">witua</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/iscsi">iscsi</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/STRBIT">http://discuss.codechef.com/problems/STRBIT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/bit"> bit </a><a class="problem-tag-small " href="/tags/problems/cook56"> cook56 </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/segment-tree"> segment-tree </a><a class="problem-tag-small " href="/tags/problems/witua"> witua </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>19-03-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/STRBIT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-99801"></a> 
+ <div id="c99801" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99801" class="active">could you pls tel me why i am</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhihegde">abhihegde</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 12:14 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    could you pls tel me why i am getting TLE pls my code @ - 
+    <a href="http://www.codechef.com/viewsolution/6569050" title="http://www.codechef.com/viewsolution/6569050">http://www.codechef.com/viewsolution/6569050</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99804"></a> 
+ <div id="c99804" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99804" class="active">@abhihegde your algorithm's</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eightnoteight">eightnoteight</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 01:42 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @abhihegde your algorithm's time complexity is O(n*k) for some testcases like n=100000 and k=100000, you will obviously get TLE
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99805"></a> 
+ <div id="c99805" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99805" class="active">similar problem spoj:</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/eightnoteight">eightnoteight</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 01:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    similar problem spoj: 
+    <a href="http://www.spoj.com/problems/PEBBLE/" title="http://www.spoj.com/problems/PEBBLE/">http://www.spoj.com/problems/PEBBLE/</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99815"></a> 
+ <div id="c99815" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99815" class="active">solved bye O(n * log(n)) :)))</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/monkey">monkey</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 02:55 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    solved bye O(n * log(n)) :)))
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99817"></a> 
+ <div id="c99817" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99817" class="active">I am getting wa can anyone</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shivam duggal">shivam duggal</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 10:51 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I am getting wa can anyone tell why??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99819"></a> 
+ <div id="c99819" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99819" class="active">I'm getting wrong answer but</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ryanafrish7">ryanafrish7</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 01:21 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    I'm getting wrong answer but i can't get the output to see what i am wrong. Why??
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-99821"></a> 
+ <div id="c99821" class="comment clear-block"> 
+  <h3><a href="/problems/STRBIT#comment-99821" class="active">Still I'm getting the given</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/ryanafrish7">ryanafrish7</a></strong>
+   <span style="color:#828282"> @ 23 Mar 2015 01:27 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Still I'm getting the given testcase solved correctly
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
