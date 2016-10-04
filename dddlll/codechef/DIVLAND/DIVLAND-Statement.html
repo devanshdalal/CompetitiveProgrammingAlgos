@@ -1,0 +1,113 @@
+<div id="node-8001524" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/APRIL15/mandarin/DIVLAND.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/APRIL15/russian/DIVLAND.pdf">Russian</a>.</h3> 
+  <p>Time flies fast, Chef’s sons are getting older, stronger and higher. Chef has got two sons and they don’t go well with each other. Their relations are getting worse day by day. Concerned Chef has now decided to separate them. Chef is very rich and he has got <b>N</b> cities (<b>N</b> is even). His sons are all he has and he must divide the cities into his sons equally. There are some roads running between the cities. Chef has to destruct all the roads between cities of first and second sons. The destruction of road costis a lot of money. So Chef wants to save as much as he can. So you have to help Chef in finding out minimal cost to split cities to his sons.</p> 
+  <h3>Input</h3> 
+  <p>First line contains two space separated integers <b>N</b>, <b>M</b> denoting the number of cities and the number of the roads respectively. </p> 
+  <p>Each <b>i<sup>th</sup></b> of the following <b>M</b> lines contains three integers <b>a<sub>i</sub></b>, <b>b<sub>i</sub></b> and <b>c<sub>i</sub></b> denoting the road between the city with the number <b>a<sub>i</sub></b> and the city with the number <b>b<sub>i</sub></b>. The cost for it's destruction is <b>c<sub>i</sub></b>. &nbsp;</p> 
+  <h3>Output</h3> 
+  <p>In a single line, output <b>N / 2</b> numbers – the numbers of cities that will belong to the first son after the partition.</p> 
+  <h3>Scoring</h3> 
+  <p>Your score will be sum of all <b>c<sub>i</sub></b> of all edges that would be destroyed by Chef. Your score for the problem will be sum of scores for each test files.</p> 
+  <p>Your solution will be tested against only on <b>20%</b> of the test files during the contest and will be rejudged against <b>100%</b> after the end of competition.</p> 
+  <h3>Constraints</h3> 
+  <p></p>
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>10<sup>6</sup></b></li> 
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>10<sup>6</sup></b></li> 
+   <li><b>0</b> ≤ <b>a<sub>i</sub>, b<sub>i</sub></b> &lt; <b>N</b></li> 
+   <li><b>1</b> ≤ <b>c<sub>i</sub></b> ≤ <b>10<sup>9</sup></b></li> 
+  </ul> 
+  <p></p> 
+  <h3>Subtasks</h3> 
+  <p>Subtask 1:</p> 
+  <ul> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>100</b></li> 
+   <li><b>1</b> ≤ <b>M</b> ≤ <b>1000</b></li> 
+  </ul> 
+  <p>Subtask 2:</p> 
+  <ul> 
+   <li><b>100</b> ≤ <b>N</b> ≤ <b>2*10<sup>4</sup></b></li> 
+   <li><b>1000</b> ≤ <b>M</b> ≤ <b>2*10<sup>5</sup></b></li> 
+  </ul> 
+  <p>Subtask 3:</p> 
+  <ul> 
+   <li><b>2*10<sup>4</sup></b> ≤ <b>N</b> ≤ <b>10<sup>5</sup></b></li> 
+   <li><b>2*10<sup>5</sup></b> ≤ <b>M</b> ≤ <b>4*10<sup>5</sup></b></li> 
+  </ul> 
+  <p>Subtask 4:</p> 
+  <ul> 
+   <li><b>10<sup>5</sup></b> ≤ <b>N</b> ≤ <b>10<sup>6</sup></b></li> 
+   <li><b>4*10<sup>5</sup></b> ≤ <b>M</b> ≤ <b>10<sup>6</sup></b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+4 4
+0 1 1 
+1 2 2
+2 3 3
+3 0 4
+
+<b>Output:</b>
+1 2
+</pre>
+  <h3>Test data generation</h3> 
+  <p> Four plans are used:</p> 
+  <ul> 
+   <li>Complete graph with random edge weights</li> 
+   <li>Complete bipartite graph with random edge weights</li> 
+   <li>Random tree</li> 
+   <li>Fully random graph</li> 
+  </ul> 
+  <p> The first two sections subtasks are generated with the usage of all <b>4</b> of them, third section is generated with the usage only of the fourth plan, and fourth section is generated with the plans number <b>3</b> and <b>4</b>. </p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witalij_hq ">witalij_hq </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/xcwgf666">xcwgf666</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/DIVLAND">http://discuss.codechef.com/problems/DIVLAND</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/april15"> april15 </a><a class="problem-tag-small " href="/tags/problems/challenge"> challenge </a><a class="problem-tag-small " href="/tags/problems/witalij_hq "> witalij_hq </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>23-02-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/DIVLAND">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div>
