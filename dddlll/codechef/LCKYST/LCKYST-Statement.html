@@ -1,0 +1,129 @@
+<div id="node-8696223" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3>Read problems statements in <a href="/download/translated/JULY15/mandarin/LCKYST.pdf" target="_blank">Mandarin Chinese </a> and <a href="/download/translated/JULY15/russian/LCKYST.pdf" target="_blank">Russian</a>.</h3> 
+  <p>A number is called as a lucky number if its decimal representation contains only the lucky digits, 4 and 7. e.g. 47, 744, 4 are lucky numbers, whereas 5, 17, 467 are not.</p> 
+  <p>Recently, Na2a found a magic stone. With the help of this stone, he can multiply a number by any lucky number. Also, the magic stone can be used any number of times (possibly zero or infinite number of times).<br> For example, if initially he has the number 1, then he can get numbers like 28 (formed by 1*4*7), 14476 (formed as 1*47*77*4) etc.</p> 
+  <p>Na2a has <b>N</b> numbers in his bag which are denoted by array <b>A</b>. For each number <b>A</b><sub>i</sub> in his bag, he asks you to transform it to a number with maximum possible number of trailing zeroes by using Magic Stone. You have to find the smallest of such numbers, since there can be multiple numbers with the maximum possible number of trailing zeros.</p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>There is a single test case.</li> 
+   <li>First line contains a single integer <b>N</b> as stated in the problem.</li> 
+   <li>The second line contains <b>N</b> space-separated integers <b>A</b><sub>1</sub>, <b>A</b><sub>2</sub>, ... , <b>A</b><sub><b>N</b></sub> where <b>A</b><sub>i</sub> denotes the <b>i</b><sup>th</sup> number in the bag.</li> 
+  </ul> 
+  <h3>Output</h3> 
+  <ul> 
+   <li>Output <b>N</b> lines, in which <b>i</b><sup>th</sup> line contains the answer corresponding to the number <b>A</b><sub>i</sub>.</li> 
+  </ul> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ≤ <b>N</b> ≤ 10<sup>5</sup></li> 
+   <li>1 ≤ <b>A</b><sub>i</sub> ≤ 10<sup>9</sup> </li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <p><b> Subtask 1(8 points) </b></p> 
+  <ul> 
+   <li>1 ≤ <b>N</b> ≤ 10</li> 
+   <li>1 ≤ <b>A</b><sub>i</sub> ≤ 10 </li> 
+  </ul> 
+  <p><br> <b> Subtask 2(22 points) </b></p> 
+  <ul> 
+   <li>1 ≤ <b>N</b> ≤ 10<sup>2</sup></li> 
+   <li>1 ≤ <b>A</b><sub>i</sub> ≤ 10<sup>3</sup> </li> 
+  </ul> 
+  <p><br> <b> Subtask 3(70 points) </b></p> 
+  <ul> 
+   <li>Original constraints</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+2 15
+
+<b>Output:</b>
+2
+60
+</pre> 
+  <h3>Explanation</h3> 
+  <p><b>Example case 1.</b> You can't get any number having zeros at the end multiplying 2 by lucky numbers.</p> 
+  <p><b>Example case 2.</b> You can multiply 15 by 4 and get 60, which has one trailing zero.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/na2a">na2a</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/mugurelionut">mugurelionut</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/LCKYST">http://discuss.codechef.com/problems/LCKYST</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/july15"> july15 </a><a class="problem-tag-small " href="/tags/problems/maths"> maths </a><a class="problem-tag-small " href="/tags/problems/na2a"> na2a </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>8-04-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/LCKYST">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-109013"></a> 
+ <div id="c109013" class="comment clear-block"> 
+  <h3><a href="/problems/LCKYST#comment-109013" class="active">where is the editorial?</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhiroj786">abhiroj786</a></strong>
+   <span style="color:#828282"> @ 13 Jul 2015 07:02 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    where is the editorial?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-109080"></a> 
+ <div id="c109080" class="comment clear-block"> 
+  <h3><a href="/problems/LCKYST#comment-109080" class="active">ISE is coming on this</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/kaushik777">kaushik777</a></strong>
+   <span style="color:#828282"> @ 15 Jul 2015 09:56 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    ISE is coming on this problem's editorial page.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
