@@ -1,0 +1,147 @@
+<div id="node-9061646" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/mandarin/GRGUY.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/russian/GRGUY.pdf">Russian</a>.</h3> 
+  <p>Chef likes to play games a lot. Gravity Guy is one such interesting game.</p> 
+  <p>"<i>Gravity Guy is an arcade side-scrolling game in which the player controls Gravity Guy by tapping the screen to switch gravity. The objective in this game is to run as far as possible while avoiding being trapped by obstacles, falling, or flying off the screen. If hit by obstacles, the game is over.</i>"</p> 
+  <p>Chef is so addicted to this game that each night he dreams of himself being in the game as Gravity Guy. He has two lanes in front of him represented by two strings of equal length named as <b>L<sub>1</sub></b> and <b>L<sub>2</sub></b>. Each of the two lanes consists of some clean blocks represented by <b>'.'</b> and some dirty blocks represented by <b>'#'</b>.</p> 
+  <p>Chef can start running from the beginning of any of the two lanes and cannot step over any dirty block <b>( '#' )</b> encountered during his journey. He has to complete his journey by reaching the end block of any of the two lanes.</p> 
+  <p>Chef can use the following jumps to reach his destination. Considering chef is at <b>x<sup>th</sup></b> block of some lane.</p> 
+  <ul> 
+   <li>He can jump to <b>x+1<sup>th</sup></b> block of the same lane.</li> 
+   <li>He can switch gravity quickly and jump to <b>x<sup>th</sup></b> block of the other lane.</li> 
+   <li>He can switch gravity and jump to <b>x+1<sup>th</sup></b> block of the other lane.</li> 
+  </ul> 
+  <p>You have to tell him whether he can reach his destination or not. If it is possible for him to reach his destination, then Chef is interested in knowing the minimum number of gravity switches required to reach the destination.</p> 
+  <h3>Input</h3> 
+  <p>First line of input contains a single integer <b>T</b> denoting the number of test cases. Each test case consists of <b>2</b> lines. First line of each test case contains a string denoting lane <b>L<sub>1</sub></b>. Second line of each test case contains a string denoting lane <b>L<sub>2</sub></b>.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, print <b>"Yes"</b> (without quotes) in the first line if Chef is able to reach the destination followed by a line containing an integer denoting minimum number of gravity switches required to reach to the destination. Print a single line containing the word <b>"No"</b> (without quotes) otherwise.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1 ≤ T ≤ 10<sup>5</sup></b></li> 
+   <li><b>1 ≤ |L<sub>1</sub>| ≤ 2 × 10<sup>5</sup></b>, where <b>|S|</b> denotes the length of string <b>S</b></li> 
+   <li><b>|L<sub>1</sub>| = |L<sub>2</sub>|</b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <p><b>Subtask 1 (25 points)</b></p> 
+  <ul> 
+   <li>Sum of <b>|L<sub>1</sub>|</b> over all test cases in one file it at most <b>200</b>.</li> 
+   <li>Only "Yes"/"No" response will be evaluated.</li> 
+  </ul> 
+  <p><br></p> 
+  <p><b>Subtask 2 (25 points)</b></p> 
+  <ul> 
+   <li>Sum of <b>|L<sub>1</sub>|</b> over all test cases in one file it at most <b>200</b>.</li> 
+  </ul> 
+  <p><br></p> 
+  <p><b>Subtask 3 (25 points)</b></p> 
+  <ul> 
+   <li>Sum of <b>|L<sub>1</sub>|</b> over all test cases in one file it at most <b>10<sup>6</sup></b>.</li> 
+   <li>Only "Yes"/"No" response will be evaluated.</li> 
+  </ul> 
+  <p><br></p> 
+  <p><b>Subtask 4 (25 points)</b></p> 
+  <ul> 
+   <li>Sum of <b>|L<sub>1</sub>|</b> over all test cases in one file it at most <b>10<sup>6</sup></b>.</li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3
+#...#
+.###.
+#.#.#.
+.#.#.#
+#...
+#...
+
+<b>Output:</b>
+Yes
+2
+Yes
+5
+No
+</pre>
+  <h3>Explanation</h3> 
+  <ul> 
+   <li><b>Test 1:</b> Chef will start his journey from <b>L<sub>2</sub></b>, switch from <b>L<sub>2</sub></b> to <b>L<sub>1</sub></b> and finally land up at last block of <b>L<sub>2</sub></b> by switching from <b>L<sub>1</sub></b> to <b>L<sub>2</sub></b>. Therefore, he requires total 2 gravity switches to reach the destination.</li> 
+   <li><b>Test 3:</b> Chef cannot start his journey as starting block of both the lanes <b>L<sub>1</sub> &amp; L<sub>2</sub></b> are dirty and he cannot step over them.</li> 
+  </ul> 
+  <p><br></p> 
+  <p>In Subtask 1 and Subtask 3, only "Yes"/"No" response will be evaluated. Thus, for example, the output</p> 
+  <pre>
+Yes
+1
+Yes
+8
+No
+
+</pre>
+  <p>is considered as a correct output for the example input.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/ma5termind">ma5termind</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/GRGUY">http://discuss.codechef.com/problems/GRGUY</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/aug15"> aug15 </a><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/greedy"> greedy </a><a class="problem-tag-small " href="/tags/problems/ma5termind"> ma5termind </a><a class="problem-tag-small " href="/tags/problems/simple"> simple </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>1-04-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/GRGUY">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-113096"></a> 
+ <div id="c113096" class="comment clear-block"> 
+  <h3><a href="/problems/GRGUY#comment-113096" class="active">Why is my solution to theprob</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/googliness">googliness</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2015 09:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Why is my solution to theprob gravity guy: 
+    <a href="https://www.codechef.com/viewsolution/7847666" title="https://www.codechef.com/viewsolution/7847666">https://www.codechef.com/viewsolution/7847666</a> showing wrong answer?? can anyone please help?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
