@@ -1,0 +1,292 @@
+<div id="node-9061648" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/mandarin/COOKMACH.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/russian/COOKMACH.pdf">Russian</a>.</h3> 
+  <p>Chef is on a vacation these days, so his friend Chefza is trying to solve Chef's everyday tasks.</p> 
+  <p>Today's task is to make a sweet roll. Rolls are made by a newly invented cooking machine. The machine is pretty universal - it can make lots of dishes and Chefza is thrilled about this.</p> 
+  <p>To make a roll, Chefza has to set all the settings to specified integer values. There are lots of settings, each of them set to some initial value. The machine is pretty complex and there is a lot of cooking to be done today, so Chefza has decided to use only two quick ways to change the settings. In a unit of time, he can pick one setting (let's say its current value is <b>v</b>) and change it in one of the following ways.</p> 
+  <ul> 
+   <li>If <b>v</b> is even, change this setting to <b>v/2</b>. If <b>v</b> is odd, change it to <b>(v − 1)/2</b>.</li> 
+   <li>Change setting to <b>2 × v</b></li> 
+  </ul> 
+  <p>The receipt is given as a list of integer values the settings should be set to. It is guaranteed that each destination setting can be represented as an integer power of <b>2</b>.</p> 
+  <p>Since Chefza has just changed his profession, he has a lot of other things to do. Please help him find the <b>minimum</b> number of operations needed to set up a particular setting of the machine. You can prove that it can be done in finite time.</p> 
+  <h3>Input</h3> 
+  <p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</p> 
+  <p>The only line of each test case contains two integers <b>A</b> and <b>B</b> denoting the initial and desired values of the setting, respectively.</p> 
+  <h3>Output</h3> 
+  <p>For each test case, output a single line containing minimum number of operations Chefza has to perform in order to set up the machine.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>200</b></li> 
+   <li><b>1</b> ≤ <b>A</b> ≤ <b>10<sup>7</sup></b></li> 
+   <li><b>1</b> ≤ <b>B</b> ≤ <b>10<sup>7</sup></b>, and <b>B</b> is an integer power of <b>2</b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li><b>Subtask #1 [40 points]: A ≤ 100 and B ≤ 100</b></li> 
+   <li><b>Subtask #2 [60 points]: No additional constraints</b></li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+6
+1 1
+2 4
+3 8
+4 16
+4 1
+1 4
+
+<b>Output:</b>
+0
+1
+4
+2
+2
+2
+</pre>
+  <h3>Explanation</h3> 
+  <ul> 
+   <li>In the first test case, you don't need to do anything.</li> 
+   <li>In the second test case, you need to multiply 2 by 2 and get 4. This is done in 1 operation.</li> 
+   <li>In the third test case, you need to obtain 1 from 3 and then multiply it by 2 three times to obtain 8. A total of 4 operations.</li> 
+   <li>In the fourth test case, multiply 4 by 2 twice.</li> 
+   <li>In the fifth test case, divide 4 by 2 twice.</li> 
+   <li>In the sixth test case, multiply 1 by 2 twice.</li> 
+  </ul> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/cenadar">cenadar</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/COOKMACH">http://discuss.codechef.com/problems/COOKMACH</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/aug15"> aug15 </a><a class="problem-tag-small " href="/tags/problems/bitwise-operatn"> bitwise-operatn </a><a class="problem-tag-small " href="/tags/problems/cakewalk"> cakewalk </a><a class="problem-tag-small " href="/tags/problems/cenadar"> cenadar </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>26-05-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>1 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/COOKMACH">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-113117"></a> 
+ <div id="c113117" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113117" class="active">sounds binary</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/tausif000">tausif000</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 05:40 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    sounds binary
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113124"></a> 
+ <div id="c113124" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113124" class="active">WHAT IS WRONG IN THIS</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/deepak12yadav">deepak12yadav</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 12:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    WHAT IS WRONG IN THIS PROGRAM? IT IS GIVING THE DESIRABLE OUTPUT. #include main() { int T,A,B,d=0,i; scanf(" %d",&amp;T); for(i=1;i&lt;=T;i=i+1) { scanf(" %d %d",&amp;A,&amp;B); while(B!=A) { if(A%2==0||A==1) { if(B&gt;A) { A*=2; d++; } else { A/=2; d++; } } else { A=(A-1)/2; d++; } } printf("%dn",d); } }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113229"></a> 
+ <div id="c113229" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113229" class="active">@deepak12yadav test ur</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rohitlien5759">rohitlien5759</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 11:43 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @deepak12yadav test ur solution for A=6 and B=16
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113283"></a> 
+ <div id="c113283" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113283" class="active">please describe how to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/gauravrana3450">gauravrana3450</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2015 03:44 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please describe how to code.in java
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113289"></a> 
+ <div id="c113289" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113289" class="active">my program gives a runtime</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/somyasr7">somyasr7</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2015 07:48 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    my program gives a runtime error.. what should i do?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113329"></a> 
+ <div id="c113329" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113329" class="active">why it is showing run time</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hitman333">hitman333</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2015 05:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    why it is showing run time error
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113353"></a> 
+ <div id="c113353" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-113353" class="active">https://ideone.com/D7Oqy5 </a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/hitman333">hitman333</a></strong>
+   <span style="color:#828282"> @ 20 Aug 2015 10:13 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    <a href="https://ideone.com/D7Oqy5" title="https://ideone.com/D7Oqy5">https://ideone.com/D7Oqy5</a> check my code at this link ,output is correct..then why on submitting its showing wrong answer...plzzz reply
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-114760"></a> 
+ <div id="c114760" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-114760" class="active">TLE :'(</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/rule_it_subir">rule_it_subir</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2015 12:39 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    TLE :'(
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-114859"></a> 
+ <div id="c114859" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-114859" class="active">#include #include #include ma</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/khursheedali38">khursheedali38</a></strong>
+   <span style="color:#828282"> @ 30 Aug 2015 05:26 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    #include #include #include main() { clock_t start = clock(); int t,x,y,count; scanf("%d",&amp;t); while(t--) { count=0; scanf("%d",&amp;x); scanf(" %d",&amp;y); if(xy) { if(x%2==0) { while(x!=y) { x=x/2; count++; } printf("n%dn",count); } else { x=(x-1)/2; while(x!=y) { x=x/2; count++; } printf("n%dn",count); } } else printf("n%dn",count); } clock_t ends = clock(); printf("Run Time: %.5fn", ((double)(ends - start)) / CLOCKS_PER_SEC); }
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117009"></a> 
+ <div id="c117009" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-117009" class="active">Can someone tell me what is</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/abhi_sinha">abhi_sinha</a></strong>
+   <span style="color:#828282"> @ 8 Sep 2015 10:51 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can someone tell me what is wrong with my code?? 
+    <a href="https://www.codechef.com/viewsolution/8079704" title="https://www.codechef.com/viewsolution/8079704">https://www.codechef.com/viewsolution/8079704</a> Or atleast tell me a case where my code cannot perform. Thanks in advance
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117827"></a> 
+ <div id="c117827" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-117827" class="active">Please help me someone!!!!</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/brijpyth">brijpyth</a></strong>
+   <span style="color:#828282"> @ 13 Sep 2015 08:08 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help me someone!!!! why my code is give runtime error. while in python ide the code is give true results. please help me. code here c,p,t=0,0,0 I = 1 T=int(input()) while i&lt;=T: x=int(input()) y=t=int(input()) while y!=1: y=y//2 p+=1 if t==2**p: y=2**p else: y=2**(p+1) while x != y: if x % 2 ==0: if y % x==0: x=x*2 c+=1 else: x=x/2 c+=1 else: if x==1: x*=2 c+=1 else: x=(x-1)/2 c+=1 print(c) c=0 I +=1 input()
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-117910"></a> 
+ <div id="c117910" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-117910" class="active">Please help with this one :</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/anchit_123">anchit_123</a></strong>
+   <span style="color:#828282"> @ 15 Sep 2015 01:49 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Please help with this one : 
+    <a href="http://ideone.com/Kann5U" title="http://ideone.com/Kann5U">http://ideone.com/Kann5U</a> I cannot figure out why is it giving WA.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-118259"></a> 
+ <div id="c118259" class="comment clear-block"> 
+  <h3><a href="/problems/COOKMACH#comment-118259" class="active">what if a is even b is odd</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/sayak96">sayak96</a></strong>
+   <span style="color:#828282"> @ 18 Sep 2015 10:28 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    what if a is even b is odd and b&gt;a
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
