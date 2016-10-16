@@ -1,0 +1,171 @@
+<div id="node-9061643" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/mandarin/WOUT.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/russian/WOUT.pdf">Russian</a>.</h3> 
+  <p>Oh, no! Chef’s in trouble. He’s got himself stuck in a cave (we don’t know how) and is looking for a way out. The bigger problem is that he needs to get his tractor out of the cave (don't ask why Chef owns a tractor!). He currently faces a large block of height <b>N</b> cells and length <b>N</b> cells, and needs to get his tractor across this block. The block is made up of vertical columns of soil, each of which is one cell long. Each column has a continuous vertical gap, with the <b>i</b><sup>th</sup> column having its gap from the <b>l<sub>i</sub></b><sup>th</sup> cell to the <b>h<sub>i</sub></b><sup>th</sup> cell (starting from the bottom, 0-indexing). That is, in the <b>i</b><sup>th</sup> column, there is no soil from the <b>l<sub>i</sub></b><sup>th</sup> cell to the <b>h<sub>i</sub></b><sup>th</sup> cell (both inclusive). Chef can build additional gaps by clearing some cells of soil. His tractor has height <b>H</b>, and therefore, he needs to build a horizontal corridor of height <b>H</b> passing through all the columns. That is, some consecutive <b>H</b> rows must have no soil. Please see the figures in the example and explanation sections for more details.</p> 
+  <p>Chef is able to clear one cell of soil by spending one unit of energy. Chef is smart, and will figure out a way to build the horizontal corridor while spending the minimum possible amount of energy. To estimate how many of his tasty dishes he will still be able to cook for you tonight, find out what is the minimum possible energy he needs to spend.</p> 
+  <h3>Input</h3> 
+  <p>First line of input contains one integer <b>T</b> - number of test cases. <b>T</b> test cases follow.</p> 
+  <p>Each test case starts with two integers <b>N</b> and <b>H</b> – size of the cave and height of the tractor, respectively. In each of the next <b>N</b> lines are two integers <b>l<sub>i</sub></b> and <b>h<sub>i</sub></b>, respectively indicating lowest and highest number of cell for the gap in the <b>i</b><sup>th</sup> column.</p> 
+  <h3>Output</h3> 
+  <p>One integer – minimum energy required.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li><b>1</b> ≤ <b>T</b> ≤ <b>10<sup>3</sup></b></li> 
+   <li><b>1</b> ≤ <b>N</b> ≤ <b>10<sup>6</sup></b></li> 
+   <li><b>1</b> ≤ sum of <b>N</b> over all test cases ≤ <b>10<sup>6</sup></b></li> 
+   <li><b>1</b> ≤ <b>H</b> ≤ <b>N</b></li> 
+   <li><b>0</b> ≤ <b>l<sub>i</sub></b> ≤ <b>h<sub>i</sub></b> &lt; <b>N</b></li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <p>Subtask 1 (25 points): <b>T ≤ 100, N ≤ 100</b></p> 
+  <p>Subtask 2 (75 points): No additional constraints</p> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+2
+4 3
+1 2
+1 2
+1 2
+1 2
+5 2
+2 3
+1 2
+2 3
+1 2
+2 3
+
+<b>Output:</b>
+4
+2
+
+</pre>
+  <h3>Explanation</h3> 
+  <p>In the second case, the figure describes the initial map, where white cells denote empty cells and brown cells denote soil cells.</p> 
+  <p><img width="350" height="225" src="http://www.codechef.com/download/AUG15/bef.png" alt=""></p> 
+  <p>When we removed soil in two cells as the following figure, then we can make a corridor of height 2, adn this is the optimal way to make a corridor.</p> 
+  <p><img width="350" height="225" src="http://www.codechef.com/download/AUG15/aft.png" alt=""></p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/witalij_hq ">witalij_hq </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/WOUT">http://discuss.codechef.com/problems/WOUT</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/aug15"> aug15 </a><a class="problem-tag-small " href="/tags/problems/dp"> dp </a><a class="problem-tag-small " href="/tags/problems/easy"> easy </a><a class="problem-tag-small " href="/tags/problems/prefix-sum"> prefix-sum </a><a class="problem-tag-small " href="/tags/problems/subarray"> subarray </a><a class="problem-tag-small " href="/tags/problems/witalij_hq "> witalij_hq </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>22-02-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/WOUT">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-113102"></a> 
+ <div id="c113102" class="comment clear-block"> 
+  <h3><a href="/problems/WOUT#comment-113102" class="active">Can you post the editorial to</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dakshv22">dakshv22</a></strong>
+   <span style="color:#828282"> @ 17 Aug 2015 10:25 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    Can you post the editorial to this ques pls?
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113113"></a> 
+ <div id="c113113" class="comment clear-block"> 
+  <h3><a href="/problems/WOUT#comment-113113" class="active">please tell what is wrong in</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/dhawal143">dhawal143</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 03:13 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell what is wrong in my submission 
+    <a href="https://www.codechef.com/viewsolution/7849843" title="https://www.codechef.com/viewsolution/7849843">https://www.codechef.com/viewsolution/7849843</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113128"></a> 
+ <div id="c113128" class="comment clear-block"> 
+  <h3><a href="/problems/WOUT#comment-113128" class="active">please tell me whats wrong</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhawin91">bhawin91</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 02:45 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell me whats wrong with my solution 
+    <a href="https://www.codechef.com/viewsolution/7851590" title="https://www.codechef.com/viewsolution/7851590">https://www.codechef.com/viewsolution/7851590</a>
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-113129"></a> 
+ <div id="c113129" class="comment clear-block"> 
+  <h3><a href="/problems/WOUT#comment-113129" class="active">please tell me some other</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/bhawin91">bhawin91</a></strong>
+   <span style="color:#828282"> @ 18 Aug 2015 03:03 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    please tell me some other test cases , i imagined many 5 3 1 4 2 4 3 4 2 3 1 2 answer: 4
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+ <a id="comment-115991"></a> 
+ <div id="c115991" class="comment clear-block"> 
+  <h3><a href="/problems/WOUT#comment-115991" class="active">editorial not there. 404 not</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/banshock">banshock</a></strong>
+   <span style="color:#828282"> @ 3 Sep 2015 11:59 PM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    editorial not there. 404 not found.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
