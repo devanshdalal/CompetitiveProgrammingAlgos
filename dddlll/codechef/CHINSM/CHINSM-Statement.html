@@ -1,0 +1,100 @@
+<div id="node-9061651" class="node clear-block"> 
+ <div class="meta"> 
+ </div> 
+ <div class="content"> 
+  <h3>All submissions for this problem are available.</h3>
+  <h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/mandarin/CHINSM.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/AUG15/russian/CHINSM.pdf">Russian</a>.</h3> 
+  <p>Chef sometimes suffers from insomnia. During sleepless nights, he often plays this game: He creates an array <b>A</b> of <b>N</b> integers and also decides one integer <b>K</b>. After that, he tries to count the number of non-empty contiguous subsequences (subsegments) of <b>A</b>, such that there are no bad pairs of integers in this subsegment. A pair <b>(x, y)</b> of integers is called bad if <b>x</b> is situated to the left of <b>y</b> in the array and <b>x mod y = K</b>. Finally, before going to sleep, Chef wrote down the answer on a sheet of paper. Sadly, he has forgotten it this morning and want your help regarding that.</p> 
+  <h3>Input</h3> 
+  <ul> 
+   <li>The first line contains two integers - <b>N</b> and <b>K</b>.</li> 
+   <li>Second line contains <b>N</b> integers - <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b> ... <b>A<sub>N</sub></b> - separated by spaces, denoting the array <b>A</b>.</li> 
+  </ul> 
+  <h3>Output</h3> 
+  <p>A single line containing an integer - the answer to the problem.</p> 
+  <h3>Constraints</h3> 
+  <ul> 
+   <li>1 ≤ <b>N</b>, <b>A<sub>i</sub></b> ≤ 10<sup>5</sup> </li> 
+   <li>0 ≤ <b>K</b> ≤ 10<sup>5</sup> </li> 
+  </ul> 
+  <h3>Subtasks</h3> 
+  <ul> 
+   <li>Subtask 1: <b>N</b> ≤ 100 (15 points) </li> 
+   <li>Subtask 2: <b>N</b> ≤ 1000 (15 points) </li> 
+   <li>Subtask 3: <b>K</b> = 0 (10 points) </li> 
+   <li>Subtask 4: Original constraints (60 points) </li> 
+  </ul> 
+  <h3>Example</h3> 
+  <pre><b>Input:</b>
+3 2
+5 3 1
+
+<b>Output:</b>
+4
+</pre>
+  <h3>Explanation:</h3> 
+  <p>We can check <b>5 mod 3 = 2</b>, <b>5 mod 1 = 0</b> and <b>3 mod 1 = 0</b>. Thus <b>(5, 3)</b> is the only bad pair in the array. The <b>4</b> subsegments <b>A[1;1] = {5}, A[2;2] = {3}, A[3;3] = {1}, A[2;3] = {3, 1}</b> are OK. The other subsegments <b>A[1;2] = {5, 3}, A[1;3] = {5, 3, 1}</b> have a bad pair.</p> 
+ </div> 
+ <hr> 
+ <table cellspacing="0" cellpadding="0" align="left"> 
+  <tbody>
+   <tr> 
+    <td width="14%">Author:</td> 
+    <td><a href="/users/zedthirtyeight">zedthirtyeight</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tester:</td> 
+    <td><a href="/users/laycurse">laycurse</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Editorial</td> 
+    <td><a href="http://discuss.codechef.com/problems/CHINSM">http://discuss.codechef.com/problems/CHINSM</a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Tags</td> 
+    <td><a class="problem-tag-small " href="/tags/problems/ad-hoc"> ad-hoc </a><a class="problem-tag-small " href="/tags/problems/aug15"> aug15 </a><a class="problem-tag-small " href="/tags/problems/combinatorics"> combinatorics </a><a class="problem-tag-small " href="/tags/problems/divisors"> divisors </a><a class="problem-tag-small " href="/tags/problems/intervals"> intervals </a><a class="problem-tag-small " href="/tags/problems/medium"> medium </a><a class="problem-tag-small " href="/tags/problems/zedthirtyeight"> zedthirtyeight </a></td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Date Added:</td> 
+    <td>7-07-2015</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Time Limit:</td> 
+    <td>2 sec</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Source Limit:</td> 
+    <td>50000 Bytes</td> 
+   </tr> 
+   <tr> 
+    <td width="14%">Languages:</td> 
+    <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td> 
+   </tr> 
+  </tbody>
+ </table> 
+ <p style="clear:left;"><br></p> 
+ <ul class="button-list button-list-left"> 
+  <li style="display:"><a href="/submit/CHINSM">Submit</a></li> 
+ </ul> 
+ <hr> 
+ <h2 style="text-decoration: none;">Comments</h2> 
+ <ul class="links inline">
+  <li class="comment_forbidden first last"><span><i><strong>Please login at the top to post a comment.</strong></i><p></p></span></li> 
+ </ul>
+</div> 
+<div id="comments"> 
+ <a id="comment-113239"></a> 
+ <div id="c113239" class="comment clear-block"> 
+  <h3><a href="/problems/CHINSM#comment-113239" class="active">@laycurse why there is no</a></h3> 
+  <div class="submitted"> 
+   <strong><a href="/users/shubh9380222">shubh9380222</a></strong>
+   <span style="color:#828282"> @ 19 Aug 2015 12:48 AM</span> 
+  </div> 
+  <div class="content"> 
+   <div class="comment-body">
+    @laycurse why there is no tutorial for this problem... it's showing error 404.
+   </div> 
+   <div class="comment-moderation-links"></div> 
+  </div> 
+ </div> 
+</div>
